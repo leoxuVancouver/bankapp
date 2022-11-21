@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>预付款</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Advance.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+<div class="page bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2>预付款</h2>
+		<a href="index.html" class="goHome"></a>
+	</div>
+	<div class="content">
+    	<div class="advance">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><em class="red">*</em>收款方用户名</td>
+                        <td><input type="text" value="" placeholder="直接录入或选择收款人"> <a href="vendor_list.html" class="">常用收款人</a></td>
+                    </tr>
+                    <tr>
+                        <td><em class="red">*</em>收款方名称</td>
+                        <td><input type="text" id="payeeName" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><em class="white">*</em>预付款余额</td>
+                        <td><input type="text" value="" readonly="readonly" /></td>
+                    </tr>
+                    <tr>
+                        <td><em class="red">*</em>本次付款金额</td>
+                        <td><input type="text" id="price" value="" placeholder="录入支付金额" /></td>
+                    </tr>
+                    <tr>
+                        <td><em class="white">*</em>备注</td>
+                        <td><input type="text" value="" /></td>
+                    </tr>
+                </tbody>
+            </table>
+    		<div class="tips">
+    			<span>温馨提示：如果您需要对订单进行支付，请使用<a href="Payment.html" class="yfk">付货款</a>功能</span>
+    		</div>
+    		<div class="button">
+    			<a href="javascript:;" id="btnNext">下一步</a>
+    		</div>
+    	</div>
+    </div>
+</div>    
+  <div class="mask"></div>
+  <div class="error_pop">
+    <h3>错误信息</h3>
+    <div class="error_info">
+        <img src="images/error_icon.png" height="35" width="35" alt="">
+        <p>收款人、金额不能为空！</p>
+    </div>
+    <div class="btnbutton">
+        <a href="javascript:;" class="btnClose">取消</a>
+        <a href="javascript:;" class="btnOK">确定</a>
+    </div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+$("#btnNext").bind("click",function(){
+    if($("#payeeName").val() =="" || $("#price").val()=="" ){
+        $(".mask").show().height($(document).height());
+        $(".error_pop").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".error_pop").css("height")))/2+"px");
+        $(".error_pop").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".error_pop").css("width")))/2+"px");
+        $(".btnClose,.btnOK").bind('click', function(){
+            $(".mask").hide();
+            $(".error_pop").hide();
+        })
+    }else{
+        window.location.href= "cashier.html";
+    };  
+    
+});
+$('#price').on('blur',function (){
+        var s = $('#price').val();
+        $(this).val(formatCurrency(s));
+    });
+</script>

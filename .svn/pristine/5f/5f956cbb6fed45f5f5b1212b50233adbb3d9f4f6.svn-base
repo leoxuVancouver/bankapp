@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>预付款</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Advance.css">
+    
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+    <script type="text/javascript" src="js/Storage.js"></script>
+    
+    <style type="text/css">
+		left:50%;
+		top:50%;
+		margin-top:-270px;
+    .windpop2{
+		margin-left:-300px;
+	}
+
+	
+    </style>
+</head>
+<body>
+<div class="page bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2>预付款</h2>
+		<a href="index.html" class="goHome"></a>
+           
+         	</div>
+	<div class="content" style="margin-top:20px;">
+    <div class="advancetop " style="margin-top:130px;">
+                
+                <h3 style="font-size:30px;padding-bottom: 0px;padding-top: 10px;"><img src="images/gdqq_logo.png" height="80" width="75" alt="">广东琪琪电子商务有限
+                公司</h3>
+                
+             </div>
+    	<div class="advance" >
+            
+            <div class="advancecon">
+               <h3 style=" margin-left: 10px;font-size:24px;">预付款余额（元）：<span style="font-size: 28px;">50,000.00</span></h3>
+                <h3 style=" margin-left: 10px;font-size:24px;"><em class="red">*</em>支付金额（元）：<input type="text" name="price" id="price"  value="" style="font-size: 28px;padding-left: 15px; width:310px;"></h3>
+                <!--<div class="price">
+                <label style="font-size: 28px;padding-left:20px">￥</label><input type="text" name="price" id="price"  value="" style="font-size: 36px;;padding-left: 20px;">
+
+                </div>  -->              
+            </div>
+            
+             <div class="comments2" style="font-size: 36px;"><div class="comments">
+                <label style="font-size:24px;">付款说明：</label>
+                <textarea   id="remark" cols="3" style="width: 360px;  margin-left: 30px; overflow:hidden; maxlength=100; vertical-align:middle;" > </textarea>
+                </div></div>
+
+                      <div class="tips2" id="tips" style="display:none;">
+                         <span style="font-size: 24px;"><font color="#2b98e5">●</font>&nbsp;提示：如果需要对订单进行支付，请使用<a href="Payment.html" style="font-size:24px; font-weight:lighter;"> 付货款</a>功能</span>
+                          <div style="text-align:center;"><span id="disappear" class="span2"  style="padding-right:100px; padding-left:100px; "><img src="images/icon_fang.png" class="ico-chk-tips">&nbsp;&nbsp;<label id="noTips">不再提示</label></span><span id="close" class="span2">关闭</span></div>
+
+                     </div>
+        
+            <!-- <div class="shows">金额不能为空！</div> -->
+
+                     
+
+    		
+    		<div class="button abs">
+    			<input type="button" value="下一步" id="btnNext"  style="margin-bottom: 70px">
+    		</div>
+    	</div>
+    </div>
+</div>   
+
+
+
+<div class="mask" style="display:none;"></div>
+<div class="windpop windpop1" style="display:none;">
+    <div class="windpopcont">
+        <ul>
+            <li>支付金额： <em  style="font-size: 28px;" id="money_show">24,880.00</em>元</li>
+            <li>短信支付<a href="advance_payment_method.html">切换</a></li>
+            <li style="height:auto; line-height:60px; border-bottom:0px solid #fff; display:none;" class="phone-tips">
+            </li>
+        </ul>
+       <div class="checkcode">
+            <p style="margin:20px 0px 20px 0px; display:none;line-height:200%;width: 505px;" class="phone-tips">序号为<span class="dxxh red">1</span>的验证码已发送至手机<em class="red">135****0759</em>，请在下框输入验证码的中间四位数字，或短信回复验证码。</p>
+            <!----<p style="margin:0px 0px 40px 0px"><em class="red">135****0759</em></p>---->
+            <lable style="">
+                 <label  class="phone-tips" style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;float:left;color:#ccc;font-size:24px;margin-top: 10px;"  >SFT#</label>
+               <input type="text"  class="inputCode" placeholder="短信验证码" style="font-size:24px;text-indent:0px;line-height:70px;margin-top: 10px;text-align:center;"> 
+                <label  class="phone-tips" style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;float:left;color:#ccc;font-size:24px;margin-top: 10px;"  >-67891</label>
+            </lable>
+            <input type="button" class="get_code fr" style="margin-top: 10px;margin-bottom: 10px; border: 1px solid #2b98e5;" value="获取验证码"  />
+         
+        </div>
+    </div>
+    <div class="windbtn" style="text-align:center;padding-bottom: 25px;padding-top: 25px;">
+        <a href="javascript:;" class="abtn btnUndo fl close_this" id="remove_stroge">取消</a>
+       
+        <input type="button"  class="abtn btnOK fr" disabled="disabled" value="确定支付" />
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+//弹窗金额获取
+var money_num = Enjurokcc.getMarkStringThis('_Money');
+if(money_num!=null&&money_num){
+    $('#money_show').text(money_num);
+     var price_num=money_num.replace(/,/g,'');
+     $('#price').val(formatCurrency(parseInt(price_num)));
+   
+}
+
+
+
+
+$('#btnNext').click(function(){
+    //window.location.href = 'Advance2.html'
+	 $(".mask").show()
+    $(".windpop1").show();
+     var numMoney = $('#price').val();
+    $('#money_show').text(numMoney);
+  })
+	$(".mask").click(function(){
+        $(".mask").hide();
+        $(".windpop1").hide();
+    });
+
+
+$(function(){
+    
+    $(".mask").show().height($(document).height());
+    $(".windpop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop1").css("height")))/2+"px");
+    $(".windpop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop1").css("width")))/2+"px");
+    $(".btnUndo").bind('click', function () {
+        $(".mask").hide();
+        $(".windpop1").hide();
+
+        // window.location.href = 'Advance2.html'
+    })
+
+})
+
+
+$(".inputCode").focus();
+$(".inputCode").on("keyup",function(evt){
+  if($(this).val().trim().length){
+    $(".btnOK").removeAttr("disabled");
+     $(".btnOK").css({
+      "background-color":"#2b98e5",
+      "color":"#fff"
+    }) 
+    $(".btnOK").click(function(){
+        window.location.href= "pay-success2.html";
+    })
+  }else{
+    $(".btnOK").prop("disabled","disabled");
+  }
+})
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+/*$("input[name=price]").focus();
+$("input[name=price]").on("input",function(evt){
+  if($(this).val().trim().length){
+    $("#btnNext").removeAttr("disabled");
+  }else{
+    $("#btnNext").prop("disabled","disabled");
+  }
+});*/
+
+//金额格式化
+$('#price').on('blur',function (){
+    var s = $('#price').val();
+    $(this).val(formatCurrency(s));
+});
+</script>
+
+</script>
+<script type="text/javascript">
+function ta(obj){
+    var val=$(obj).val().length;
+    if(val>10){
+        alert("至多输入100字符！");
+        $(obj).val($(obj).val().substring(0,10))
+        }
+}
+</script>
+<script type="text/javascript">
+//$(document).ready(function(){
+//	$("#price").focus();
+//});
+//不再提示
+	$(".ico-chk-tips").click(function(){
+		if($(this).attr('src')=="images/icon_fang.png"){
+			$(this).attr("src","images/icon_fang_chk.png"); 
+		}else{
+			$(this).attr("src","images/icon_fang.png");
+			}
+    });
+	$("#noTips").click(function(){
+       $(".tips2").hide();
+    });
+//关闭提示
+	$("#close").click(function(){
+       $(".tips2").hide();
+    });
+//
+	$(".get_code").click(function(){
+       $(".phone-tips").show();
+        $(".inputCode").css('width','170px');
+       $(".get_code").css('width','200px');
+    });
+
+//下一步
+
+$(function(){
+$('.Nexe_one').click(function(){
+    $(".mask").show()
+    $(".windpop1").show();
+   $('#btnNext').click(function(){
+    //window.location.href = 'Advance2.html'
+	 $(".mask").show()
+    $(".windpop1").show();
+  })
+})
+
+//弹窗金额获取
+var money_num = Enjurokcc.getMarkStringThis('_Money');
+if(money_num!=null&&money_num){
+    $('#money_show').text(money_num);
+  
+}
+
+
+})
+
+</script>
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>在线下单</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/mycart.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+</head>
+<body>
+    <div class="page">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+    		<a href="index.html" class="a-back"></a>
+    		<h2>在线下单</h2>
+    		<!-- <a href="" class="a-menu"></a> -->
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+        <div class="content">
+    	<div class="order">
+        	<div class="order_company">
+            	<p>广东省广州市琪琪电子信息科技股份有
+限公司</p>
+            </div>
+            <div class="order_daily"><span style="margin-right:60px;">订单日期：2015-12-15</span><span>订单号：20150817001</span></div>
+            <div class="img_icon">
+            <img src="images/icon_yes.png"><img src="images/icon_recive.png"><img src="images/icon_yes.png">
+            </div>
+            <div class="last fr"><span>订单金额(元)：24,880.00</span></div>
+    </div>
+    <div class="order2">
+        	<div class="order_company2">
+            	<p>湖北百歌电子商务有限公司</p>
+            </div>
+            <div class="order_daily" ><span style="margin-right:60px;">订单日期：2015-12-15</span><span>订单号：20150817002</span></div>
+            <div class="img_icon">
+            <img src="images/icon_yes.png"><img src="images/icon_recive.png"><img src="images/icon_yes.png">
+            </div>
+            <div class="last fr"><span>订单金额(元)：24,880.00</span></div>
+    </div>
+    <div class="order2">
+        	<div class="order_company">
+            	<p>广东省广州市琪琪电子信息科技股份有
+限公司</p>
+            </div>
+            <div class="order_daily"><span style="margin-right:60px;">订单日期：2015-12-15</span><span>订单号：20150817003</span></div>
+            <div class="img_icon">
+            <img src="images/icon_yes.png"><img src="images/icon_recive.png"><img src="images/icon_yes.png">
+            </div>
+            <div class="last fr"><span>订单金额(元)：24,880.00</span></div>
+    </div>
+    
+    </div>
+    </div>
+    <!-- content 结束 -->
+</body>
+</html>

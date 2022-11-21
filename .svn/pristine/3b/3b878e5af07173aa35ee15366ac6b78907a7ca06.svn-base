@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:17
+ * @version $Id$
+ */
+
+ /* 预付款*/
+.advance{ width: 100%; background: #e6e6e6;}
+.advance table{ background: #fff; width: 100%;}
+.advance table tr{ border-top: 1px solid #ccc; padding: 0 25px; display: block; overflow: hidden;}
+.advance table tr td{ height: 100px; line-height: 100px; float: left; }
+.advance table tr td:nth-child(1){ width: 30%; font-size: 24px; color: #333; }
+.advance table tr td:nth-child(2){ width: 70%; }
+.advance table tr td input{ width: 280px; height: 40px; border: 0px; }
+.advance table tr td em{ margin-right: 5px; }
+.advance table tr td a{ float: right; color: #2b98e5; font-size: 20px; }
+.advance .tips{ text-align: center; padding: 50px 25px 150px 25px;}
+.advance .tips span{ float: left; font-size: 20px; }
+.advance .tips span a{ display: inline-block; font-size: 30px; color: #2b98e5; font-weight: bold; }
+
+
+.advance .tips2{ background: #FFFFFF;text-align: center; margin:35px 25px 0px 25px;  overflow: hidden;
+     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+	padding:20px 5px;
+	line-height:300%;
+	}
+.advance .tips2 span{ float: left;}
+.advance .tips2 span a{ display: inline-block; font-size: 22px; color: #2b98e5; font-weight: bold; }
+.advance .tips21 p{width:200px;margin-left:100px;}
+
+.span2 {font-size: 26px;color:#2b98e5;cursor:pointer;font-weight:lighter;}
+
+
+
+
+
+
+
+.shows{ font-size: 20px; height: 30px; line-height: 30px; padding: 0 25px; margin-top: 10px;}
+.advance .abs{ margin-top: 120px;}
+.advancetop{ width: 100%; height: auto; background: #f3f3f3; text-align: center; padding: 20px 0px; border-bottom: 1px solid #ccc;}
+.advancetop h3{ width: 100%; font-size: 28px; color: #000; padding: 30px 0px 10px 0px;}
+.advancetop p{ font-size: 24px;}
+
+.advancecon{ padding:25px 25px 0px 25px; background: #fff; }
+.advancecon h3{ font-size: 28px; color: #000;  line-height: 50px; padding: 20px 0px; }
+.advancecon h3 em{ float: left; margin-top: 5px;}
+.advancecon .price{ height: 70px; border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+.advancecon .price em{ float: left; font-size: 28px; margin-top: 14px;}
+.advancecon .price input{  height: 70px;  line-height: 70px; font-size: 36px;}
+
+.comments{ height: 80px; padding: 0 25px; line-height: 80px; border-bottom: 0px solid #ccc;background: #fff;}
+.comments2{ padding: 10px 15px 10px 25px; border-bottom: px solid #ccc;background: #fff;}
+.comments label{ float: left; font-size: 28px;}
+.comments2 textarea{ height: 76px;line-height: 28px;padding: 0px 0px;width: 100%; font-size: 24px; }
+#btnNext{ width: 100%; height: 80px; line-height: 78px;color: #fff; background: #2b98e5; font-size: 30px; border-radius: 10px; }
+#btnNext:disabled{opacity: 0.5;}

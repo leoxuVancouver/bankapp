@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:47:28
+ * @version $Id$
+ */
+/*收银台*/
+.cashier{ width: 100%; }
+.cashier-tips{ background: #fff;  height: 78px; padding: 20px 25px; line-height: 40px; }
+.cashier-tips h2{ font-size: 24px; font-family: "Microsoft YaHei";}
+.cashier-tips h2 span{ padding: 0 16px;}
+.cashier-tips p{ font-size: 20px; font-family: "Microsoft YaHei";}
+
+.cashier ul{ background: #fff; }
+.cashier ul li{ height: 118px; line-height: 118px; font-size: 20px; padding: 0 24px; border-bottom: 1px solid #ccc;}
+.cashier ul li input{ width: 32px; height: 32px; margin-right: 30px; vertical-align: middle; background: url("../images/check.png") no-repeat 0px -32px; }
+.cashier ul li input.active{ background: url("../images/check.png") no-repeat 0px 0px; }
+.cashier ul li img{ vertical-align: middle; margin-right: 15px;}
+.cashier ul li span.font22{ font-size: 22px; font-weight: bold; margin-right: 40px;}
+.cashier ul li span em{ font-size: 36px;}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>付货款</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Payment.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+ <div class="page bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2 style="font-size: 30px">付货款</h2>
+		<a href="payment5.html" class="goHome"></a>
+	</div>
+	<div class="content">
+		<div class="search">
+			<input type="text" class="sInput" placeholder="订单号、供应商名称、订单日期">
+		</div>
+		<div class="payment">
+			<div class="bundle mb20" id="list-one">
+				<h2><input type="checkbox" class="checkall" id="checkall" /><label for="checkall"></label>供应商名称：广州琪琪电子商务有限公司</h2>
+				<ul>
+					<li>
+						<span class="input-checkbox"><input type="checkbox" class="checkbox" id="checkbox-1" checked="checked" /><label for="checkbox-1"></label></span>
+						<p>订单号：20150817001</p>
+						<p>订单日期：2015-08-17</p>
+						<p>订单总额（元）：<em class="price">24,880.00</em></p>
+						<div class="footshow" style="display:block;">
+							<p>已付金额（元）：0.00</p>
+							<p>本次付款（元）：<input type="text" class="inps" value="24,880.00" /></p>
+						</div>
+					</li>
+					<li>
+						<span class="input-checkbox"><input type="checkbox" class="checkbox" id="checkbox-2" /><label for="checkbox-2"></label></span>
+						<p>订单号：20150817005</p>
+						<p>订单日期：2015-08-17</p>
+						<p>订单总额（元）：<em class="price">24,880.00</em></p>
+						<div class="footshow">
+							<p>已付金额（元）：0.00</p>
+							<p>本次付款（元）：<input type="text" class="inps" value="24,880.00" /></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="bundle" id="list-two">
+				<h2><input type="checkbox" class="checkall" id="checkall2" /><label for="checkall2"></label>供应商名称：湖北百歌电子商务有限公司</h2>
+				<ul>
+					<li>
+						<span class="input-checkbox"><input type="checkbox" class="checkbox2" id="checkbox-3" /><label for="checkbox-3"></label></span>
+						<p>订单号：20150817005</p>
+						<p>订单日期：2015-08-17</p>
+						<p>订单总额（元）：<em class="price">24,880.00</em></p>
+						<div class="footshow">
+							<p>已付金额（元）：0.00</p>
+							<p>本次付款（元）：<input type="text" class="inps" value="24,880.00" /></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="foot">
+				<span>付款总额：<em class="stotal red">24,880.00</em></span>
+				<a href="javascript:;" class="btnPay">付款</a>
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+<div class="mask"></div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+</script>

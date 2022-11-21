@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+.logs{ width: 100%; }
+.logs ul{ overflow: hidden;}
+.logs ul li{ background: #fff;  margin-bottom: 18px; width: 100%;border-top: 1px solid #ccc; }
+.logs ul li:last-child{ margin-bottom: 0px;}
+.logs ul li p{ padding: 0 24px; font-size: 20px; height: 78px; line-height: 78px; border-bottom: 1px solid #ccc; }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>修改电子邮箱</title>
+	<link rel="stylesheet" href="style/comm.css">
+	
+	<link rel="stylesheet" href="style/email.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+ <div class="page bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2>修改电子邮箱</h2>
+		<a href="index.html" class="goHome"></a>
+	</div>
+	<div class="content">
+		<div class="email">
+			<ul>
+				<li><label style="font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#999999;">原电子邮箱</label ><label style="font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#333333;">21*********1@163.com</label></li>
+				<li><span style="font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#999999;">新的电子邮箱</span><input type="text"  placeholder=""></li>
+				<li style="background: #e6e6e6;border: none;"><input type="text" style="font-size: 28px;font-weight: normal;color:#999999;text-indent:20px;" class="inputCode"placeholder="验证码"><img src="images/yzm.png" class="yzm"/><a href="javascript:;" class="red">换一换</a></li>
+				
+			</ul>
+			<div class="button abs">
+				<a href="email2.html" class="btnPay">提交</a>
+            </div>
+        </div>
+    </div>	
+</div>
+
+
+</body>
+</html>

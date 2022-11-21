@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:46:21
+ * @version $Id$
+ */
+.pay-success .succtips{ text-align: center; background: #fff; border-bottom: 1px solid #ccc; padding: 60px 0px;}
+.pay-success .succtips img{ vertical-align: middle; margin-bottom: 50px;}
+.pay-success .succtips h3,.delivery h3{font-size: 36px; color: #000; margin-bottom: 40px;}
+.pay-success .succtips p{ height: 44px; line-height: 44px; font-size: 28px; color: #000;}
+
+.pay-success .abs{ margin-top: 292px;}
+/*----收货成功页面开始--------*/
+.delivery{
+	width:640px;
+	height:566px;
+	text-align:center;
+	background:#fff;
+	border-bottom: 1px solid #ccc;
+	}
+.delivery img{
+	vertical-align:center;
+	margin:110px auto 50px;}
+.reback a{
+	font-size:30px;
+	color:#2997e4;
+	margin:20px;}
+.reback{
+	margin-top:100px;}
+/*----收货成功页面结束--------*/
+/*----收货地址页面开始--------*/
+.head{
+	width:640px;
+	height:100px;
+	background-color:#fff;
+	margin-top:130px;
+	}
+.head h3{
+	font-size:28px;
+	line-height:100px;
+	margin-left:25px;}
+.part{
+	width:610px;
+	height:246px;
+	background-color:#fff;
+	text-align:left;
+	border:1px solid #ccc;
+	border-radius:6px;
+	margin:18px auto;
+	position:relative;
+	}
+.part_box h3,.part span{
+	font-size:28px;
+	line-height:70px;
+	}
+.on{font-weight:bold;}
+
+.part_box {
+	border-bottom:1px solid #ccc;
+	width:580px;
+	margin:15px auto;
+	}
+.part span{
+	margin:15px;}
+.part img{
+	position:absolute;
+	left:430px;
+	top:-15px;
+	display:block;}
+	.part_box p3,.part span{
+	font-size:28px;
+	line-height:50px;
+	}
+	

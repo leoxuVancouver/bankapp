@@ -1,0 +1,171 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>付货款</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Payment.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+    <style>
+    .payment ul li span.input-checkbox {
+    left: 14px;
+		}
+    </style>
+</head>
+<body>
+ <div class="page bggray2">
+	<div class="header bgblue">
+		<a href="index.html" class="goBack"></a>
+		<h2 >付货款</h2>	
+		<a href="search.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+	</div>
+	<div class="content">
+		
+		<div class="payment">
+			<div class="bundle mb20" id="list-one">
+				<h2 style="height:100px;padding-left:30px;"><input type="checkbox" class="checkall" id="checkall" /><label for="checkall"></label><label style="color:#333333;margin-left: 5px;">广州琪琪电子商务有限公司</label></h2>
+				<ul >
+                   <li class="round">
+                                                                                
+						<span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox" class="checkbox" id="checkbox-2" /><label for="checkbox-2"></label></span>
+						<a href="dd-detail.html" >
+                                                                               <p><label style="color:#333333;font-size: 28px;">订单号：72015122600132439002</label></p>
+						<p style="color:#999999;">订单日期：2015-08-25</p>
+                                                                                </a >
+
+                                                                                
+						<p style="margin-bottom:20px">订单金额（元）：<em class="price" style="color:#333333;padding-left:40px">24,880.00</em></p>
+					             
+						
+						<div class="footshow" >
+                                                                                              <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+							<p style="color:#999999;float: right;margin-right: 35px;">已付金额（元）：0.00</p>
+							<p style="margin-bottom: 20px;float: right;margin-right: 35px;">本次付款（元）：<span class="payThis"><input type="text" class="inps" value="24,880.00" /><img src="images/paymentedit.png" class="ico-edit"/></span></p>
+						</div>
+					</li>
+
+					<li class="round">
+                                                                                
+						<span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox" class="checkbox" id="checkbox-1" checked="checked" /><label for="checkbox-1"></label></span>
+						<p><label style="color:#333333;bold;font-size: 28px;">订单号：72015122800132439004</label></p>
+                        <p style="color:#999999;">订单日期：2015-08-17</label></p>
+                                                                               
+						<p style="margin-bottom: 20px">订单金额（元）：<em class="price" style="color:#333333;padding-left:40px">24,880.00</em></p>
+					
+					               
+                                                                                
+						<div class="footshow" style="display:block;">
+                                                                                             <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+							<p style="color:#999999;float: right;margin-right: 35px;">已付金额（元）：0.00</p>
+							<p style="margin-bottom: 20px;float: right;margin-right: 35px;">本次付款（元）：<span class="payThis"><input type="text" class="inps" value="24,880.00"  /><img src="images/paymentedit.png" class="ico-edit"/></span></p>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			
+			
+		</div>
+
+	</div>
+	<div class="foot paymentfoot">
+				<span>付款总额（元）：<em class="stotal red" style="font-weight:bold">24,880.00</em></span>
+				<a href="javascript:;" class="btnPay">付款</a>
+			</div>
+</div> 
+
+
+<div class="mask"></div>
+<div class="windpop windpop1">
+    <div class="windpopcont">
+        <ul>
+            <li>支付金额： <em class="red">24,880.00</em>元</li>
+            <li>账号支付<a href="payment2.html">切换</a></li>
+            <li style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;" class="phone-tips">
+            <p style="font-size:26px;margin-top:10px;">本次交易需要短信确认，验证码已发送至手机</p> 
+            <p><em class="red" style="margin-top:10px;">135****0759</em></p>
+            </li>
+        </ul>
+       <div class="checkcode" style="margin-top:15px;height: 80px;">
+           <label  class="phone-tips" style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;float:left;color:#ccc;font-size:24px;"  >SFT#</label> <input type="text"  class="inputCode" placeholder="短信验证码" style="font-size:24px;width:160px;line-height:70px;text-indent:20px;"> <label  class="phone-tips" style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;float:left;color:#ccc;font-size:24px;"  >-67891</label>
+            <input type="button" class="get_code fr" style="width:200px;" value="免费获取" />
+        </div>
+    </div>
+    <div class="windbtn" style="text-align:center;padding-bottom: 25px;padding-top: 25px;">
+        <!--<a href="javascript:;" class="abtn btnUndo fl">取消</a>-->
+        <a href="pay-success.html" class="abtn btnOK">确定支付</a>
+    </div>
+</div>
+
+
+
+<div class="windpop windpop2">
+    <div class="windpopcont">
+        <ul>
+        	<li>支付金额： <em class="red">24,880.00</em>元</li>
+        	<li>推荐支付方式<a href="payment2.html">切换</a></li>
+        	<li>建行账号支付<span style="color:#ccc;">（建行账号  尾号1110）</span></li>
+        </ul>
+        <div class="windinfo">
+        	<p>本次交易需要短信确认，验证码已发送至手机</p> 
+        	<p><em class="red">135****0759</em></p>
+        </div>
+        <div class="checkcode" style="margin-top: 10px;">
+        	<input type="text"  class="inputCode" placeholder="短信验证码" style="font-size:24px;">
+        	<input type="button" class="get_code fr" value="免费获取" />
+        </div>
+    </div>
+    <div class="windbtn2">
+    	<input type="button" class="abtn btnUndo fl" value="取消" />
+    	<input type="button"  class="abtn btnOK btnOK2 fr" disabled="disabled" value="确定支付" />
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(".btnPay").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".windpop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop1").css("height")))/2+"px");
+    $(".windpop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop1").css("width")))/2+"px");
+    $(".btnUndo").bind('click', function () {
+        $(".mask").hide();
+        $(".windpop1").hide();
+    })
+    $(".btnOK").bind('click', function () {
+        $(".windpop1").hide();
+        $(".windpop2").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop2").css("height")))/2+"px");
+	    $(".windpop2").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop2").css("width")))/2+"px");
+	    $(".btnUndo").bind('click', function () {
+	        $(".mask").hide();
+	        $(".windpop2").hide();
+	    }) 
+    })
+})
+
+
+$(".inputCode").focus();
+$(".inputCode").on("keyup",function(evt){
+  if($(this).val().trim().length){
+    $(".btnOK2").removeAttr("disabled");
+    $(".btnOK2").click(function(){
+        window.location.href= "pay-success.html";
+    })
+  }else{
+    $(".btnOK2").prop("disabled","disabled");
+  }
+});
+//清空价格
+ $(".ico-edit").click(function(){
+		$(this).prev(".inps").val("");
+    });
+	
+$(".get_code").click(function(){
+       $(".phone-tips").show();
+    });
+</script>

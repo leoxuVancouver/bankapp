@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>供应商</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/provider.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+	<div class="page bggray2">
+		<div class="header">
+			<a href="index.html" class="goBackUrl"></a>
+			<h2>供应商</h2>
+			<a href="search-gys.html" class="goSearch" style="margin-right: 85px;"></a>
+			<a href="index.html" class="goHome"></a>
+		</div>
+		<div class="content">
+
+			<div class="provider pb50" >
+				<a href="provider-detail.html">
+					<dl class="mb10 bt" style="top: 20px;" >
+						<dt style="margin-top:10px;margin-bottom:10px;border-w"><img src="images/hbbg-logo.png">广东琪琪电子商务有限公司 <i class="icon_w fr orange"><img src="images/icon_yibangd.png" /></i></dt>
+<!--						<dd style="margin-top: 40px;"><span>对方联系人：张慧欣</span><span>手机号：15826889595</span></dd>
+						<dd style="margin-bottom:10px;"><span>采购业务员：李燕兵</span></dd>-->
+	<dd>
+		<ul class="m-list">
+			<li style="width:45%; float:left; line-height:300%;">对方联系人：张慧欣</li>
+			<li style="width:45%; float:right; line-height:300%;">手机号：15826889595</li>
+			<li style="width:45%; float:left;">采购业务员：李燕兵</li>
+		</ul>
+	</dd>     		
+					</dl>
+				</a>
+				<a href="provider-detail-nb.html">
+				<dl class="mb10 bt" style="top: 20px;">
+					<dt style="margin-top:10px;margin-bottom:10px"><img src="images/hbbg_2.png">湖北百歌电子商务有限公司<i class="icon_ fr orange"><img src="images/icon_wbangd.png" /></i></dt>
+<!--					<dd style="margin-top: 40px;"><span>对方联系人：黄分达</span><span>手机号：13826881239</span></dd>
+					<dd style="margin-bottom:10px"><span>采购业务员：杨兰</span></dd>-->
+	<dd>
+		<ul class="m-list">
+			<li style="width:45%; float:left; line-height:300%;">对方联系人：黄分达</li>
+			<li style="width:45%; float:right; line-height:300%;">手机号：13826881239</li>
+			<li style="width:45%; float:left;">采购业务员：</li>
+		</ul>
+	</dd>               
+				</dl> 
+				</a>
+				
+</div>
+</div>
+<!-- content 结束 -->
+
+</div>
+</body>
+</html>

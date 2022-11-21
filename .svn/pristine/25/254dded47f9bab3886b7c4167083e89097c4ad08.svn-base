@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>善付通</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/index.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+<div class="masking hide"></div>
+<div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header bggray">
+    		<h2 style=" margin-top: 23px; "><img src="images/ccb_logo.png"></h2>
+    		<a href="javascript:void(0)" class="goMenu"></a>
+    		<div class="hide speech-bubble speech-bubble-top">
+		            <a href="password1.html"><img src="images/lock.png">修改密码</a>
+                    <a href="noticesystem.html"><img src="images/u_xtgg.png">系统公告</a>
+	    			<a href="login.html"><img src="images/quit.png">退出</a>
+	        </div>
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+    		<div class="menu">
+				<div class="head-info">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<p style="font-size:24px;">待付款余额（元）</p>
+							<span style="font-size:48px;">818,640<em style="font-size:30px;">.00</em></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<p style="font-size:24px;">本月已付金额（元）</p>
+								<span style="font-size:48px;">69,966<em style="font-size:30px;">.00</em></span>
+							</a>
+						</li>
+					</ul>
+				</div> 
+				<div class="menu-info" style="margin-bottom: 40px;">
+					<div class="menu-row">
+					    <a href="javascript:;"><img src="images/icon-yfk-grey.png" /><p style="color:#999999;">付货款</p></a>
+						<a href="javascript:;"><img src="images/icon-fhk-grey.png" /><p style="color:#999999;">预付款</p></a>
+						<a href="javascript:;"><img src="images/icon-zd2-gery.png" /><p style="color:#999999;">账单</p></a>
+						
+					</div>
+					<div class="menu-row">
+						<a href="javascript:;"><img src="images/icon-zxxd-grey.png" /><p style="color:#999999;">下单</p></a>
+						<a href="cx-order.html"><img src="images/icon_ddcx.png" /><p>订单查询</p></a>
+						<a href="Receiving.html"><img src="images/icon-qdsh.png" /><p>收货</p></a>
+					</div>
+					<div class="menu-row">
+                       <!-- <a href="vendor_list_hx.html"><img src="images/icon-yfhx.png" /><p>预付款核销</p></a>-->
+						<a href="provider.html"><img src="images/icon-gys.png" /><p>供应商</p></a>
+						<a href="javascript:;"><img src="images/icon_addsubaccount-grey.png" /><p style="color:#999999;">员工管理</p></a>	
+                        <a href="online.html"><img src="images/icon-kf.png" /><p>在线客服</p></a>
+					</div>
+                    <!--<div class="menu-row" >
+                        <a href="online.html"><img src="images/icon-kf.png" /><p>在线客服</p></a>
+					</div>-->
+				<div class="notice-info bt">
+					<a href="notice.html" ><h2>供应商公告 <img src="images/laba.png"/><img src="images/more.png" class="fr" style="margin-right: 25px;" /></h2></a>
+					<ul>
+						<li style="padding:10px;"><a href="notice-detail.html"><i class="dot"></i>关于召开2016年全国经销商大会的通知！</a></li>
+						<li style="padding:10px;"><a href="javascript:;"><i class="dot"></i>海尔电器2016年2月 促销活动通知！</a></li>
+					</ul>
+				</div>                 
+    		</div>
+    	</div>
+      </div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".goMenu").on("click", function(e){
+		if($(".speech-bubble").is(":hidden")){
+	    		$(".speech-bubble").show();
+	    		$('.masking').show();
+	    	}else{
+	    		$(".speech-bubble").hide();
+	    		$('.masking').hide();
+	    	}
+
+	    	$(document).one("click", function(){
+	        		$(".speech-bubble").hide();
+	        		$('.masking').hide();
+	    	});
+			
+		$(".masking").click(function(){
+	        		$(".speech-bubble").hide();
+	        		$('.masking').hide();
+    		});		
+	    	e.stopPropagation();
+	});
+	$(".speech-bubble").on("click", function(e){
+	    	e.stopPropagation();
+	});
+
+});
+
+
+
+	
+</script>

@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/***********弹窗 START************/
+.popWin_box{
+   font-size: 30px;
+   text-align: center;
+   padding-top: 50px;
+}/*模板用字体大小可去掉*/
+
+.pop_win_mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	display: none;
+}
+.pop_win {
+	width: 520px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -520px;
+	margin-top: -150px;
+	background: #f0f3f6;
+	border-radius: 9px;
+}
+.pop_win .ft {
+	border-top: 1px #c8c8c8 solid;
+	height: 88px;
+}
+.pop_win .ft a {
+	font-size: 30px;
+	display: block;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;
+}
+.pop_win .ft a:hover {
+	text-decoration: none;
+	outline: none;
+}
+.pop_win .ft_two_btn a {
+	width: 49%;
+}
+.pop_win .ft_two_btn a.l {
+	float: left;
+	border-right: 1px #c8c8c8 solid;
+}
+.pop_win .ft_two_btn a.r {
+	float: right;
+}
+
+/*提示对话框*/
+.bd_has_icon {
+	line-height: normal;
+}
+.bd_has_icon .tis {
+	width: 100%;
+	height: 62px;
+	padding: 25px 0px;
+	text-align: center;
+	border-bottom: 1px #c8c8c8 solid;
+}
+.bd_has_icon img {
+	vertical-align: -16px;
+}
+.bd_has_icon .content {
+	padding: 23px 27px 26px 27px;
+}
+.bd_has_icon .single_line {
+	line-height: 62px;
+}
+.bd_has_icon .confirm_wp {
+	margin: 0px;
+	padding: 30px;
+}
+
+/*帮助类型弹窗*/
+.pop_has_title .hd,
+.pop_has_title_input .hd {
+	height: 88px;
+	line-height: 88px;
+	font-size: 36px;
+	text-align: center;
+}
+.pop_has_title .content,
+.pop_has_title_input .content {
+	margin: 0px 20px 10px 20px;
+	max-height: 390px;
+	overflow-y: hidden;
+	line-height: 44px;
+	font-size: 26px;
+	background: none;
+}
+.pop_scroll .content p{
+	 text-indent: 2em;
+	 text-align: justify;
+	 cursor: pointer;
+}
+.pop_win p.center{text-align: center;}
+.pop_win p.padding{padding: 10px 0;}
+input.pop_input_text{
+	width: 92%;
+	padding: 5px 4%;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 5px;
+	border: none;
+	background: #fff;
+	margin: 22px 0px;
+	font-size: 24px;
+}
+
+/*输入密码弹窗*/
+.pop_has_title .content input.pwd {
+	width: 92%;
+	padding: 5px 4%;
+	box-shadow: inset 1px 2px 3px #999;
+	height: 55px;
+	line-height: 55px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/*滚动弹窗*/
+.pop_win .pop_scroll {
+	max-height: 390px;
+	overflow: hidden;
+	margin: 10px 20px;
+}
+.pop_win .pop_scroll .content {
+	/*max-height: none;*/
+	margin: 0;
+}
+/***********弹窗 END***********/
+
+
+/*评价等级 START*/
+.stars {
+	width: 500px;
+	height: 90px;
+	margin: auto;
+}
+.stars p:last-child{
+	text-align: center;
+	letter-spacing: 5px;
+	color: #999;
+	line-height: 60px;
+	font-size: 24px;
+}
+.rating {
+	position: relative;
+	width: 380px;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 10px 0 0;
+	padding: 0;
+	background-position: top left;
+	margin: 0 60px;
+}
+.feed_text{
+	font-size: 24px;
+	letter-spacing: 5px;
+	padding: 10px;
+}
+.rating,.rating a:hover,.rating .current {
+	background: url(../images/star.png) top left no-repeat;
+}
+.rating li {
+	display: inline;
+}
+.rating a,.rating .current {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -9000px;
+	height: 40px;
+	line-height: 15px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	font-size: 15px;
+}
+
+.rating a:hover {
+	background-position: left bottom;
+}
+.rating .selected {
+	background-position: left bottom;
+}
+
+.rating .rate1 {
+	width: 20%;
+	z-index: 6;
+}
+.rating .rate2 {
+	width: 45%;
+	z-index: 5;
+}
+.rating .rate3 {
+	width: 65%;
+	z-index: 4;
+}
+.rating .rate4 {
+	width: 85%;
+	z-index: 3;
+}
+.rating .rate5 {
+	width: 100%;
+	z-index: 2;
+}
+.rating .current {
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+.haschecked {
+	background: url(../images/tips/star.png) left bottom;
+}
+/*评价等级 END*/
+
+/*多行输入框 START*/
+.input_area_title{
+	padding-left: 18px;
+    line-height: 50px;
+	font-size: 16px;
+}
+.input_area_title > span{
+	letter-spacing: 5px;
+	font-size: 24px;
+}
+.input_area {
+	position: relative;
+	width: 92%;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: solid 1px #cecece;
+	background: #FFF;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.input_area textarea {
+	width: 93.5%;
+	height: 195px;
+	margin: 15px;
+	border: none;
+	font-size: 24px;
+}
+.input_area span {
+	color: #b3b3b3;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+/*多行输入框 END*/
+/* 标题 START */
+
+.pbd_font {
+	line-height: 40px;
+	padding: 5px;
+}
+/* 标题 END */

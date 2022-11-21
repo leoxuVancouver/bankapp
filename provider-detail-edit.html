@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>供应商信息编辑</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/sh_detail.css">
+    <link rel="stylesheet" href="style/employee.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+				<a href="javascript:void(0)" class="goBack"></a>
+				<h2>供应商信息编辑</h2>
+				<a href="index.html" class="goHome"></a>
+			</div>
+			<!-- header 结束 -->
+      <!-- content 开始 -->
+    	<div class="content">
+            <div class="info">
+                 <dl>
+                    <dt>供应商名称</dt>
+                    <dd><input class="inps" style="width: 350px;" type="name" value="广东琪琪电子商务有限公司"></dd>
+                    <dt>供应商用户名</dt>
+                    <dd><input class="inps" type="nameID" value="gd**qq"></dd>
+                     <dt>供应商代码</dt>
+                    <dd><input class="inps" type="nameID" value="EC10002"></dd>
+                    <dt>采购业务员</dt>
+                    <dd><input class="inps" type="name" value="李彦斌"></dd>
+                    <dt>首要联系人</dt>
+                    <dd><input class="inps" type="name" value="张慧欣"></dd>
+                    <dt>手机号码</dt>
+                    <dd><input class="inps" type="tel" value="15835458585"></dd>
+                    <dt>固定电话</dt>
+                    <dd><input class="inps" type="tel" value="020-85495078"></dd>
+                    <dt>QQ</dt>
+                    <dd><input class="inps"  value="14100916"></dd>
+                    <dt>联系地址</dt>
+                    <dd><input class="inps" style="width: 340px;" value="广东省广州市花都区彭家岭366号万通工业园18号楼"></dd>
+                 </dl>
+            </div>
+            <div class="clear"></div>
+            <div class="button">
+                <a href="provider-detail.html" style="margin-top:20px;">提交</a>
+            </div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(".mask").click(function(){
+        $(".mask").hide();
+        $(".windpop1").hide();
+    });
+$("#btnNext").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".windpop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop1").css("height")))/2+"px");
+    $(".windpop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop1").css("width")))/2+"px");
+    $(".btnUndo").bind('click', function () {
+        $(".mask").hide();
+        $(".windpop1").hide();
+    })
+    $(".btnOK").bind('click', function () {
+        $(".windpop1").hide();
+//        $(".windpop2").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop2").css("height")))/2+"px");
+//        $(".windpop2").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop2").css("width")))/2+"px");
+        $(".windpop2").show();
+        $(".btnUndo").bind('click', function () {
+            $(".mask").hide();
+            $(".windpop2").hide();
+        }) 
+    })
+})
+
+
+$(".inputCode").focus();
+$(".inputCode").on("keyup",function(evt){
+  if($(this).val().trim().length){
+    $(".btnOK2").removeAttr("disabled");
+    $(".btnOK2").click(function(){
+        window.location.href= "pay-success2.html";
+    })
+  }else{
+    $(".btnOK2").prop("disabled","disabled");
+  }
+});
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+$("input[name=price]").focus();
+$("input[name=price]").on("input",function(evt){
+  if($(this).val().trim().length){
+    $("#btnNext").removeAttr("disabled");
+  }else{
+    $("#btnNext").prop("disabled","disabled");
+  }
+});
+
+//金额格式化
+$('#price').on('blur',function (){
+    var s = $('#price').val();
+    $(this).val(formatCurrency(s));
+});
+</script>
+
+</script>
+<script type="text/javascript">
+
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#price").focus();
+});
+//不再提示
+    $(".ico-chk-tips").click(function(){
+        if($(this).attr('src')=="images/icon_fang.png"){
+            $(this).attr("src","images/icon_fang_chk.png"); 
+        }else{
+            $(this).attr("src","images/icon_fang.png");
+            }
+    });
+    $("#noTips").click(function(){
+       $(".tips2").hide();
+    });
+
+</script>
+
+
+
+
+
+

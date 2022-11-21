@@ -1,0 +1,56 @@
+.down_show{width: auto;height:108px;display: none;}
+.billdetail{display: block;}
+.box_context{
+	width: 600px;height: auto;
+	background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.content{margin-top: 140px;}
+.box_context h3.tips_{width:100%;height: 110px;font-size:28px;font-weight: normal;text-indent: 28px;border-bottom: 1px solid #ccc;margin-bottom:20px;margin-top:150px;}
+.box_context .tips_ i{
+	display: inline-block;width: 64px;height: 66px;background: url(../images/hbbg-logo.png)  no-repeat;
+    position: relative;top: 22px;left: -8px;}
+.box_context h3.tips2_{width:100%;height: 110px;font-size:28px;font-weight: normal;text-indent: 28px;border-bottom: 1px solid #ccc;margin-bottom:20px;}
+.box_context .tips2_ i{
+    display: inline-block;width: 64px;height: 66px;background: url(../images/hbbg_2.png)  no-repeat;
+    position: relative;top: 22px;left: -8px;}
+.messagezd{padding-bottom: 25px;}
+.messagezd  .total_list_2 li span{display:inline-block;margin-left:0px;}
+.messagezd  .total_list_2 li{margin-bottom: 20px;}
+.messagezd  .total_list_2 li .Message{height:100px;}
+.messagezd  .total_list_2 li .Message dl{height:auto;border-bottom:none;}
+.messagezd  .total_list_2 li .Message dl dd{float:left;display:inline-block;margin-right:20px;padding-left:0;height:auto;font-size: 30px;}
+.messagezd  .total_list_2 li .Message2{height:100px;}
+.messagezd  .total_list_2 li .Message2 dl{height:auto;border-bottom:none;}
+.messagezd  .total_list_2 li .Message2 dl dd{float:left;display:inline-block;margin-right:20px;padding-left:0;height:auto;}
+.messagezd  li dd span.one{display: inline-block;padding:0 10px;font-size: 30px; }
+.Message{height: auto !important;}
+.payment label.lebel_.class_on,.payment label.class_All.class_on{
+background: url("../images/check.png") no-repeat 0px 0px !important;
+}
+.payment label.class_All{background: url("../images/check.png") no-repeat 0px -32px !important;}
+.payment label.lebel_.class_No,.payment label.class_All.class_No{
+	background: url("../images/check_no.png") no-repeat !important;
+}
+.payment .bundle h2 input[type="checkbox_"] + label {
+    margin-top: 32px;
+    float: left;
+}
+input[type="checkbox_"] + label {
+    width: 32px;
+    height: 32px;
+    background: url("../images/check.png") no-repeat 0px -32px;
+    display: inline-block;
+    position: relative;
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+input[type="checkbox_"] {
+    display: none;
+}
+.footshow_{display: none;}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>员工管理</title>
+    <link rel="stylesheet" href="style/comm.css">
+    <link rel="stylesheet" href="style/employee.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+
+<body>
+    <div class="page bggray2">
+        <!-- header 开始 -->
+        <div class="header">
+            <a href="index.html" class="goBackUrl"></a>
+            <h2>员工信息</h2>
+            <a href="search_yg.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+        </div>
+        <!-- header 结束 -->
+        <!-- content 开始 -->
+        <div class="content">
+          <div class="employee">
+          		
+              <ul>
+                
+                   <li class="li_2 clearfix" id="ven_li1">
+                         <a href="employee_account_info.html">
+                          <label class="fl" style="width:50%;">用户名：<span style="font-weight:normal;">xiaohai</span></label>
+                          <label class="fr" style="width:50%;">姓名：<span style="font-weight:normal;">小海</span></label> 
+                          </a>
+                           </li>
+                     
+                      <li class="li_2 clearfix" id="ven_li1">
+                            <label class="fl" style="width:50%;">用户名：<span style="font-weight:normal;">sunny </span></label>
+                            <label class="fr" style="width:50%;">姓名：<span style="font-weight:normal;">欧阳富 </span></label>
+                        </li>
+                        
+                       <li class="li_2 clearfix" id="ven_li1">
+                            <label class="fl" style="width:50%;">用户名：<span style="font-weight:normal;">susan</span></label>
+                            <label class="fr" style="width:50%;">姓名：<span style="font-weight:normal;">苏珊</span></label>
+                        </li>
+                        
+                        <li class="li_2 clearfix" id="ven_li1">
+                            <label class="fl" style="width:50%;">用户名：<span style="font-weight:normal;">alina</span></label>
+                            <label class="fr" style="width:50%;">姓名：<span style="font-weight:normal;">奥莉娜</span></label>
+                        </li>
+                        
+                        <li class="li_2 clearfix" id="ven_li1">
+                            <label class="fl" style="width:50%;">用户名：<span style="font-weight:normal;">skye</span></label>
+                            <label class="fr" style="width:50%;">姓名：<span style="font-weight:normal;">斯凯</span></label>
+                        </li>
+                </ul>
+            </div>
+            <div class="employee bundle">
+                   <ul>
+                   <li class="round" style="padding-top: 0px;padding-bottom: 0px;">
+                   <a href="employee_account_create.html"><p style="margin-right: 50px; color:#2b98e5;"><img src="images/icon-xzyg.png" style="margin-right:17px;">新增员工</p></a>
+                </li>
+                </ul>
+                </div>
+            
+            <!--
+               <div class="button">
+                <a href="employee_account_create.html" style="margin-top:120px;">新增员工</a>
+            </div>
+                -->
+        </div>
+        <!-- content 结束 -->
+
+    </div>
+</body>
+<script type="text/javascript">
+
+	$('#close').click(function(){
+	 	$('#tips').hide();
+	 	$('#ven_li1').removeClass('li_2').addClass('li_1');
+	});
+	
+	$('#disappear').click(function(){
+	 	$('#tips').hide();
+	 	$('#ven_li1').removeClass('li_2').addClass('li_1');
+});
+
+</script>
+</html>

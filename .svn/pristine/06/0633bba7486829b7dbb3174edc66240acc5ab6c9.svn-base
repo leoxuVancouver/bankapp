@@ -1,0 +1,24 @@
+﻿@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+/* 供应商公告 */
+.notice{ width: 100%; }
+.notice dl{ padding:24px; border-bottom: 1px solid #ccc; background: #fff; }
+.notice dl dt{ height: 52px; line-height: 52px; font-size: 28px; color: #000; }
+.notice dl dt{ background: url("../images/dian.png") no-repeat 0px 20px; }
+.notice dl dt.white{ background: url("../images/dianwhite.png") no-repeat 0px 20px; }
+.notice dl dt span{ margin-left: 20px; }
+.notice dl dd{ height: 44px; line-height: 44px; font-size: 24px; color: #666; padding-left: 20px; }
+
+.notice-detail{ padding: 25px; background: #fff; }
+.notice-detail .title2{ border-bottom: 1px solid #ccc; padding-bottom: 20px; width:100%; clear:both;}
+.notice-detail .title2 span{ font-weight: bold; font-size:28px; float:left;}
+.notice-detail .datetime p{ color: #333; padding-top: 10px;  float:left; font-size:24px;}
+.notice-detail .datetime p span{ color: #666; margin-left: 54px;}
+.notice-detail .cont{ padding-top: 40px; line-height: 30px; }
+.notice-detail .cont img{ margin: 10px 0px;}
+.notice-detail .cont p{ text-indent: 2em; line-height: 40px; font-size:24px; float:left;}

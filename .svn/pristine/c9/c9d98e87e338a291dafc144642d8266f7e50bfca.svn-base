@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5,user-scalable=no" />
+	<title>账单查询</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/search_bill_2.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+		<script type="text/javascript" src="js/price.js"></script> 
+  
+      <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+	
+	
+	
+	
+	
+	
+	
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header bgblue">
+			<a href="index.html" class="goBackUrl"></a>
+			<h2>账单查询</h2>
+            <!--<a href="search_bills_detail.html" class="goSearch" style="margin-right:85px;"></a>-->
+			<a href="index.html" class="goHome"></a>
+	</div>
+    	<div class="content">
+             <ul>
+               <a href="bill_detail.html">
+               <li><p><span class="word">广东琪琪电子商务有限公司</span></p></li>
+               <li><span class="word">付货款</span><span class="fr num price1" id="totalmoney">0</span></li>
+               <li><span class="date billdate">02-22</span>&nbsp&nbsp<span class="date" id="paymenttime"> 09:38</span></li></a>
+             </ul>
+            <ul>
+               <li><p><span class="word">广东琪琪电子商务有限公司</span></p></li>
+               <li><span class="word">预付款</span><span class="fr num price1" id="advance">0</span></li>
+               <li><span class="date billdate">02-11</span>&nbsp&nbsp<span class="date"id="advancetime">20:06</span></li>
+             </ul>
+            
+            </div>
+			
+    	
+    	<div class="orderPrice" style="margin-top: 20px;">
+                   <span class="fl"  style="color:#000000;"><img src="images/icon-price.png" style="margin-right:5px;font-weight: normal;" />本月汇总（元）：</span>
+                    <span class="fr total"   style="color:#000000;margin-right: 20px;padding-right: 30px; font-weight:bold;">69,966.00</span>
+            </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
+
+
+
+<script>
+$(document).ready(function(){
+
+			
+//付货款金额获取  
+      var totalmoney = Enjurokcc.getMarkStringThis('_totalmoney');	
+      console.log(Enjurokcc.getMarkStringThis('_totalmoney'));	  
+	  if(Enjurokcc.getMarkStringThis('_totalmoney')!="0"){
+      $('#totalmoney').text(totalmoney); 
+      var paymentQty=1;	  
+      }
+	  else{
+	  $("#paymentbill").slideUp(150);
+	  var paymentQty=0;
+	  }
+//预付款金额获取  
+      var advance = Enjurokcc.getMarkStringThis('_Money');	
+      console.log(Enjurokcc.getMarkStringThis('_Money'));	  
+	  if(Enjurokcc.getMarkStringThis('_Money')!="0"){
+      $('#advance').text(advance); 	
+      var advancetQty=1	;	  
+      }
+	  else{
+	  $("#advancebill").slideUp(150);
+	  var advancetQty=0;
+	  }    
+// 账单数
+     var billQty=paymentQty+advancetQty;
+	 console.log(billQty);
+	 $('#billQty').text(billQty+"笔");
+	 
+//本地时间
+var billdate=new Date();
+var year=billdate.getFullYear();
+var month=billdate.getMonth()+1;
+if (parseInt(month)<10) month="0"+month;
+var date=billdate.getDate();
+if (parseInt(date)<10) date="0"+date;
+var checkdate=month+"-"+date;
+var localdate=billdate.toLocaleDateString();
+console.log(localdate);
+console.log(checkdate);
+$(".billdate").text(checkdate);
+
+
+
+ //订单时间获取
+      var paymenttime = Enjurokcc.getMarkStringThis('_paymenttime'); 
+	  console.log(paymenttime)
+	  $('#paymenttime').text(paymenttime);
+	  var advancetime = Enjurokcc.getMarkStringThis('_advancetime'); 
+	  console.log(advancetime)
+	  $('#advancetime').text(advancetime); 	
+
+//账单金额加总
+            var s = 0;
+            $(".price1").each(function() {
+                    var price = $(this).text();
+                    price = price.replace(",",'');
+                    var n_price = parseInt(price);
+                    console.log(n_price)
+                    s += n_price;                    
+            });
+            console.log(s)
+            $(".total").html(formatCurrency(s));
+				  
+			
+			
+			
+			
+})
+</script>
+
+

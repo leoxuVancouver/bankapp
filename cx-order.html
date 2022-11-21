@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>订单查询</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/mycart.css">
+
+    	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	      <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+	
+</head>
+<body>
+    <div class="page">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+    		<a href="index.html" class="goBackUrl"></a>
+    		<h2>订单查询</h2>
+               <a href="search_order.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+
+    		<!-- <a href="" class="a-menu"></a> -->
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+        <div class="content">
+    	<div class="order"><a href="dd-detail.html">
+        	<div class="order_company">
+            	<p style="line-height:80px;">广东琪琪电子商务有限公司</p>
+            </div>
+            <div class="order_daily" style="margin-bottom: 10px;margin-top: 5px; "><span>订单号：72015122500132439003</span></div>
+            <div class="order_daily">订单日期：<span id="nowTime">2015-12-25</span></div>
+
+            <div class="img_icon" style="padding-bottom: 10px;"dd-detail2.html>
+            <img src="images/icon_yes.png"><img id="pay" src="images/icon_nopay.png"><img id="receiveItem" src="images/icon_fh.png">
+            </div>
+            <div class="last fr"><span >订单金额（元）：<label class="bold" id="totalorder">52,840.00</label></span></div></a>
+    	</div>
+    	<div class="order2">
+        	<div class="order_company2">
+            	<p style="line-height:80px;">湖北百歌电子商务有限公司</p>
+            </div>
+           <div class="order_daily" style="margin-bottom: 10px;margin-top: 5px; "><span>订单号：72015122600132439002</span></div>
+            <div class="order_daily">订单日期：<span >2015-12-15</span></div>
+            <div class="img_icon" style="padding-bottom: 10px;">
+            <img src="images/icon_wqr.png"><img src="images/icon_nopay.png"><img src="images/icon_wfh.png">
+            </div>
+            <div class="last fr"><span>订单金额（元）：<label class="bold">24,880.00</label></span></div>
+    </div>
+    <div class="order2">
+        	<div class="order_company2">
+            	<p style="line-height:80px;">湖北百歌电子商务有限公司</p>
+            </div>
+           <div class="order_daily" style="margin-bottom: 10px;margin-top: 5px; "><span>订单号：72015122700132439001</span></div>
+            <div class="order_daily"><span >订单日期：2015-12-15</span></div>
+            <div class="img_icon"  style="padding-bottom: 10px;">
+            <img src="images/icon_yes.png"><img src="images/icon_pay.png"><img src="images/icon_wfh.png">
+            </div>
+            <div class="last fr"><span>订单金额（元）：<label class="bold">21,986.00</label></span></div>
+    </div>
+    
+    </div>
+    </div>
+    <!-- content 结束 -->
+</body>
+</html>
+
+<script type="text/javascript">
+ 
+function current(){ 
+//获得时间
+var d=new Date(),str=''; 
+str +=d.getFullYear()+'-'; //获取当前年份 
+str +=d.getMonth()+1+'-'; //获取当前月份（0——11） 
+str +=d.getDate(); 
+return str; } 
+setInterval(function(){$("#nowTime").html(current)},10); 
+//订单总额
+var totalorder =Enjurokcc.getMarkStringThis('_ordertotal'); 
+$("#totalorder").text(formatCurrency(totalorder)); 
+console.log(totalorder);
+var totalorder=totalorder.replace(",","");
+var totalorder=parseInt(totalorder);
+//支付金额
+var totalmoney =Enjurokcc.getMarkStringThis('_totalmoney');
+console.log(totalmoney);
+var totalmoney=totalmoney.replace(",","");
+var totalmoney=parseInt(totalmoney);
+console.log(totalorder);
+console.log(totalmoney);
+var balance=totalorder-totalmoney;
+console.log(balance);
+if  (balance<=0){//全部支付
+    console.log("1");
+    $("#pay").attr("src","images/icon_pay.png");   
+ }
+ if  (balance>0 & totalmoney!=0){//部分支付
+     console.log("2");
+    $("#pay").attr("src","images/icon_bpay.png");
+ }
+//获得订单商品数量
+      var obj = Enjurokcc.getMarkStringThis('_itemStort');
+      var itemSour = JSON.parse(obj); 
+  //解析收货值 
+      var obj = Enjurokcc.getMarkStringThis('_receiveStort');
+      var receiveSour = JSON.parse(obj);   
+//判断是否收清	  
+      var receiveItem=0;     
+     
+     for(var k=0;k<3;k++){          
+        var orderQty=parseInt(itemSour._orderQty[k]);
+		var receiveQty=parseInt(receiveSour._receiveQty[k]);
+		
+		console.log(k);
+		console.log("itemSour._orderQty[k]");
+		console.log(itemSour._orderQty[k]);
+		console.log(parseInt(itemSour._orderQty[k]));
+		console.log("receiveSour._receiveQty[k]");
+		console.log(receiveSour._receiveQty[k]);
+		console.log(parseInt(receiveSour._receiveQty[k]));
+		
+          if (itemSour._orderQty[k]==""){
+              orderQty=0;			
+             } 
+		  	 console.log(orderQty);
+			 console.log(receiveQty);
+		  if (orderQty==receiveQty){
+		      receiveItem ++
+			  console.log(receiveItem)
+		  }
+		
+          }
+		if (receiveItem==3){
+		$("#receiveItem").attr("src","images/icon_yjq.png");
+		}
+              
+ 
+
+
+</script> 

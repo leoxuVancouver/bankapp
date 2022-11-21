@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+/*我的供应商 - 列表*/
+.provider{ width: 100%; }
+.provider a{ color: #333; }
+.provider dl{ padding: 10px 10px; background: #fff; border-bottom: 1px solid #ccc;border-top: 1px solid #ccc; position: relative; width:580px; height:204px; border:1px ssolid #ccc; border-radius:16px; margin-left:auto; margin-right:auto;}
+.provider dl:after1{ content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 24px; top: 44%; }
+.provider dl dt{ height: 44px; line-height: 52px; font-size: 28px; color: #000; }
+.provider dl dt i{ float: right;  font-size: 24px; }
+.provider dl dt i img{ margin-right: 20px;}
+.provider dl dt i.icon_y img{ width: 110px; height: 28px;}
+.provider dl dt i.icon_w img{ width: 110px; height: 28px;}
+.provider dl dd{  font-size: 24px; height: 40px; line-height: 40px; margin-top: 20px;margin-bottom: 20px;"}
+.provider dl dd span{ display:inline-block; width: 50%; }

@@ -1,0 +1,444 @@
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>付货款</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Payment.css">
+  <link rel="stylesheet" type="text/css" href="style/new_tf.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+  <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+  <!--对话框引入css与js-->
+  <link rel="stylesheet" type="text/css" href="style/popWin.css">
+  <script type="text/javascript" src="js/popWin.js"></script>
+    <style>
+    .payment ul li span.input-checkbox {
+    left: 14px;
+		}
+    </style>
+</head>
+<body>
+ <div class="page bggray2">
+  <div class="header bgblue">
+    <a href="index.html" class="goBackUrl"></a>
+    <h2 >付货款</h2> 
+    <a href="search.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+  </div>
+  <div class="content">
+    
+    <div class="payment">
+
+                <div class="bundle" id="list-two">
+            
+          <h2 ><input type="checkbox_" class="checkall c2" id="checkall2" name="check2"/><label for="" class="class_All"></label><label style="color:#333333;margin-left: 5px;">广东琪琪电子商务有限公司</label></h2>
+        <ul >
+          <li>
+                      <span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox_" class="checkbox c2" id="checkbox-3" name="check2"/><label for="checkbox-3" class="lebel_"></label></span>
+                     
+                        <p><label style="color:#333333;font-size: 28px;">订单号：72015122500132439003</label></p>
+                        <p style="color:#999999;">订单日期：2015-12-16</p>                            
+            <p style="margin-bottom:20px;color:#999999;">订单金额（元）：<em class="price" style="color:#333333;" id="totalorder">24,880.00</em></p>
+                      
+            <div class="footshow_ c2" >
+                         <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+                          <p style="color:#999999;float: right;margin-right: 35px; right;margin-right: 167px;">已付金额（元）：0.00</p>
+                          <p style="margin-bottom: 20px;float: right;margin-right: 35px;">本次付款（元）：<span class="payThis"><input type="text" class="inps payment" id="payment" value="24,880.00" /><img src="images/paymentedit.png" class="ico-edit"/></span></p>
+            </div>
+          </li>
+                 </ul>                
+            </div>
+         
+
+
+
+      <div class="bundle" id="list-one" style="border-top:none;">
+        <h2 ><input type="checkbox" class="checkall c1" id="checkall" name="check1"/>
+            <label for="" class="class_All"></label>
+            <label style="color:#333333;margin-left: 5px;">湖北百歌电子商务有限公司</label></h2>
+
+        <ul >
+                  <li>
+                      <span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox_" class="checkbox c1" id="checkbox-2_" name="check1"/><label for="checkbox-2_" class="lebel_"></label></span>
+                      <a href="dd-detail.html" >
+                        <p><label style="color:#333333;font-size: 28px;">订单号：72015122500132439002</label></p>
+                        <p style="color:#999999;">订单日期：2015-12-25</p>                              
+              <p style="margin-bottom:20px;color:#999999;">订单金额（元）：<em class="price" style="color:#333333;">52,570.00</em></p>
+                      </a > 
+                      <div class="footshow_ c1">
+                         <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+                          <p style="color:#999999;float: right;margin-right: 35px; right;margin-right: 167px;">已付金额（元）：0.00</p>
+                          <p style="margin-bottom: 20px;float: right;margin-right: 35px;">本次付款（元）：<span class="payThis"><input type="text" class="inps payment" value="52,570.00" /><img src="images/paymentedit.png" class="ico-edit"/></span></p>
+                      </div>
+          </li>
+          <li>                                                             
+            <span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox_" class="checkbox c1" id="checkbox-1" name="check1" /><label for="checkbox-1" class="lebel_"></label></span>
+                            <p><label style="color:#333333;bold;font-size: 28px;">订单号：72015122700132439001</label></p>
+                                    <p style="color:#999999;">订单日期：2015-12-15</label></p>
+                                    <p style="margin-bottom: 20px;color:#999999;">订单金额（元）：<em class="price" style="color:#333333;">21,986.00</em></p>
+                                                                              
+            <div class="footshow_ c1" >
+                                         <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+              <p style="color:#999999;float: right;margin-right: 35px; right;margin-right: 167px;">已付金额（元）：0.00</p>
+              <p style="margin-bottom: 20px;float: right;margin-right: 35px;">本次付款（元）：<span class="payThis"><input type="text" class="inps payment" value="21,986.00"  /><img src="images/paymentedit.png" class="ico-edit"/></span></p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+
+
+           
+
+
+      
+      
+    </div>
+
+
+
+  </div>
+  <div class="foot paymentfoot">
+        <span class="normal">付款总额（元）：<em class="stotal_" id="Money_all"style="font-weight:bold;font-size: 30px;">0.00</em></span>
+        <a href="javascript:;" class="btnPay">付款</a>
+      </div>
+</div> 
+
+<!--弹窗-->
+<div class="mask"></div>
+<div class="windpop windpop1">
+    <div class="windpopcont">
+        <ul>
+            <li>支付金额： <em  style="font-size: 28px;" id="_money_this">24,880.00</em>元</li>
+            <li >短信支付<span class="fr blue" id="method">切换</span></li>
+            <li style="height:auto; line-height:60px; border-bottom:0px solid #fff; display:none;" class="phone-tips">
+            </li>
+        </ul>
+       <div class="checkcode">
+            <p style="margin:20px 0px 20px 0px; display:none;line-height:200%;width: 505px;" class="phone-tips">序号为<span class="dxxh red">1</span>的验证码已发送至手机<em class="red">135****0759</em>，请在下框输入验证码的中间四位数字，或短信回复验证码。</p>
+            <!----<p style="margin:0px 0px 40px 0px"><em class="red">135****0759</em></p>---->
+            <lable style="">
+                 <label  class="phone-tips" style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;float:left;color:#ccc;font-size:24px;margin-top: 10px;margin-left:-10px;"  >SFT#</label>
+               <input type="text"  class="inputCode" placeholder="短信验证码" value="" style="font-size:24px;text-indent:0px;line-height:70px;margin-top: 10px;text-align:center; "> 
+                <label  class="phone-tips" style="height:auto; line-height:70px; border-bottom:0px solid #fff; display:none;float:left;color:#ccc;font-size:24px;margin-top: 10px;"  >-67891</label>
+            </lable>
+            <input type="button" class="get_code fr" style="margin-top: 10px;margin-bottom: 10px; border: 1px solid #2b98e5;" value="获取验证码"  />
+         
+        </div>
+    </div>
+    <div class="windbtn" style="text-align:center;padding-bottom: 25px;padding-top: 25px;">
+        <a href="javascript:;" class="abtn btnUndo fl close_this" id="remove_stroge">取消</a>
+       
+        <input type="button"  class="abtn btnOK fr" disabled="disabled" value="确定支付" />
+    </div>
+</div>
+
+
+
+<div class="windpop windpop2">
+    <div class="windpopcont">
+        <ul>
+          <li>支付金额： <em class="red"  id="_money_this">24,880.00</em>元</li>
+          <li >推荐支付方式<a href="payment2.html">切换</a></li>
+          <li>建行账号支付<span style="color:#ccc;">（建行账号  尾号1110）</span></li>
+        </ul>
+        <div class="windinfo">
+          <p>本次交易需要短信确认，验证码已发送至手机</p> 
+          <p><em class="red">135****0759</em></p>
+        </div>
+        <div class="checkcode" style="margin-top: 10px;">
+          <input style="margin-left:30px; font-size:24px;" type="text"  class="inputCode" placeholder="短信验证码" value='"' />
+          <input style="margin-right:30px;" type="button" class="get_code fr" value="免费获取" />
+        </div>
+    </div>
+    <div class="windbtn2">
+      <input type="button" class="abtn btnUndo fl" value="取消" />
+      <input type="button"  class="abtn btnOK2 fr" disabled="disabled" value="确定支付" />
+    </div>
+</div>
+<!--对话框_提示对话框 START-->
+      <div class="pop_win_mask" id="popWin3">
+        <div class="pop_win">
+          <div class="pop_has_title titleshow">
+            <div class="hd">提示信息</div>
+            <div class="content">
+              <p class="center padding">只能选同一个供应商的订单</p><!--若不用居中的请把class = center去掉-->
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="ft">
+            <a class="r hidePop" href="javascript:">确定</a>
+          </div>
+        </div>
+      </div>
+      <!--对话框_提示对话框 END-->
+</body>
+</html>
+<script type="text/javascript">
+      var totalorder_txt =Enjurokcc.getMarkStringThis('_ordertotal'); 
+     console.log(totalorder_txt);
+      $("#totalorder").text(formatCurrency(totalorder_txt));
+       $("#payment").val(formatCurrency(totalorder_txt));
+
+$(".btnPay").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".windpop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop1").css("height")))/2+"px");
+    $(".windpop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop1").css("width")))/2+"px");
+    $(".btnUndo").bind('click', function () {
+        $(".mask").hide();
+        $(".windpop1").hide();
+    })
+    $(".btnOK").bind('click', function () {
+        $(".windpop1").hide();
+        $(".windpop2").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop2").css("height")))/2+"px");
+	    $(".windpop2").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop2").css("width")))/2+"px");
+	    $(".btnUndo").bind('click', function () {
+	        $(".mask").hide();
+	        $(".windpop2").hide();
+	    }) 
+    })
+})
+
+
+$(".inputCode").focus();
+$(".inputCode").on("keyup",function(evt){
+  if($(this).val().trim().length){
+    $(".btnOK").removeAttr("disabled");
+    $(".btnOK").css({
+      "background-color":"#2b98e5",
+      "color":"#fff"
+    }
+      ); 
+    $(".btnOK").click(function(){
+        window.location.href= "pay-success.html";
+    })
+  }else{
+    $(".btnOK").prop("disabled","disabled");
+  }
+});
+//清空价格
+ $(".ico-edit").click(function(){
+		$(this).prev(".inps").val("");
+    });
+	
+$(".get_code").click(function(){
+       $(".phone-tips").show();
+       $(".inputCode").css('width','170px');
+       $(".get_code").css('width','200px');
+    });
+$('.mask').click(function(){
+    $('.windpop1').fadeOut(100);
+    $(this).hide();
+})
+
+//label选择
+$(function(){
+  
+   $('.lebel_:not(.class_All)').live('click',function(){
+    var _this = $(this);
+    if(!$(this).hasClass('class_No')){
+        var parAD = $(this).parents('.bundle').index();
+        console.log("parAD");
+        console.log(parAD);
+        var id = $('.bundle .lebel_').index(this);
+        console.log("id");
+        console.log(id);
+        var has_select_len;
+       
+        if(!$(this).hasClass('class_on')){
+           $(this).addClass('class_on');
+           $(this).parents('li').find('.payment').addClass('on');
+           has_select_len = $(this).parents('.bundle').find('.lebel_.class_on').length;
+           console.log(has_select_len);
+           //显示可改变金额
+           $(this).parents('li').find('.footshow_').show();
+        }else{
+         $(this).removeClass('class_on');
+         $(this).parents('li').find('.payment').removeClass('on');
+         has_select_len = $(this).parents('.bundle').find('.lebel_.class_on').length;
+         //隐藏可改变金额
+        $(this).parents('li').find('.footshow_').hide();
+        }
+         
+        //
+       
+        if(parAD==1){//俩订单
+          has_select_len = $(this).parents('.bundle').find('.lebel_.class_on').length;
+          console.log(has_select_len);
+          if(has_select_len==2){
+            $(this).parents('.bundle').find('.class_All').addClass('class_on');
+            $('div.bundle').eq(0).find('.class_All').addClass('class_No');
+            $('div.bundle').eq(0).find('label.lebel_').addClass('class_No');
+          }else if(has_select_len==0){
+           $('div.bundle').eq(0).find('.class_All').removeClass('class_No');
+           $('div.bundle').eq(0).find('label.lebel_').removeClass('class_No');
+          }else{
+            $(this).parents('.bundle').find('.class_All').removeClass('class_on');
+            $('div.bundle').eq(0).find('.class_All').addClass('class_No');
+            $('div.bundle').eq(0).find('label.lebel_').addClass('class_No');
+          }
+          //
+          
+        }else if(parAD==0){
+          if(has_select_len==1){
+           $(this).parents('.bundle').find('.class_All').addClass('class_on');
+           $('div.bundle').eq(1).find('.class_All').addClass('class_No');
+           $('div.bundle').eq(1).find('label.lebel_').addClass('class_No');
+          }else if(has_select_len==0){
+           $('div.bundle').eq(1).find('.class_All').removeClass('class_No');
+           $('div.bundle').eq(1).find('label.lebel_').removeClass('class_No');
+           $(this).parents('.bundle').find('.class_All').removeClass('class_on');
+          }
+          
+        }
+        
+        //金额计算
+        var s=0;
+        for(var i=0;i<has_select_len;i++){//2 0 1
+            var price = _this.parents('.bundle').find('.payment.on').eq(i).val();
+                price = price.replace(",",'');
+                var n_price = parseInt(price);
+                console.log(price)
+                 s += n_price;                
+        }
+        $("#Money_all").text(formatCurrency(s));
+       
+    }else{
+      popWin("#popWin3");
+    }
+  })
+ $('.class_All').live('click',function(){
+      console.log($(this).attr('class'));
+  if(!$(this).hasClass('class_No')){
+     
+      if(!$(this).hasClass('class_on')){
+          var id = $('.class_All').index(this);
+		  console.log(id)
+          $(this).parents('.bundle').find('li label.lebel_').addClass('class_on');
+		  $(this).parents('.bundle').find('.payment').addClass('on');
+          $(this).addClass('class_on');
+          //显示可改变金额
+          $(this).parents('.bundle').find('.footshow_').show();
+
+          if(id==0){
+          $('div.bundle').eq(1).find('.class_All').addClass('class_No');
+          $('div.bundle').eq(1).find('label.lebel_').addClass('class_No');
+          $('#Money_all').text(formatCurrency(totalorder_txt));
+        }else if(id==1){
+          $('#Money_all').text('74,556.00');
+          $('div.bundle').eq(0).find('.class_All').addClass('class_No');
+          $('div.bundle').eq(0).find('label.lebel_').addClass('class_No');
+        }
+
+      }else{
+        //隐藏可改变金额
+        $(this).parents('.bundle').find('.footshow_').hide();
+
+        $(this).parents('.bundle').find('li label.lebel_').removeClass('class_on');
+        $(this).removeClass('class_on');
+	  $(this).parents('.bundle').find('.payment').removeClass('on');
+        //
+        
+         $('div.bundle').find('.class_All').removeClass('class_No');
+         $('div.bundle').find('label.lebel_').removeClass('class_No');
+         $('#Money_all').text(formatCurrency(0));
+      }
+       
+  }else{
+    //alert('您已经选择一种订单')
+    popWin("#popWin3");
+   }
+  })
+ // 修改金额刷新付款总价
+ 
+ $(".payment").keyup(function(){
+        var s=0;
+		has_select_len = $(this).parents('.bundle').find('.lebel_.class_on').length;
+		console.log("has_select_len");
+		console.log(has_select_len);
+        for(var i=0;i<has_select_len;i++){//2 0 1
+            var price = $(this).parent().parent().parent().parent().parent('ul').find('.payment.on').eq(i).val();
+			    console.log(price)
+                price = price.replace(",",'');
+                var n_price = parseInt(price);
+                console.log(n_price)
+                 s += n_price; 
+                $("#Money_all").text(formatCurrency(s));				 
+        }
+        
+  
+})
+
+
+		
+    
+  
+  
+  
+ //返回页面
+ $('#remove_stroge').click(function(){
+  var parClass = [],childClass = [];
+  $('.class_All').each(function(){
+     parClass.push($(this).attr('class'));//父级类
+  })
+  $('label.lebel_').each(function(){
+     childClass.push($(this).attr('class'));//子级类
+  })
+  var moneyNum = $('.stotal_').text();
+  console.log(parClass)
+  console.log(childClass)
+ var dataJson = '{'+'\"_parClass\"'+':'+'['+'\"'+parClass[0]+'\"'+','+'\"'+parClass[1]+'\"'+']'+',' + '\"_childClass\"' +':'+'['+ '\"'+childClass[0]+'\"'+','+'\"'+childClass[1]+'\"'+','+'\"'+childClass[2]+'\"'+']'+','+'\"_parMoney\"'+':'+'\"'+moneyNum+'\"'+'}';
+  
+   //储存信息
+  Enjurokcc.addMarkPage('_dataStort_',dataJson);
+  setTimeout(function(){
+    window.location.href='Payment.html';
+  },100);
+ })
+ //解析值
+  if(Enjurokcc.getMarkStringThis('_dataStort')!=null&&Enjurokcc.getMarkStringThis('_dataStort')){
+      var obj = Enjurokcc.getMarkStringThis('_dataStort');
+      console.log(obj)
+      var dataSour = JSON.parse(obj);
+      var pl = $('.class_All').length;
+      var cl = $('label.lebel_').length;
+
+      for(var i=0;i<pl;i++){
+        $('.class_All').eq(i).attr('class',dataSour._parClass[i]);
+      }
+      for(var k=0;k<cl;k++){
+        $('label.lebel_').eq(k).attr('class',dataSour._childClass[k]);
+      }
+      $('.lebel_.class_on').parents('li').find('.footshow_').show();
+      $('.stotal_').text(dataSour._parMoney);//金额
+       
+  }
+  //清楚数据
+setTimeout(function(){
+  localStorage.removeItem("_dataStort")
+},200);
+ //付款金额
+ $('.btnPay').live('click',function(){
+  setTimeout(function(){
+    var Txtnum = $('.stotal_').text();
+    $('#_money_this').text(Txtnum);
+    Enjurokcc.addMarkPage('_totalmoney',Txtnum);//存金额
+  },100);
+ })
+})
+ //切换付款
+$('#method').click(function(){
+   window.location.href= "payment2.html";  
+ })
+
+
+
+</script>

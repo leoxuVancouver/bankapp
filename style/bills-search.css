@@ -1,0 +1,28 @@
+/* 
+* @Author: Marte
+* @Date:   2016-03-11 10:02:07
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-03-11 14:28:28
+*/
+.content .box_context {font-size: 28px;height: 140px;padding-top:10px;border: 1px solid #ccc;border-radius:15px;background-color: #fff;width: 600px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin: 145px auto 0;
+   }
+.content .box_context .tips_{font-size: 28px;font-weight: normal;margin-left:22px;}
+
+.box_text span{display: block;font-size: 28px;float: left;}
+.box_text span:nth-child(1){margin-left: 20px;margin-top: 8px;}
+.box_text span:nth-child(2){float: right;margin-top: 8px;margin-right: 22px;}
+.box_text span:nth-child(3){font-size: 28px;margin-top: 50px;margin-left: -85px;font-weight: normal;}
+
+.content .box_context2{width: 600px;font-size: 28px;height: 140px;padding-top:10px;border: 1px solid #ccc;border-radius:15px;background-color: #fff;margin-top:14px; margin: 0 auto;margin-top: 15px;}
+.content .box_context2 .tips_{font-size: 28px;font-weight: normal;margin-left: 22px;}
+
+.footer{width:600px;height: 99px;border: 1px solid #ccc;background-color: #fff;margin:0 auto;margin-top: 234px;}
+.footer ul{margin-top: 37px;margin-left: 28px;}
+.footer ul li{float: left;font-size: 28px;font-weight: bold;height: 31px;line-height: 31px;}
+.footer ul li:first-child{width: 23px;height: 31px;background: url(../images/icon-price.png) no-repeat;}
+.footer ul li:nth-child(2){margin-left: 7px;}
+.footer ul li:last-child{float: right;margin-right: 38px;}
+

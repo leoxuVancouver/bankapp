@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>员工信息编辑</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/sh_detail.css">
+    <link rel="stylesheet" href="style/employee.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+				<a href="javascript:void(0)" class="goBack"></a>
+				<h2>员工信息编辑</h2>
+				<a href="index.html" class="goHome"></a>
+			</div>
+			<!-- header 结束 -->
+      <!-- content 开始 -->
+    	<div class="content">
+            <div class="info">
+                 <dl>
+                    <dt>用户名</dt>
+                    <dd><input class="inps" type="nameID" value="xiaohai"></dd>
+                    <dt>密码</dt>
+                    <dd><input class="inps" type="password" value="******"></dd>
+                    <dt>确认密码</dt>
+                    <dd><input class="inps" type="password" value="******"></dd>
+                    <dt>姓名</dt>
+                    <dd><input class="inps" type="name" value="小海"></dd>
+                    <dt>手机号码</dt>
+                    <dd><input class="inps" type="tel" value="15835458585"></dd>
+                    <dt style="border:0;">电子邮箱</dt>
+                    <dd style="border:0;"><input class="inps" type="email" value="2144874@qq.com"></dd>
+                 </dl>
+            </div>
+            <div class="info-a">
+                <p><strong>数据权限</strong></p>
+                  <ul>
+                      <li><img src="images/icon_fang.png" class="ico-chk-tips">分配至个人的数据</li>
+                      <li><img class="ico-chk-tips" src="images/icon_fang_chk.png">企业所有数据</li>
+                  </ul>
+            </div>
+            <div class="info-a">
+                <p><strong>岗位</strong></p>
+                <dl>
+                    <dt><img class="ico-chk-tips" src="images/icon_fang_chk.png"><strong>采购业务员</strong></dt>
+                    <dd>可操作功能：下单、订单查询、供应商</dd>
+                    <dt><img class="ico-chk-tips" src="images/icon_fang_chk.png"><strong>财务出纳</strong></dt>
+                    <dd>可操作功能：付货款、预付款、账单、预付款核销</dd>
+                    <dt><img class="ico-chk-tips" src="images/icon_fang_chk.png"><strong>仓库收货员</strong></dt>
+                    <dd>可操作功能：收货</dd>
+                </dl>
+            </div>
+            <div class="clear"></div>
+            <div class="button">
+                <a href="employee_account_info.html" style="margin-top:20px;">提交</a>
+            </div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(".mask").click(function(){
+        $(".mask").hide();
+        $(".windpop1").hide();
+    });
+$("#btnNext").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".windpop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop1").css("height")))/2+"px");
+    $(".windpop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop1").css("width")))/2+"px");
+    $(".btnUndo").bind('click', function () {
+        $(".mask").hide();
+        $(".windpop1").hide();
+    })
+    $(".btnOK").bind('click', function () {
+        $(".windpop1").hide();
+//        $(".windpop2").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".windpop2").css("height")))/2+"px");
+//        $(".windpop2").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".windpop2").css("width")))/2+"px");
+        $(".windpop2").show();
+        $(".btnUndo").bind('click', function () {
+            $(".mask").hide();
+            $(".windpop2").hide();
+        }) 
+    })
+})
+
+
+$(".inputCode").focus();
+$(".inputCode").on("keyup",function(evt){
+  if($(this).val().trim().length){
+    $(".btnOK2").removeAttr("disabled");
+    $(".btnOK2").click(function(){
+        window.location.href= "pay-success2.html";
+    })
+  }else{
+    $(".btnOK2").prop("disabled","disabled");
+  }
+});
+
+
+
+</script>
+
+
+<script type="text/javascript">
+
+$("input[name=price]").focus();
+$("input[name=price]").on("input",function(evt){
+  if($(this).val().trim().length){
+    $("#btnNext").removeAttr("disabled");
+  }else{
+    $("#btnNext").prop("disabled","disabled");
+  }
+});
+
+//金额格式化
+$('#price').on('blur',function (){
+    var s = $('#price').val();
+    $(this).val(formatCurrency(s));
+});
+</script>
+
+</script>
+<script type="text/javascript">
+
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#price").focus();
+});
+//不再提示
+    $(".ico-chk-tips").click(function(){
+        if($(this).attr('src')=="images/icon_fang.png"){
+            $(this).attr("src","images/icon_fang_chk.png"); 
+        }else{
+            $(this).attr("src","images/icon_fang.png");
+            }
+    });
+    $("#noTips").click(function(){
+       $(".tips2").hide();
+    });
+
+</script>
+
+
+
+
+
+

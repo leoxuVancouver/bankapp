@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>在线下单</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/mycart.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/price.js"></script>
+</head>
+<body>
+    <div class="page">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+    		<a href="index.html" class="a-back"></a>
+    		<h2>在线下单</h2>
+    		<!-- <a href="" class="a-menu"></a> -->
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+    		<div class="vendor">
+    			<div class="inputBar">
+    				<label>供应商名称：广州琪琪电子商务有限公司</label>
+    			</div>
+				<a href="vendor_list2.html" class="btn-select">常用供应商</a>
+			</div>
+            <div class="tips mb10 bb">
+                结算方式：先货后款   账期为发货后30天     
+            </div>
+    		<div class="mycart pb50">
+                <ul class="bb" id="goods">
+                    <li id="item1">
+                        <div class="code"><span class="fl">商品编码：pd2014060907</span><a href="javascript:;" class="J_del blue fr">删除</a></div>
+                        <p class="spname"><label>商品名称：</label>苹果（APPLE）iPhone 4 8G版 3G手机（白色）WCDMA/GSM</p>
+                        <div class="plus">
+                            <div class="fl">单价：<em class="price">2,488.00</em></div>
+                            <div class="purch fr">采购数量：
+                                <a class="min" href="javascript:;">-</a> 
+                                <em class="number bt bb">10</em> 
+                                <a class="add" href="javascript:;">+</a>
+                            </div>
+                        </div>
+                        <div class="clearfix shopprice"><span class="fr">小计：<em class="total">24,880.00</em></span></div>
+                    </li>
+                </ul>
+                <div class="addshop bb mb10">
+                    <a href="goods_list.html"><span>添加商品<img src="images/add.png" height="40" width="40" alt=""></span></a>
+                </div>
+                <div class="price_info bb bt">
+                    <span class="fl">订单金额：</span>
+                    <span class="stotal fr">24,880.00</span>
+                </div>
+                <div class="button clearfix">
+                    <a href="zx-order4.html" class="btnsubmit" id="btnsubmit">提交</a>
+                </div>
+    		</div>
+    	</div>
+    	<!-- content 结束 -->
+		<!-- footer 开始 -->
+		<div class="footer">
+			<div class="foot">
+				<a href="index.html" class="home">首页</a>
+				<a href="bills.html" class="bill">账单</a>
+				<a href="perset.html" class="set">个人设置</a>
+				<a href="online.html" class="call">在线客服</a>
+			</div>
+		</div>
+		<!-- footer 结束 -->
+    </div>
+</body>
+</html>
+
+

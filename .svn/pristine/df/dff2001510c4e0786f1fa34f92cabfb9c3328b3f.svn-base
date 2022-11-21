@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>预付款明细</title>
+    <link rel="stylesheet" href="style/comm.css">
+    <link rel="stylesheet" href="style/vendor_record.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script> 
+  
+      <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+	
+	
+	
+	
+	
+</head>
+
+<body>
+    <div class="page bggray2">
+        <!-- header 开始 -->
+        <div class="header">
+            <a href="index.html" class="goBackUrl"></a>
+            <h2>预付款明细</h2><a href="search_yfdetail.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+           
+        </div>
+        <!-- header 结束 -->
+        <!-- content 开始 -->
+        <div class="content" style="margin-top: 170px;">
+        <div class="tit" >
+           <img src="images/logo_gdqq.png" style="padding-bottom: 9px; padding-right: 7px;" /><a>广东琪琪电子商务有限公司</a> 
+           </div>
+          <div class="info" style="height: 210px;">
+          		<p style="height: 64px;"><span class="fl billdate">2015-12-20</span>
+                  <span class="fr" style="font-size:24px;">业务类型：预付款核销</span>
+                 </p>
+                 <ul>
+                    <li><span style="font-size:28px;">金额（元）</span><span class="fr" style="font-size:28px;" id="advance">30,880.00</span></li>
+                    <li>单据号：72015122015323456003</li>
+                 </ul>
+            </div>
+            <div class="info" style="height: 210px;">
+          		<p style="height: 64px;"><span class="fl">2015-12-16</span>
+                  <span class="fr" style="font-size:24px;">业务类型：预付款调整</span>
+                 </p>
+                 <ul>
+                    <li><span style="font-size:28px;">金额（元）</span><span class="fr" style="font-size:28px;">48,000.00</span></li>
+                    <li>单据号：72015121615323411009</li>
+                 </ul>
+            </div>
+            <div class="info" style="height: 210px;">
+          		<p style="height: 64px;"><span class="fl">2015-12-03</span>
+                  <span class="fr" style="font-size:24px;">业务类型：期初录入</span>
+                 </p>
+                 <ul>
+                    <li><span style="font-size:28px;">金额（元）</span><span class="fr" style="font-size:28px;">22,880.00</span></li>
+                    <li>单据号：72015120315323456330</li>
+                 </ul>
+            </div>
+
+        </div>
+        <!-- content 结束 -->
+    </div>
+</body>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+//本地时间
+var billdate=new Date();
+var year=billdate.getFullYear();
+var month=billdate.getMonth()+1;
+if (parseInt(month)<10) month="0"+month;
+var date=billdate.getDate();
+if (parseInt(date)<10) date="0"+date;
+var checkdate=year+"-"+month+"-"+date;
+var localdate=billdate.toLocaleDateString();
+console.log(localdate);
+console.log(checkdate);
+$(".billdate").text(checkdate);
+
+
+//订单总额
+var advance =Enjurokcc.getMarkStringThis('_Money'); 
+console.log(advance);
+$("#advance").text(formatCurrency(advance)); 
+
+})
+
+</script>

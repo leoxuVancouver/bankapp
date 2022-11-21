@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+/*预付款核销 - 新增*/
+.verification{ width: 100%; }
+
+.verification .tit{text-align:center;margin:30px; border-bottom: 30px;}
+.verification .tit a{font-weight:bold; font-size:28px;}
+.verification .tit p{font-size:24px;margin:18px;}
+.verification .con{ width: 100%;  overflow: hidden; }
+.verification .con ul{ border-bottom: 1px solid #ccc; overflow: hidden;}
+.verification .con ul li{ width: 50%; float: left; line-height: 32px;}
+
+
+.verification1 .bundle{ width: 100%;  }
+.verification1 .bundle h2{ height: 100px; line-height: 100px; padding: 0px 0px 0px 28px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; position: relative; font-size: 28px;  font-weight: normal; color: #999999; background-color:#fff; }
+.verification1 .bundle h2 input[type="checkbox"] + label{ margin-top: 32px; float: left;}
+
+.verification1 ul{ width: 100%;}
+.verification1 ul li{ padding: 10px 0px 10px 63px; overflow: hidden; position: relative; border-bottom: 1px solid #ccc; }
+.verification1 ul li em{ overflow: hidden; font-size: 28px; color: #333333;font-weight: lighter;}
+.verification1 ul li span.input-checkbox{ position: absolute;  left: 25px; }
+.verification1 ul li p{ padding: 20px 0px 0px 0px; float: left; font-size: 24px; clear: both;}
+.verification1 ul li p .inps{ font-size:26px;display: inline-block; width: 130px; text-align: left;  color: #333;font-weight: bold; padding: 3px 0px; border-bottom: 0px solid #ccc;}
+.verification1 ul li .footshow{ display: none;}
+
+.verification1 .orderPrice {height: 100px; line-height: 100px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 0px 25px; overflow: hidden; margin-top: 22px; }
+.verification1 .orderPrice span{ font-size: 36px; color: #000; }
+.verification1 .abs{ margin-top: 60px;}
+
+
+
+
+.round {
+	background:#fff;
+   	width:100%;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+	margin:10px 10px 0px 15px;
+	padding-top:10px;
+	width: 545px;
+	border:1px solid #ccc;
+}
+

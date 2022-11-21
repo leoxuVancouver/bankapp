@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+ ul{ margin:25px 15px;border-radius:15px;background: #fff;padding: 10px 0px;padding-left: 20px;padding-right: 20px; }
+ ul li{ height:28px;line-height: 28px;padding:10px 0px;font-weight: lighter;color:#333333;}
+ ul li .word  {font-size:28px; font-weight:normal;}
+ ul li .date   {font-size:28px ;}
+ ul li .num  {font-size:24px;}
+ 
+.orderPrice{ height: 90px; line-height: 100px; border-radius:15px ; margin:25px 15px;background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; overflow: hidden; padding:0px 15px;}
+.orderPrice span{padding: 0px 0px; font-size: 28px; }
+

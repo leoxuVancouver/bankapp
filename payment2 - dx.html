@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>选择支付方式</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Payment.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+ <div class="page">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2 style="font-size: 36px">选择支付方式</h2>
+		<a href="index.html" class="goHome"></a>
+	</div>
+	<div class="content">
+		<div class="paymain">
+			<div class="paytop" style="background-color: #ffffff">
+				<p>支付金额： <em class="red" id="money_show">24,880.00</em>元</p>
+="money_show"
+						
+			</div>
+			<div class="paylist">
+				<ul class="menu_ex" style="background-color: #ffffff">
+                    <li><a href="javascript:void">短信支付<span><img src="images/hand.png" height="29" width="20" alt="">推荐</span><i class="arrow"></i></a></li>
+					<li><a href="accounts_pay.html">建行账号支付 <i class="arrow"></i></a></li>
+              
+                     <li><a href="javascript:;">手机银行支付<i class="arrow"></i></a></li>
+                  </ul>   
+
+			</div>
+		</div>
+	</div>
+</div> 
+</body>
+</html>
+<script type="text/javascript">
+           
+
+
+ $(document).ready(function(){
+	var $toggleBtn = $(".quickpay");
+	var $category = $(".menu_show");
+	$toggleBtn.toggle(function(){
+		$toggleBtn.find("i").addClass("arrow_down")
+		$category.slideDown();
+	},function(){
+		$toggleBtn.find("i").removeClass("arrow_down")
+		$category.slideUp();
+	});
+
+});
+</script>
+
+
+<script type="text/javascript">
+
+    $(function(){
+        //金额获取
+        var money_num = Enjurokcc.getMarkStringThis('_totalmoney');
+        if(money_num!=null&&money_num){
+            $('#money_show').text(money_num);
+        }
+    })         
+
+
+ 
+</script>

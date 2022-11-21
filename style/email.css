@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+
+ 
+/*在线下单*/
+
+.email{ width: 100%; }
+
+
+
+
+.email .succtips{ text-align: center; background: #fff;  padding: 130px 0px 70px 0px;}
+.email .succtips img{ vertical-align: middle; margin-bottom: 50px;}
+.email .succtips h3{font-size: 36px; color: #000; margin-bottom: 40px;}
+.email .succtips p{ height: 44px; line-height: 44px; font-size: 28px; color: #000;}
+
+
+
+.email{ width: 100%; overflow:hidden;}
+.email ul{ padding: 25px;}
+.email ul li{ margin-bottom: 25px; overflow:hidden;border-radius: 6px;background:#fff; border: 1px solid #ccc;}
+.email .old ul li { font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#999999;}
+.email.old {font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#999999;}
+
+.email ul li input{  box-sizing: border-box; height: 80px; font-size: 28px; color: #333333; background:#fff; }
+.email ul li input.inputCode{ width: 316px; height: 58px; text-indent: 44px;float: left; }
+.email ul li img{ float: left; margin-left: 0px; width: 586px;height: 45px;}
+.email ul li img.yzm{ float:left;margin-left:25px;width: 115px;height: 53px;}
+.email ul li a{ float: left; margin-left: 46px; font-size: 28px; line-height: 58px;}
+.email .abs{ margin-top: 520px;}
+
+.button2{ padding: 0 25px; margin-top: 40px; margin-bottom: 40px; overflow: hidden;}
+.button2 a{ float: right; color: #2b98e5; font-size: 24px;}
+
+ 

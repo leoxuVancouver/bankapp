@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+
+ 
+/*在线下单*/
+
+.enterprise_info{ width: 100%; }
+
+
+
+
+.enterprise_info .succtips{ text-align: center; background: #fff;  padding: 130px 0px 70px 0px;}
+.enterprise_info .succtips img{ vertical-align: middle; margin-bottom: 50px;}
+.enterprise_info .succtips h3{font-size: 36px; color: #000; margin-bottom: 40px;}
+.enterprise_info .succtips p{ height: 44px; line-height: 44px; font-size: 28px; color: #000;}
+
+
+.enterprise_info{ width: 100%; overflow:hidden;}
+.enterprise_info ul{ padding: 25px;}
+.enterprise_info ul li{ margin-bottom: 25px; overflow:hidden;border-radius: 6px;background:#fff; border: 1px solid #ccc;}
+.enterprise_info .old ul li { font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#999999;}
+.enterprise_info.old {font-size: 28px;font-weight: normal;line-height: 80px;height: 80px;margin:20px;color:#999999;}
+
+.enterprise_info ul li input{  box-sizing: border-box; height: 80px; font-size: 28px; color: #333333; background:#fff; }
+.enterprise_info ul li input.inputCode{ width: 316px; height: 58px; text-indent: 44px;float: left; }
+.enterprise_info ul li img{ float: left; margin-left: 0px; width: 586px;height: 45px;}
+.enterprise_info ul li a{ float: left; margin-left: 46px; font-size: 28px; line-height: 58px;}
+.enterprise_info .abs{ margin-top: 150px;}
+.enterprise_info { margin-top: 150px;}
+
+.button2{ padding: 0 25px; margin-top: 40px; margin-bottom: 40px; overflow: hidden;}
+.button2 a{ float: right; color: #2b98e5; font-size: 24px;}

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+
+ 
+/*在线下单*/
+
+.verification{ width: 100%; }
+.verification .addProduct{ background: #fff; height: 100px; line-height: 100px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; color: #666; text-align: center; }
+.verification .addProduct a{ font-size: 28px; }
+.verification .addProduct a img{ vertical-align: middle; margin-left: 20px; }
+
+
+.verification .tips{ height: 72px; line-height: 72px; padding: 0 25px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; font-family: "Microsoft YaHei","宋体";}
+.verification .tips span{ font-size: 24px; }
+
+.verification ul{ width: 100%;}
+.verification ul li{ background: #fff; padding: 14px 0px 0px 0px; position: relative; margin-bottom: 20px; /*border-bottom: 1px solid #ccc;*/ overflow: hidden;}
+.verification ul li .productInfo{ width: 100%; border-bottom: 1px solid #ccc; padding-bottom: 50px;}
+.verification ul li .productCode{ line-height: 50px; margin-bottom: 10px;}
+.verification ul li .productCode,.productName{ font-size: 28px; padding: 0 25px; clear: both;font-weight: lighter; margin-bottom: 20px;}
+.verification ul li .productCode,.productName2{ font-size: 24px; padding: 30px 25px 0px 25px; clear: both;font-weight: lighter;}
+.verification ul li .productCode a.J_del{ padding-left: 36px; padding-right: 25px; position: absolute; right: 0px; background: url("../images/icon_del.png") no-repeat 0px 12px;}
+.verification ul li label{ height: 50px; display: block; float: left;}
+
+.verification ul li .productPrice{ padding: 0px 25px; height: 64px; line-height: 64px; clear: both;}
+.verification ul li .productPrice .words{ font-size: 24px;}
+.verification ul li .productPrice .spinner{ width: 300px; float: right; position: relative; font-size: 24px; }
+.verification ul li .productPrice .spinner a{ width: 44px; height: 52px; line-height: 52px; display: inline-block; background: #fff; font-size: 30px;border-bottom: 1px solid #ccc;  text-align: center; position: absolute; top: 0px;}
+.verification ul li .productPrice .min{ left: 100px; }
+.verification ul li .productPrice .add{ left: 254px; }
+.verification ul li .productPrice em.number{ width: 110px; height: 52px; line-height: 52px; font-size: 28px;  border-bottom: 1px solid #ccc; left: 144px; text-align: center; position: absolute; top: 0px; }
+.verification ul li .productPrice em{ float: right; }
+.verification ul li .shopprice{ padding: 0px 25px; margin-bottom: 20px; color: #000; font-size: 28px; clear: both; }
+
+.verification .orderPrice{ height: 100px; line-height: 100px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 0px 25px; overflow: hidden; }
+.verification .orderPrice span{ font-size: 30px; color: #000; }
+.verification .abs{ margin-top: 60px;}
+
+.verification .succtips{ text-align: center; background: #fff;  padding: 60px 0px;}
+.verification .succtips img{ vertical-align: middle; margin-bottom: 50px;}
+.verification .succtips h3{font-size: 36px; color: #000; margin-bottom: 40px;}
+.verification .succtips p{ height: 44px; line-height: 44px; font-size: 28px; color: #000;}
+
+.verificationbtn{ background: #fff; border-bottom: 1px solid #ccc; padding-bottom: 45px;}
+.verificationbtn a{ color: #2b98e5; font-size: 30px; }
+
+.round {
+	background:#fff;
+   
+	width:95%;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+	margin:20px 10px 0px 15px;
+	padding-top:10px;
+}

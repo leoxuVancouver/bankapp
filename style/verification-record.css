@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+/*预付款核销- 记录*/
+.record{ width: 100%; }
+
+.record .tit{text-align:center;margin:30px; border-bottom: 30px;}
+.record .tit a{font-weight:bold; font-size:28px;}
+.record .tit p{font-size:24px;margin:18px;}
+.record .con{ width: 100%;  overflow: hidden; }
+.record .con ul{ border-bottom: 1px solid #ccc; overflow: hidden;}
+.record .con ul li{ width: 50%; float: left; line-height: 32px;}
+
+
+.record1 ul{ width: 610px;background: #ffffff;border-radius: 15px;margin:25px 15px 25px 15px;}
+.record1 ul li{ padding: 10px 10px 10px 18px; overflow: hidden; position: relative; border-bottom: 1px solid #ccc; }
+.record1 ul li p{ padding: 20px 0px 0px 0px; float: left; font-size: 24px;clear: both; }
+.record1 ul li p .inps{ font-size:28px;display: inline-block; width: 130px; text-align: left;font-weight: bold; padding: 3px 0px; border-bottom: 0px solid #ccc;}
+
+
+

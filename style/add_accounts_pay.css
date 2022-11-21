@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-29 16:19:44
+ * @version $Id$
+ */
+.add_accounts_pay{ width: 100%; overflow:hidden;}
+.add_accounts_pay ul.mass_one{ margin: 25px; border: 1px solid #ccc; border-radius: 6px; background: #fff; }
+.add_accounts_pay ul.mass_one li{height: 80px; line-height: 80px;}
+.add_accounts_pay ul.mass_one li:not(:last-child){border-bottom: 1px solid #ccc;}
+.add_accounts_pay ul.mass_one li label{ width: 160px; float: left; font-size: 24px; color: #999; padding-left: 10px; }
+
+.add_accounts_pay ul.mass_one li input{  width: 400px; height: 80px; font-size: 24px; color: #000; float: left;}
+
+.add_accounts_pay ul.mass_two{}
+
+.add_accounts_pay ul.mass_two{ padding:0px 25px;}
+.add_accounts_pay ul.mass_two li{ margin-bottom: 25px; overflow:hidden;}
+.add_accounts_pay ul.mass_two li input{ border: 1px solid #ccc; box-sizing: border-box; border-radius: 6px; height: 80px; font-size: 24px; color: #ccc; float: left;}
+.add_accounts_pay ul.mass_two li input.inputCard{ width: 100%; background:#fff url(../images/icon_card.png) no-repeat 24px 20px; text-indent: 130px;}
+.add_accounts_pay ul.mass_two li input.inputPhone{ width: 100%;  background:#fff url(../images/icon_tel.png) no-repeat 36px 20px;text-indent: 130px;}
+.add_accounts_pay ul.mass_two li input.inputCode{ width: 316px; height: 76px; text-indent: 44px; }
+.add_accounts_pay ul.mass_two li input.get_code{ float: right; text-align: center; line-height: 76px; font-size: 20px; font-weight: bold; color: #2b98e5; width: 250px; height: 76px; border: 1px solid #2b98e5; background: #fff; border-radius: 6px;}
+.button2{ padding: 0 25px; margin-top: 40px; margin-bottom: 40px; overflow: hidden;}
+.button2 a{ float: right; color: #2b98e5; font-size: 24px;}

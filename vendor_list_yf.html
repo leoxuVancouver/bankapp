@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>选择供应商</title>
+    <link rel="stylesheet" href="style/comm.css">
+    <link rel="stylesheet" href="style/vendor_list.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+
+<body>
+    <div class="page bggray2">
+        <!-- header 开始 -->
+        <div class="header">
+            <a href="index.html" class="goBackUrl"></a>
+            <h2>选择供应商</h2><a href="search_yf.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+           
+        </div>
+        <!-- header 结束 -->
+        <!-- content 开始 -->
+        <div class="content">
+          <div class="vendor_list pb50">
+              <ul>
+                   <li class="li_2 clearfix" id="ven_li1">
+                         <a href="Advance2.html">
+                            <img class="fl mr10" src="images/gdqq_logo.png" alt="" />
+                            <p class="font28"><span>广东琪琪电子商务有限公司</span></p>
+                            <p class="font20"><span>用户名：gd***qq</span></p>
+                         </a>
+                   </li>
+                   <li>
+                            <img class="fl mr10" src="images/hbbg_logo.png" alt="" />
+                            <p class="font28"><span>湖北百歌电子商务有限公司</span></p>
+                            <p class="font20"><span>用户名：hb**bg</span></p>
+                    </li>
+                    <li>
+                            <img class="fl mr10" src="images/szns_logo.png" alt="" />
+                            <p class="font28"><span>深圳市南山区丁冰家用电器店</span></p>
+                            <p class="font20"><span>用户名：sz***ns</span></p>
+                    </li>
+                    <li>
+                            <img class="fl mr10" src="images/hbmm_logo.png" alt="" />
+                            <p class="font28"><span>湖北美满集团电器有限公司</span></p>
+                            <p class="font20"><span>用户名：hb***mm</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- content 结束 -->
+    </div>
+</body>
+<script type="text/javascript">
+
+	$('#close').click(function(){
+	 	$('#tips').hide();
+	 	$('#ven_li1').removeClass('li_2').addClass('li_1');
+	});
+	
+	$('#disappear').click(function(){
+	 	$('#tips').hide();
+	 	$('#ven_li1').removeClass('li_2').addClass('li_1');
+});
+
+</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>选择商品</title>
+    <link rel="stylesheet" href="style/comm.css">
+    <link rel="stylesheet" href="style/goods_list.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+    <script type="text/javascript" src="js/price.js"></script>
+      <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+</head>
+
+<body>
+    <div class="page bggray2">
+        <div class="header bgblue">
+            <a href="javascript:void(0)" class="goBack"></a>
+            <h2>选择商品</h2>
+            <a href="search_item.html" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+            
+        </div>
+        <div class="content">
+            <div class="goods_list" style="margin-top: 150px;">
+                <div class="goods" id="item1" style="margin-top: 150px;width: 610px;margin-left: 15px;margin-right: 15px;">
+                   <h2><input type="checkbox"  class="item_ " id="checkbox-1" /><label for="checkbox-1" style="margin-top: 5px;" ></label ><label style="color:#333333;" onclick="location.href='goods-detail.html'">Apple iPhone 5s 16GB 银色移动4G手机</label> 
+                   <label style="font-size:24px; margin-top:30px; float:left; margin-left: 1px;">计量单位：部</label><label style="margin-left:60px;float:right;margin-right:25px; font-size:24px; margin-top:30px;" >单价（元）：2,488.00</label></h2><!--注意：PC看是靠左，margin-left: 1px;但在手机上看是对齐采购数量的。-->
+                  
+                    <div class="goods_num  hide" id="goods_num1">
+                      <span class="words fl" style="top: 0px;">采购数量：</span>
+                      <span class="purch fr">
+                        <a class="min bold" href="javascript:;" style="font-size: 36px;">-</a> 
+                        <input type="text" class="numberinput" style="font-weight:bold" value="" placeholder="1" />
+                        <a class="add bold" href="javascript:;" style="font-size: 36px;">+</a>
+                      </span>
+                    </div>
+                </div>
+
+                <div class="goods" id="item2" style="margin-top: 15px;width: 610px;margin-left: 15px;margin-right: 15px;">
+                    <h2><input type="checkbox" class="item_ " id="checkbox-2" /><label for="checkbox-2" style="margin-top:5px;" ></label ><label style="color:#333333;" > SAMSUNG三星节能四季柜式超静电冰箱</label>
+                    <label style="font-size:24px; margin-top:30px; float:left;margin-left: 1px;">计量单位：台</label><label style="margin-left:60px;float:right;margin-right:25px; font-size:24px; margin-top:30px;" >单价（元）：2,769.00</label></h2>
+
+                    <div class="goods_num hide" id="goods_num2">
+                      <span class="words fl" style="top: 0px;">采购数量：</span>
+                      <span class="purch fr">
+                        <a class="min bold" href="javascript:;" style="font-size: 36px;">-</a> 
+                        <input type="text" class="numberinput" style="font-weight:bold"  value="" placeholder="1"  /> 
+                        <a class="add bold" href="javascript:;" style="font-size: 36px;">+</a>
+                      </span>
+                    </div>
+
+                </div>
+
+                <div class="goods" id="item3" style="margin-top: 15px;width: 610px;margin-left: 15px;margin-right: 15px;">
+                    <h2><input type="checkbox" class="item_ " id="checkbox-3" /><label for="checkbox-3" style="margin-top: 5px;" ></label ><label style="color:#333333 ; width:505px; float:left" >卡萨帝冰箱 BCD-356W</label>
+                    <label style="font-size:24px; margin-top:30px; float:left;margin-left: 1px;">计量单位：台</label><label style="margin-left:60px;float:right;margin-right:25px; font-size:24px; margin-top:30px;" >单价（元）：4,000.00</label> </h2>
+                    <div class="goods_num hide" id="goods_num3" >
+                      <span class="words fl" style="top: 0px;">采购数量：</span>
+                      <span class="purch fr">
+                        <a class="min bold" href="javascript:;" style="font-size: 36px;" >-</a> 
+                        <input type="text" class="numberinput" style="font-weight:bold"  value="" placeholder="1"  /> 
+                        <a class="add bold" href="javascript:;" style="font-size: 36px;" >+</a>
+                      </span>
+                    </div>
+
+                </div>
+                <div class="button clearfix abs"  >
+                    <a href="javascript:void" class="next" id="next" style="background-color: #999999;">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+ // 下一步按键初始状态
+$(function(){
+ var k = $("input[type='checkbox']:checked").length; 
+if(k==0){   
+    $(".next").css("background-color","#999999");
+    $(".next").attr("href","javascript:void:;");
+  }
+   else{
+     $(".next").css("background-color","#2b98e5");
+    $(".next").attr("href","onlineOrder2.html");
+   }
+//checkbox 初始状态
+ $("input[type='checkbox']:checked").addClass('on')   
+ $("input[type='checkbox']:checked").parent().parent(".goods").find(".goods_num").show();
+
+
+//下一步按键
+$(".item_").click(function() {
+if($(this).attr("checked")){
+  $(".next").css("background-color","#2b98e5");
+  $(".next").attr("href","onlineOrder2.html");
+ }
+
+//CHECKBOX 选中
+ if(!$(this).hasClass('on')){
+           $(this).addClass('on');           
+         }
+         else{
+         $(this).removeClass('on');    
+         }
+})
+
+ //获得item选中值
+ $('#next').click(function(){
+  var itemClass = [];
+  var orderQty=[];
+  $('.item_').each(function(){
+     itemClass.push($(this).attr('class'));//商品     
+  })
+  $('.numberinput').each(function(){
+     orderQty.push($(this).val());//数量      
+  })
+  
+ 
+var itemJson = '{'+ '\"_itemClass\"' +':'+'['+ '\"'+itemClass[0]+'\"'+','+'\"'+itemClass[1]+'\"'+','+'\"'+itemClass[2]+'\"'+']'+',' + '\"_orderQty\"' +':'+'['+ '\"'+orderQty[0]+'\"'+','+'\"'+orderQty[1]+'\"'+','+'\"'+orderQty[2]+'\"'+']'+'}';
+ (itemJson);
+
+   //储存信息
+  Enjurokcc.addMarkPage('_itemStort',itemJson);
+     })
+})
+
+
+
+
+</script>

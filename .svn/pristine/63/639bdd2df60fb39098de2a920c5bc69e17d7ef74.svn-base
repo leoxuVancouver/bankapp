@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:46:22
+ * @version $Id$
+ */
+/*添加商品*/
+.employee_account_edit{ width: 100%;}
+.employee_account_edit ul{position: relative; background: #ffffff;border-radius: 15px; margin:20px 15px 20px 15px;}
+.employee_account_edit ul li{height: 60px;line-height: 60px ;padding: 15px; border-bottom: 1px solid #ccc; position: relative; font-size: 28px;  font-weight: normal; color: #000;}
+.employee_account_edit ul li p{}
+.employee_account_edit ul li span{}
+
+
+

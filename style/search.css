@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+
+ /*付货款*/
+
+.osearch .bundle,.osearch .bundle_1{ background: #fff; width: 100%;  }
+
+
+.osearch ul{ width: 100%;margin:20px 0px 20px 0px;position: relative;}
+.osearch ul li{ padding: 10px 20px 10px 20px; height:80px;font-size:32px;text-align: left;line-height:80px;overflow: hidden; position: relative; color: #333333; border-bottom: 1px solid #ccc; }
+.osearch ul li span{ height:80px;font-size:28px;text-align: left;line-height:80px;color: #333333;width:200px;float: left; }
+.osearch ul li input{ height:80px;font-size:28px;text-align: center;line-height:80px;color: #999999;width:380px; }
+
+
+.osbtn a{ margin-left:20px;display: inline-block; width: 600px; height: 78px; line-height: 78px; text-align: center; font-size: 36px; background: #2b98e5; border-radius: 5px;  color: #fff;}
+
+.searchfoot a.btnPay{ float: right; color: #fff; font-size: 36px; display: inline-block; width: 196px; background: #2b98e5; text-align: center; line-height: 90px; }
+
+
+.paymain{ width: 100%; }
+.paytop{ padding: 10px 25px; border-bottom: 1px solid #ccc;}
+.paytop p{ font-size: 28px; padding: 8px 0px;}
+.balance{ padding: 20px 25px; border-bottom: 1px solid #ccc;}
+.balance p{ font-size: 28px; padding: 8px 0px;}
+.paylist{ border: 1px solid #ccc; border-radius: 10px; margin: 25px; overflow: hidden;}
+
+.paylist ul li{ line-height: 80px; font-size: 28px; color: #333;  position: relative;}
+.paylist ul li:not(:last-child){border-bottom: 1px solid #ccc;}
+.paylist ul li a{ display: block; padding: 0px 12px;}
+.paylist ul li span{ font-size: 28px; color: #ccc; float: right; margin-right: 40px;}
+.paylist ul li span img{ vertical-align: middle; margin-top: -6px; margin-right: 10px;}
+.paylist ul li i.arrow{ display: inline-block; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 24px; top: 27px;}
+.paylist ul li i.arrow.arrow_down{ background: url("../images/rarrow2.png"); width: 26px; height: 14px; top: 33px;}
+.menu_show li{ border-bottom: 1px solid #ccc; padding-left: 23px;}
+.paylist22 ul li:after{content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 24px; top: 42%; }
+.paylist ul li em{ padding-left: 20px; }
+
+/*---search_order---*/
+.content .change{
+	background-color:#2b98e5;
+	color:#fff;}	
+.content .changedate{
+	background-color:#2b98e5;
+	color:#fff;}	
+.bg_none{
+	line-height:90px;
+	color:#333333;
+	font-size:28px;
+	}
+.time{
+	background-color:#fff;
+	height:90px;
+	padding-left:28px;
+	padding-right:28px;
+	width:594px;
+	border-bottom:1px solid #ccc;
+	}
+.time p{
+	line-height:90px;
+	}
+.pay_atti{
+	background-color:#fff;
+	height:180px;
+	padding-left:28px;
+	padding-right:28px;
+	width:604px;
+	border-bottom:1px solid #ccc;
+	}
+.pay_atti p{
+	line-height:90px;
+	}
+.pay_atti p a{
+	font-size:24px;
+	height:44px;
+	line-height:44px;
+	padding-left:16px;
+	padding-right:16px;
+	background-color:#eee;
+	margin-right:7px;
+	border-radius:4px;
+	display:inline-block;
+	}
+.title_1{
+	font-size:28px;
+	line-height:90px;
+	color:#333333;
+	}
+.title_2{
+	font-size:28px;
+	color:#000;
+	}
+.time_btn{
+	width:590px;
+	height:78px;
+	border-radius:8px;
+	background-color:#2b98e5;
+	color:#fff;
+	font-size:30px;
+	margin-top:60px;
+	margin-bottom:60px;
+	margin-left:25px;
+	margin-right:25px;
+}
+.current{background-color:red;}
+.time input{
+	    height: 80px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 80px;
+    color: #999999;
+    width: 380px;
+	margin-left:30px;
+	}
+.osbtn_1 a{
+    margin-left: 20px;
+    display: inline-block;
+    width: 600px;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    font-size: 36px;
+    background: #2b98e5;
+    border-radius: 5px;
+    color: #fff;
+	}

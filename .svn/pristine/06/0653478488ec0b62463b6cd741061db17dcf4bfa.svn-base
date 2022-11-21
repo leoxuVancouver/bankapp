@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5,user-scalable=no" />
+	<title>账单详情</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/bill_detail.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>s
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header bgblue">
+			<a href="bills.html" class="goBackUrl"></a>
+			<h2>账单详情</h2>
+            <!--<a href="search_bills_detail.html" class="goSearch" style="margin-right:85px;"></a>-->
+			<a href="index.html" class="goHome"></a>
+	    </div>
+    	<div class="content">
+              <ul>
+               <li><p><span class="word">广东琪琪电子商务有限公司</span></p></li>
+               <li style="border-bottom:1px solid #ccc;padding-bottom:30px;">
+               <span class="date">付款日期：2016-02-22</span>
+               <span class="fr num"><img src="images/icon-ddcx.png" style="padding-right:10px;"/>付货款</span></li>
+               <li style="padding-top:30px;"><span class="num">付款单号：72015073115323456002</span></li>
+               <li><span class="num">付款银行：中国建设银行</span></li>
+               <li style="border-bottom:1px solid #ccc; padding-bottom:30px;"><span class="num">付款卡号：6217092406411091</span></li>
+               <li style="padding-top:30px;">
+               <span class="word">付款总金额：</span>
+               <span class="fr word">20,000.00</span></li>
+             </ul>
+             
+           <div class="orderPrice" style="margin-top: 20px;">
+           <a href="dd-detail.html">
+              <span class="fl" style="font-weight:normal;">订单号：201508170018975425879</span></a>
+            </div>
+      </div>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+	var $category1 = $('.purch1');
+	var $category2 = $('.purch2');
+	var $toggleBtn = $('.goEdit');
+	var $vale = $('.active').text();
+
+	$toggleBtn.toggle(function(){
+		$category2.show();
+		$category1.hide();
+		$(this).text('完成');	
+	},function(){
+		$category1.show();
+		$category2.hide();
+		$(this).text('编辑');
+		$category1.text("采购数量："+ $category2.find(".number").text());
+	});
+
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+            var s = 0;
+            $(".price").each(function() {
+                    var price = $(this).text();
+                    price = price.replace(",",'');
+                    var n_price = parseInt(price);
+                    console.log(n_price)
+                    s += n_price;                    
+            });
+            console.log(s)
+            $(".total").html(formatCurrency(s));
+});
+</script>

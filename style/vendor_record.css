@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*供应商列表*/
+.vendor_record{ width: 100%; }
+.vendor_record ul{ width: 100%; position:relative;top:30px;}
+.vendor_record ul li{ background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-bottom: 18px;}
+.vendor_record ul li p{ height: 46px; line-height: 46px; font-size: 24px;}
+.vendor_record .button.abs{ margin-top: 132px;}
+
+.tips{ background: #e7f4fd;text-align: center; padding:20px 25px 20px 30px; overflow: hidden;}
+.tips span{ float: left; font-size: 24px; }
+.tips span a{ display: inline-block; font-size: 22px; color: #2b98e5; font-weight: bold; }
+.tips p{width:200px;margin-left:auto;margin-right:auto;}
+
+.span1 {font-size: 24px;color:#2b98e5;margin:20px 5px 0px 20px;cursor:pointer;font-weight:lighter;}
+.li_1{background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-top:0px;}
+.li_2{background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-top: 20px;}
+
+/*员工信息*/
+.info {
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+	float:left;
+	font-size:28px;
+	width: 560px;
+	width:92%;
+}
+.info p,.info-a p{ height:70px; line-height:70px; border-bottom:1px solid #ccc; padding:10px;}/*2016-03-06 jww修改*/
+.info p strong{margin-left:100px;}
+.info ul{ font-size:24px; margin-top:30px;}
+.info ul li,.info-a li{ height:50px; line-height:50px; padding-left:10px;padding-right: 10px;}/*2016-03-06 jww修改*/
+.info ul li img,.info-a	li img,.info-a	dt img{ margin-right:10px; vertical-align: middle;}/*2016-03-06 jww修改*/
+.content{ width: 100%; }
+.tit{text-align:center;margin:30px; border-bottom: 30px;}
+.tit a{font-weight:bold; font-size:28px;}

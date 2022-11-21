@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>密码设置成功</title>
+	<link rel="stylesheet" href="style/comm.css">
+             <link rel="stylesheet" href="style/onlineOrder.css">
+	<link rel="stylesheet" href="style/pay-success.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+    <script type="text/javascript" src="js/Storage.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header">
+    		<!--<a href="javascript:void(0)" class="goBack"></a>-->
+            <h2>提示信息</h2>
+            <a href="index.html" class="goHome"></a>
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+            <div class="onlineOrder">
+                <div class="succtips">
+                    <img src="images/icon_secc.png" alt="">
+                    <h3>密码设置成功</h3>
+                    <p style="font-size:24px;">短信支付<span id="money_show">24,880.00</span> 元</p>
+                </div>
+               
+            </div>
+        </div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(function(){
+        //金额获取
+        var money_num = Enjurokcc.getMarkStringThis('_totalmoney');
+        if(money_num!=null&&money_num){
+            $('#money_show').text(money_num);
+        }
+    })
+
+</script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+//本地时间
+var billdate=new Date();
+var hour=billdate.getHours();
+var minute=billdate.getMinutes();
+if (parseInt(hour)<10) hour="0"+hour;
+var date=billdate.getDate();
+if (parseInt(minute)<10) minute="0"+minute;
+var paymenttime=hour+":"+minute;
+console.log(paymenttime);
+//存付款时间
+Enjurokcc.addMarkPage('_paymenttime',paymenttime);//存金额
+  
+})
+</script> 
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>我的供应商</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/provider.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+</head>
+<body>
+    <div class="page">
+    	<div class="header">
+    		<a href="" class="a-back"></a>
+    		<h2>我的供应商</h2>
+    		<!-- <a href="" class="a-menu"></a> -->
+    	</div>
+    	<div class="content">
+    		<div class="search mb10">
+				<input type="text" class="sInput" placeholder="供应商名称">
+			</div>
+    		<div class="provider pb50">
+				<a href="gys-detail.html">
+					<dl class="mb10 bt">
+						<dt>广东琪琪电子商务有限公司 <i class="icon_y fr blue"><img src="images/icon_ybd.png" />已绑定</i></dt>
+						<dd><span>采购业务员：李燕兵</span></dd>
+						<dd><span>首要联系人：张慧欣</span><span>手机号：15826889595</span></dd>
+					</dl>
+				</a>
+				<dl class="mb10 bt">
+					<dt>湖北百歌电子商务有限公司<i class="icon_w fr org"><img src="images/icon_wbd.png" />未绑定</i></dt>
+					<dd><span>采购业务员：李燕兵                    </span></dd>
+					<dd><span>首要联系人：张慧欣</span><span>手机号：15826889595</span></dd>
+				</dl> 
+				<dl class="mb10 bt">
+					<dt>湖北美满集团电器有限公司<i class="icon_y fr blue"><img src="images/icon_ybd.png" />已绑定</i></dt>
+					<dd><span>采购业务员：李燕兵</span></dd>
+					<dd><span>首要联系人：张慧欣</span><span>手机号：15826889595</span></dd>
+				</dl>
+				<dl class="mb10 bt">
+					<dt>湖北乐麦电器有限公司<i class="icon_w fr org"><img src="images/icon_wbd.png" />未绑定</i></dt>
+					<dd><span>采购业务员：李燕兵</span></dd>
+					<dd><span>首要联系人：张慧欣</span><span>手机号：15826889595</span></dd>
+				</dl> 
+				<dl class="mb10 bt">
+					<dt>湖北美满集团电器有限公司<i class="icon_y fr blue"><img src="images/icon_ybd.png" />已绑定</i></dt>
+					<dd><span>采购业务员：李燕兵</span></dd>
+					<dd><span>首要联系人：张慧欣</span><span>手机号：15826889595</span></dd>
+				</dl>                                   
+    		</div>
+    	</div>
+    	<!-- content 结束 -->
+    		<!-- footer 开始 -->
+			<div class="footer">
+				<div class="foot">
+					<a href="index.html" class="home">首页</a>
+					<a href="bills.html" class="bill">账单</a>
+					<a href="perset.html" class="set">个人设置</a>
+					<a href="online.html" class="call">在线客服</a>
+				</div>
+			</div>
+			<!-- footer 结束 -->
+    </div>
+</body>
+</html>

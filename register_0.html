@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>设置用户信息</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Payment.css">
+	<link rel="stylesheet" href="style/accounts_pay.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/Storage.js"></script>
+</head>
+<body>
+ <div class="page bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2>设置用户信息</h2>
+	</div>
+	<div class="content">
+		<div class="accounts_pay">
+			<ul>
+				
+				<li style="margin-bottom:20px;"><input type="text" class="user in" id="user1" placeholder="请设置用户名"></li>
+				<li><p style="font-size:24px;">4-20个字符，由英文字母（不区分大小写）、数字或下划线组成。</p></li>
+				<li class="pw1"style="margin-bottom:20px;margin-top:40px;position:relative;display:none;"><input type="password" id="password1" class="password in"placeholder="请设置密码"><label style="position:absolute;right:10px;top:10px;"><img src="images/passwordr1.png" class="rb" style="margin-left:0;"><img src="images/passwordl1.png" class="lb" style="margin-left:0;"></label> </li>
+				<li  class="pw2" style="margin-bottom:20px;margin-top:40px;position:relative;"><input type="text" id="password2" class="password in"placeholder="请设置密码"><label style="position:absolute;right:10px;top:10px;"><img src="images/passwordr1.png" class="rb" style="margin-left:0;"><img src="images/passwordl1.png" class="lb" style="margin-left:0;"></label> </li>			               
+				<li><p  style="font-size:24px;">6-16个字符，由英文字母（区分大小写）、数字和符号组成。请勿使用简单密码。</p></li>
+				
+			                 <li style="margin-top:340px;"><p style="font-size:20px;"><span id="disappear"><img src="images/icon_fang.png" class="ico-chk-tips"></span>
+				 &nbsp;&nbsp;已知悉并同意<label id="shengming" style="color:#2b98e5;">《中国建设银行善融商务会员服务协议》</label>
+				</p>
+				</li>
+			
+			</ul>
+			<div class="button abs2">
+				<a href="javascript:;" class="nextbtn btnPay" style="background-color:#999999; color:#fff;disabled:disabled;",
+     >注册</a>
+			</div>
+            
+		</div>
+	</div>
+</div> 
+
+<div class="mask"></div>
+
+
+
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+// 判断输入项
+$(".user").focus();
+$(".in").on("keyup",function(evt){
+  if($(".user").val().length && $(".ico-chk-tips").attr('src')=="images/icon_fang_chk.png" && ($("#password1").val().length || $("#password2").val().length) ){
+    $(".nextbtn").removeAttr("disabled");   
+    $(".nextbtn").css({
+      "background-color":"#2b98e5",
+      "color":"#fff"
+    }) 
+    $(".nextbtn").click(function(){
+        window.location.href= "index.html";
+    })
+  }else{
+    $(".nextbtn").css({
+      "background-color":"#999999",
+      "color":"#fff"	  
+    });
+	$(".nextbtn").click(function(){
+        window.location.href= "javascript:;";
+    })
+	
+	
+  }
+});
+
+
+
+//不再提示
+	$(".ico-chk-tips").click(function(){
+		if($(this).attr('src')=="images/icon_fang.png"){
+			$(this).attr("src","images/icon_fang_chk.png");
+    if($(".user").val().length  && ($("#password1").val().length || $("#password2").val().length) ){
+    $(".nextbtn").removeAttr("disabled");   
+    $(".nextbtn").css({
+      "background-color":"#2b98e5",
+      "color":"#fff"
+    }) 
+    $(".nextbtn").click(function(){
+        window.location.href= "index.html";
+    })
+  }			
+			
+                                    
+		}else{
+			$(this).attr("src","images/icon_fang.png");
+			$(".nextbtn").css({
+      "background-color":"#999999",
+      "color":"#fff"	  
+    });
+	$(".nextbtn").click(function(){
+        window.location.href= "javascript:;";
+    })
+			
+                                     
+			}
+    });
+//	隐藏
+		$(".lb").click(function(){
+		
+			$(".lb").attr("src","images/passwordl2.png");
+			$(".rb").attr("src","images/passwordr2.png");         
+			$("#password1").val($("#password2").val()); 
+			$("#password2").val(""); 
+			$(".pw2").hide(); 
+			$(".pw1").show();                             
+			
+    });
+//	显示
+	$(".rb").click(function(){		
+			$(".lb").attr("src","images/passwordl1.png");
+			$(".rb").attr("src","images/passwordr1.png"); 
+			$("#password2").val($("#password1").val()); 
+			$("#password1").val(""); 
+			$(".pw1").hide(); 
+			$(".pw2").show(); 
+
+			
+    });
+//声明
+$("#shengming").click(function(){		
+	 window.location.href= "register_3.html";                     
+			
+    });	
+
+
+</script>
+
+

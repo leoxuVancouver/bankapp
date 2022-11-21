@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>收货</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/receive.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+</head>
+<body>
+    <div class="page">
+    	<!-- header 开始 -->
+    	<div class="header">
+    		<a href="index.html" class="a-back"></a>
+    		<h2>收货</h2>
+    		<!-- <a href="" class="a-menu"></a> -->
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+    		<div class="search mb10">
+				<input type="text" class="sInput" placeholder="发货单号、发货方、发货日期">
+			</div>
+    		<div class="receive pb50">
+				<dl class="mb10">
+					<dt>发货方：广东琪琪电子商务有限公司</dt>
+					<dd>
+						<a href="fh-detail.html">
+							<p><span>发货单号：1201673344041041</span></p>
+							<p><span>发货日期：2015-08-17</span></p>
+							<p><span>物流公司：顺风快递</span></p>
+							<p><span>快递单号：768978397999</span></p>
+						</a>
+					</dd>
+				</dl>
+				<dl class="mb10 bt">
+					<dd>
+						<p><span>发货单号：1201673344041042</span></p>
+						<p><span>发货日期：2015-08-17</span></p>
+						<p><span>物流公司：顺风快递</span></p>
+						<p><span>快递单号：768978397999</span></p>
+					</dd>
+				</dl>
+				<dl class="mb10 bt">
+					<dt>发货方：广东琪琪电子商务有限公司</dt>
+					<dd>
+						<p><span>发货单号：1201673344041045</span></p>
+						<p><span>发货日期：2015-08-17</span></p>
+						<p><span>物流公司：顺风快递</span></p>
+						<p><span>快递单号：768978397999</span></p>
+					</dd>
+				</dl>
+    		</div>
+    	</div>
+    	<!-- content 结束 -->
+		<!-- footer 开始 -->
+		<div class="footer">
+			<div class="foot">
+				<a href="index.html" class="home">首页</a>
+				<a href="bills.html" class="bill">账单</a>
+				<a href="perset.html" class="set">个人设置</a>
+				<a href="online.html" class="call">在线客服</a>
+			</div>
+		</div>
+		<!-- footer 结束 -->
+    </div>
+</body>
+</html>

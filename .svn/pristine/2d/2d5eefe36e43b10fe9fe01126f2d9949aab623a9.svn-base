@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*供应商列表*/
+.vendor_list{ width: 100%; }
+.vendor_list ul{ width: 100%; position:relative;top:30px;}
+.vendor_list ul li{ background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-bottom: 18px;}
+.vendor_list ul li p{ height: 46px; line-height: 46px; font-size: 20px;}
+.vendor_list .button.abs{ margin-top: 132px;}
+
+.tips{ background: #e7f4fd;text-align: center; padding:20px 25px 20px 30px; overflow: hidden;}
+.tips span{ float: left; font-size: 24px; }
+.tips span a{ display: inline-block; font-size: 22px; color: #2b98e5; font-weight: bold; }
+.tips p{width:200px;margin-left:auto;margin-right:auto;}
+
+.span1 {font-size: 24px;color:#2b98e5;margin:20px 5px 0px 20px;cursor:pointer;font-weight:lighter;}
+.li_1{background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-top:0px;}
+.li_2{background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-top: 20px;}

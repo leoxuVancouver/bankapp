@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>在线下单</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/mycart.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+</head>
+<body>
+    <div class="page">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+    		<a href="index.html" class="a-back"></a>
+    		<h2>在线下单</h2>
+    		<!-- <a href="" class="a-menu"></a> -->
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+    		<div class="mycart pb50">
+				<div class="mycart_info">
+					<img src="images/secc-icon.png" height="35" width="35" alt="">
+					<span>订单创建成功，已发送给供应商确认</span>
+				</div>
+				<div class="btninfo">
+					<p>您可以继续</p>
+					<a href="zx-order.html" class="fl">在线下单</a>
+					<a href="cx-order.html" class="fr">订单查询</a>
+				</div>
+    		</div>
+    	</div>
+    	<!-- content 结束 -->
+		<!-- footer 开始 -->
+		<div class="footer">
+			<div class="foot">
+				<a href="index.html" class="home">首页</a>
+				<a href="bills.html" class="bill">账单</a>
+				<a href="perset.html" class="set">个人设置</a>
+				<a href="online.html" class="call">在线客服</a>
+			</div>
+		</div>
+		<!-- footer 结束 -->
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+ /*确认收货*/
+.payment_ccb{ width: 100%; }
+.payment_ccb h2{ height: 92px; line-height: 92px; font-size: 28px; font-weight: normal; background: #fff; color: #000; padding:0px 25px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.payment_ccb ul{ background: #fff; }
+.payment_ccb ul li{ padding: 20px 10px 20px 28px; overflow: hidden; position: relative; color:#333333;} 
+/*.payment_ccb ul li:after{ content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 25px; top: 44%; }*/
+.payment_ccb ul li a{ display: block; font-size: 28px;}
+.payment_ccb ul li p{ line-height: 80px; font-size: 28px; float: left; clear: both;}
+
+
+.round {background:#fff;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+	margin:40px  25px 0px 25px;	
+}
+
+
+ input.inputCode {
+    border: 1px solid #ccc;
+    width: 320px;
+    height: 60px;
+    text-indent: 55px;
+    float: left;
+    border-radius: 15px;
+}

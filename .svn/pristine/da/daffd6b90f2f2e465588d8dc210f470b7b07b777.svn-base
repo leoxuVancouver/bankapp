@@ -1,0 +1,168 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>账单</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/bills.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <link rel="stylesheet" href="style/new_tf.css"/>
+
+   
+<script>
+
+</script>
+
+</head>
+<body>
+      <div class="page bggray2">
+    	<div class="header">
+		<a href="index.html" class="goBackUrl"></a>
+		<h2>账单</h2>
+		<a href="search_bills.html?sid=1" class="goSearch" style="margin-right:85px;"></a><a href="index.html" class="goHome"></a>
+	</div>
+    	<div class="content " >
+          <!--0-->
+    		  <div class="box_context">
+            <h3 class="tips_"><i></i>广东琪琪电子商务有限公司</h3>
+            <!--内容部分-->
+              <div class="messagezd">
+                   <ul class="total-list total_list_2" >
+                       <li style="margin-top: 10px;margin-left: 10px;" class="showbilldetail">
+                          <div class="Message">
+                             <dl>
+                               <dd style="height:60px; line-height:60px; "><span class="one">2016年02月</span></dd>
+                               <dd style="height:60px; line-height:60px;margin-left:49px; ">2笔</dd>
+                               <dd style="height:60px; line-height:60px; margin-left:39px; "><span>￥</span>30,000.00</dd>
+                             </dl>
+                             <div class="clear"></div>
+                          </div>
+                              <div class="down_show">
+                               <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333; margin-top:10px; display: none;">
+                                 <span style="margin-left:40px;">02-22 09:38</span>
+                                 <span style="margin-left:80px;">付货款</span>
+                                 <span style="margin-left:56px;">￥ 20,000.00</span>
+                               </p>
+                               <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333;display: none; ">
+                               <span style="margin-left:40px;">02-11 20:06</span>
+                               <span style="margin-left:80px;">预付款</span>
+                               <span style="margin-left:56px;">￥ 10,000.00</span>
+                               </p>
+                               </div>
+                        </li>
+                     
+                        <li style="margin-left: 10px;" class="showbilldetail">
+                          <div class="Message">
+                             <dl id="jan">
+                               <dd style="height:60px; line-height:60px; "><span class="one">2016年01月</span></dd>
+                               <dd style="height:60px; line-height:60px;margin-left:49px; ">2笔</dd>
+                               <dd style="height:60px; line-height:60px; margin-left:39px; "><span>￥</span>36,000.00</dd>
+                             </dl>
+                             <div class="clear" ></div>
+                          </div>
+                          <div class="down_show">
+                              <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333; margin-top:10px; display: none;">
+                                 <span style="margin-left:40px;">02-22 09:38</span>
+                                 <span style="margin-left:80px;">付货款</span>
+                                 <span style="margin-left:56px;">￥ 20,000.00</span>
+                               </p>
+                               <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333;display: none; ">
+                               <span style="margin-left:40px;">02-11 20:06</span>
+                               <span style="margin-left:80px;">预付款</span>
+                               <span style="margin-left:56px;">￥ 10,000.00</span>
+                               </p>
+                              </div>
+                        </li>
+                    </ul> 
+                </div>
+          </div>
+         <!--1-->
+          <div class="box_context">
+            <h3 class="tips_"><i></i>湖北百歌电子商务有限公司</h3>
+            <!--内容部分-->
+              <div class="messagezd">
+                   <ul class="total-list total_list_2" >
+                       <li style="margin-top: 10px;margin-left: 10px;" class="showbilldetail">
+                          <div class="Message">
+                             <dl>
+                               <dd style="height:60px; line-height:60px; "><span class="one">2016年02月</span></dd>
+                               <dd style="height:60px; line-height:60px;margin-left:49px; ">3笔</dd>
+                               <dd style="height:60px; line-height:60px; margin-left:39px; "><span>￥</span>39,966.00</dd>
+                             </dl>
+                             <div class="clear"></div>
+                          </div>
+                              <div class="down_show">
+                               <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333; margin-top:10px; display: none;">
+                                 <span style="margin-left:40px;">02-22 09:38</span>
+                                 <span style="margin-left:80px;">付货款</span>
+                                 <span style="margin-left:56px;">￥ 20,000.00</span>
+                               </p>
+                               <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333;display: none; ">
+                               <span style="margin-left:40px;">02-11 20:06</span>
+                               <span style="margin-left:80px;">预付款</span>
+                               <span style="margin-left:56px;">￥ 10,000.00</span>
+                               </p>
+                               </div>
+                        </li>
+                     
+                        <li style="margin-left: 10px;" class="showbilldetail">
+                          <div class="Message">
+                             <dl id="jan">
+                               <dd style="height:60px; line-height:60px; "><span class="one">2016年01月</span></dd>
+                               <dd style="height:60px; line-height:60px;margin-left:49px; ">2笔</dd>
+                               <dd style="height:60px; line-height:60px; margin-left:39px; "><span>￥</span>10,000.00</dd>
+                             </dl>
+                             <div class="clear" ></div>
+                          </div>
+                          <div class="down_show">
+                              <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333; margin-top:10px; display: none;">
+                                 <span style="margin-left:40px;">02-22 09:38</span>
+                                 <span style="margin-left:80px;">付货款</span>
+                                 <span style="margin-left:56px;">￥ 20,000.00</span>
+                               </p>
+                               <p class="billdetail" style="height:50px; line-height:50px; font-size:24px; color:#333333;display: none; ">
+                               <span style="margin-left:40px;">02-11 20:06</span>
+                               <span style="margin-left:80px;">预付款</span>
+                               <span style="margin-left:56px;">￥ 10,000.00</span>
+                               </p>
+                              </div>
+                        </li>
+                    </ul> 
+                </div>
+          </div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+//
+	$("#detail").click(function(){
+       $(".goSearch").attr("href","search_bills.html?sid=1");
+	   window.location.href="bills.html";
+    });
+//
+	$("#total").click(function(){
+      $(".goSearch").attr("href","search_bills.html?sid=2");
+    });
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.showbilldetail').click(function(){
+  var  showDom = $(this).find('.down_show');
+  if(showDom.is(':hidden')){
+    showDom.slideDown(150);
+  }else{
+    showDom.slideUp(150);
+  }
+  
+ })
+});
+</script>

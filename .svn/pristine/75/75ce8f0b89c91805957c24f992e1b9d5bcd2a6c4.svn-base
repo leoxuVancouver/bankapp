@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>收货详情</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/sh_detail.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>
+	 <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+	
+</head>
+<body>
+    <div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header bgblue">
+				<a href="javascript:void(0)" class="goBack"></a>
+				<h2>收货详情</h2>
+				<a href="index.html" class="goHome"></a>
+			</div>
+			<!-- header 结束 -->
+      <!-- content 开始 -->
+    	<div class="content">
+	    		<div class="RecDetail">
+					<div class="shippcont">
+						<dl>
+							<dt><p><label >订单号: </label><label >72015122500132439003</label></dt>
+							<dd id="item1" class="round" style="width: 560px;display:none;"><a href="goods-detail.html" >
+								<div class="productInfo">
+		                            <!--<p class="productCode"><label >商品编码：</label>pd2014060909</p>-->
+		                            <p class="productName"><label ></label>Apple iPhone 5s 16GB 银色移动4G手机</p>
+		                        </div>
+								<div class="group" style="margin-top:20px;">
+									<span class="one" ><label >计量单位：</label>部</span> 
+									<!--<span class="two" ><label >型号：</label>SS4J-24023C</span>-->
+								</div></a>
+								<div class="group">
+									<span class="one"><label>发货数量：</label><span class="orderQty">10</span></span>
+									<span class="purch"><em class="words" style="font-weight: lighter">收货数量：</em>
+										<a class="min" href="javascript:;" style="font-size:40px;">-</a> 
+										<!--<em class="number bt bb" style="color:#666666;font-weight:bold;font-size: 28px">10</em>--> 
+                                        <input type="text" class="numberinput number bt bb" style="font-weight:bold"  value="0" placeholder="1"  />
+										<a class="add" href="javascript:;" style="font-size:40px;">+</a>
+				    				</span>
+								</div>
+							</dd>
+							<dd id="item2" class="round" style="width: 560px;display:none;">
+								<div class="productInfo">
+		                            <!--<p class="productCode"><label  >商品编码：</label>pd2014060922</p>-->
+		                            <p class="productName"><label  ></label>SAMSUNG三星节能四季柜式超静电冰箱</p>
+		                        </div>
+								<div class="group"  style="margin-top:20px;">
+									<span class="one" ><label >计量单位：</label>台</span>
+									<!--<span class="two"><label >型号：</label>SS4J-24023C</span>-->
+								</div>
+								<div class="group">
+									<span class="one" ><label>发货数量：</label><span class="orderQty">10</span></span>
+									<span class="purch" ><em class="words" style="font-weight: lighter">收货数量：</em>
+										<a class="min" href="javascript:;" style="font-size:40px;">-</a> 
+										<!--<em class="number bt bb" style="color:#666666;font-weight:bold;font-size: 28px">5</em> -->
+                                        <input type="text" class="numberinput number bt bb" style="font-weight:bold"  value="0" placeholder="1"  />
+										<a class="add" href="javascript:;" style="font-size:40px;">+</a>
+				    				</span>
+								</div>
+							</dd>
+							<dd id="item3" class="round" style="width: 560px;display:none;">
+								<div class="productInfo">
+		                            <!--<p class="productCode"><label  >商品编码：</label>pd2014060922</p>-->
+		                            <p class="productName"><label  ></label>卡萨帝冰箱 BCD-356W</p>
+		                        </div>
+								<div class="group"  style="margin-top:20px;">
+									<span class="one" ><label >计量单位：</label>台</span>
+									<!--<span class="two"><label >型号：</label>SS4J-24023C</span>-->
+								</div>
+								<div class="group">
+									<span class="one" ><label>发货数量：</label><span class="orderQty">10</span></span>
+									<span class="purch" ><em class="words" style="font-weight: lighter">收货数量：</em>
+										<a class="min" href="javascript:;" style="font-size:40px;">-</a> 
+										<!--<em class="number bt bb" style="color:#666666;font-weight:bold;font-size: 28px">5</em> -->
+                                        <input type="text" class="numberinput number bt bb" style="font-weight:bold"  value="0" placeholder="1"  />
+										<a class="add" href="javascript:;" style="font-size:40px;">+</a>
+				    				</span>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="button abs" id="next">
+						<a href="sh-detail-1.html">提交</a>
+					</div>
+	    		</div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+$(function(){
+console.log(Enjurokcc.getMarkStringThis('_itemStort'))
+ //解析值
+  if(Enjurokcc.getMarkStringThis('_itemStort')!=null&&Enjurokcc.getMarkStringThis('_itemStort')){
+      var obj = Enjurokcc.getMarkStringThis('_itemStort');
+      var itemSour = JSON.parse(obj);    
+          
+     for(var k=0;k<3;k++){
+        $('.round').eq(k).addClass(itemSour._itemClass[k]);           
+        var orderQty=parseInt(itemSour._orderQty[k]);
+          if (itemSour._orderQty[k]==""){
+            orderQty=0;
+			$('.round').eq(k).removeClass("on");
+        } 
+          $('.orderQty').eq(k).text(orderQty); 
+          $('.numberinput').eq(k).val(orderQty); 		  
+     }
+     }
+      $('.round.item_.on').show();   
+
+ //获得item选中值
+ $('#next').click(function(){
+  var receiveQty = [];
+  $('.numberinput').each(function(){
+     receiveQty.push($(this).val());//数量      
+  })
+   
+var receiveJson = '{'+ '\"_receiveQty\"' +':'+'['+ '\"'+receiveQty[0]+'\"'+','+'\"'+receiveQty[1]+'\"'+','+'\"'+receiveQty[2]+'\"'+']'+'}';
+
+console.log(receiveJson);
+   //储存信息
+  Enjurokcc.addMarkPage('_receiveStort',receiveJson);
+     })	  
+       
+ 
+
+})
+</script>

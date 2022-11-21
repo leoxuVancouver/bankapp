@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+ /*确认收货*/
+.payment_method{ width: 100%; }
+.payment_method h2{ height: 92px; line-height: 92px; font-size: 28px; font-weight: normal; background: #fff; color: #000; padding:0px 25px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.payment_method ul{ background: #fff; }
+.payment_method ul li{ padding: 20px 10px 20px 28px; border-bottom: 1px solid #ccc; overflow: hidden; position: relative; color:#333333;} 
+/*.payment_method ul li:after{ content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 25px; top: 44%; }*/
+.payment_method ul li a{ display: block; font-size: 28px;}
+.payment_method ul li p{ line-height: 48px; font-size: 28px; float: left; clear: both;}
+.rarrow  { position: absolute;right:20px;top:35px;width: 14px;height: 26px}
+.rarrow2 {position: absolute;right:20px;top:36px;width: 26px;height: 14px}
+
+.round {background:#fff;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+	margin:40px  25px 0px 25px;	
+}

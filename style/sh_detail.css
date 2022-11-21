@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+ /* 发货详情 开始*/
+.RecDetail{ width: 100%; }
+.RecDetail .shippcont dl{ width: 100%; overflow: hidden;  }
+.RecDetail .shippcont dl dt{ background: #fff;  height: 90px; font-size: 28px; line-height: 90px; padding: 0px 25px; border-bottom: 1px solid #ccc; }
+.RecDetail .shippcont dl dd{ background: #fff; padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-bottom: 18px; width: 550px;}
+
+.RecDetail .shippcont dl dd .productInfo{ width: 100%; border-bottom: 1px solid #ccc; padding-bottom: 20px;}
+.RecDetail .shippcont dl dd .productCode{ line-height: 50px; margin-bottom: 10px; position: relative;}
+.RecDetail .shippcont dl dd .productCode,.productName{ font-size: 28px; clear: both;font-weight: lighter;;color:#010101; }
+.RecDetail .shippcont dl dd .productCode a.J_del{ padding-left: 36px; position: absolute; right: 0px; background: url("../images/icon_del.png") no-repeat 0px 12px;}
+.RecDetail .shippcont dl dd label{ height: 50px; display: block; float: left;}
+
+.RecDetail .shippcont dl dd .group{ overflow: hidden; width: 100%; padding: 5px 0px 5px; position: relative; font-size: 24px; clear: both; }
+.RecDetail .shippcont dl dd .group span{ display:inline-block; float: left; font-size: 24px; box-sizing: border-box; }
+.RecDetail .shippcont dl dd .group span.one{ width: 49%; font-size: 24px;font-weight: lighter;;color:#010101; }
+.RecDetail .shippcont dl dd .group span.two{ width: 51%; font-size: 24px; padding-top:10px;font-weight: lighter;;color:#010101; }
+.RecDetail .shippcont dl dd .group span.blue{ text-align: right; font-size: 24px; }padding-top:10px;
+
+.RecDetail .shippcont dl dd span.purch{ height: 54px; width: 340px; line-height: 54px; float: right; position: absolute; top: 10px; right: 0px;}
+.RecDetail .shippcont dl dd span.purch .words{ position: absolute; right: 202px; }
+.RecDetail .shippcont dl dd span.purch a{ display: inline-block; background: #fff; border-bottom: 1px solid #ccc; font-size: 30px; text-align: center; position: absolute; top: 0px;}
+.RecDetail .shippcont dl dd .min{ width: 42px; height: 52px; right: 148px; cursor: pointer;}
+.RecDetail .shippcont dl dd .add{ width: 42px; height: 52px; right: 0px; cursor: pointer;}
+.RecDetail .shippcont dl dd .number{ font-size: 28px; border-bottom: 1px solid #ccc; background: #fff;  width: 110px; height: 52px; line-height: 40px; right: 38px; text-align: center; position: absolute; top: 0px; }
+.RecDetail .shippcont dl dd .numberinput{ font-size: 28px; border-bottom: 1px solid #ccc; background: #fff;  width: 110px; height: 52px; line-height: 40px; right: 38px; text-align: center; position: absolute; top: 0px; }
+
+.RecDetail .button.abs{ position:fixed;bottom: 20px;width: 590px;}
+
+.RecDetail .succtips{ text-align: center; background: #fff;  padding: 60px 0px;}
+.RecDetail .succtips img{ vertical-align: middle; margin-bottom: 50px;}
+.RecDetail .succtips h3{font-size: 36px; color: #000; margin-bottom: 40px;}
+.RecDetail .succtips p{ height: 44px; line-height: 44px; font-size: 22px; color: #000;}
+
+.RecDetailbtn{ background: #fff; border-bottom: 1px solid #ccc; padding-bottom: 45px;}
+.RecDetailbtn a{ color: #2b98e5; font-size: 30px; margin-left: 66px;}
+
+/*
+.RecDetail{ width: 100%; }
+.RecDetail ul{ width: 100%; }
+.RecDetail ul li{ background: #fff;  padding: 20px 25px; font-size: 24px; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;  margin-bottom: 18px;}
+.RecDetail ul li p{ height: 46px; line-height: 46px; font-size: 24px;}*/
+
+.round {
+	background:#fff;
+   
+	width:94%;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+	margin:20px 10px 0px 15px;
+	padding-top:10px;
+}

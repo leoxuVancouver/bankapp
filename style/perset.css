@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+/* 个人设置*/
+.userbg{ height: 220px; text-align: center; background: url("../images/user_bg.png") no-repeat center center; }
+.userbg img{ width: 138px; height: 138px; border-radius: 50%; margin-top: 41px; cursor: pointer;}
+.perset{ width: 100%; }
+.perset ul{ background: #fff; }
+.perset ul li{ height: 106px; font-size: 26px; line-height: 106px; position: relative; border-bottom: 1px solid #ccc; padding: 0px 24px; }
+.perset ul li:after{ content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 24px; top: 38%; }
+.perset ul li a{ display: block;}
+.perset ul li i.main_icon{ display: inline-block; width: 36px;   height: 36px;  margin-top: 36px;  float: left; background-image: url("../images/icon.png"); background-repeat: no-repeat center; }
+.perset ul li i.password{ background-position: 0px 0px;}
+.perset ul li i.mobile{ background-position: 0px -36px;}
+.perset ul li i.email{  background-position: 0px -72px;}
+.perset ul li i.business{  background-position: 0px -108px;}
+.perset ul li span{ margin-left: 30px; }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>付货款</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/Payment.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+ <div class="page bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2 >订单搜索</h2>
+		<a href="index.html" class="goHome"></a>
+	</div>
+	<div class="content">
+		
+		<div class="payment">
+			<div class="bundle mb20" id="list-one">
+				<h2 style="color:#333333">供应商名称：湖北百歌电子商务有限公司</h2>
+				<ul>
+					<li>
+						
+						<p><lable  style="color:#333333">订单号：</lable><label>20150817002</label></p>
+						<p><lable  style="color:#333333">订单日期：</lable><label>2015-09-17</label></p>
+						<p><lable  style="color:#333333">订单总额（元）：</lable><label>8,880.00</label></p>
+						<p><lable  style="color:#333333">已付金额（元）：</lable><label>8,880.00</label></p>							
+						
+					</li>
+					<li>
+						
+						<p><lable  style="color:#333333">订单号：</lable><label>20150817005</label></p>
+						<p><lable  style="color:#333333">订单日期：</lable><label>2015-08-17</label></p>
+						<p><lable  style="color:#333333">订单总额（元）：</lable><label>18,880.00</label></p>
+						<p><lable  style="color:#333333">已付金额（元）：</lable><label>18,880.00</label></p>
+							
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+<div class="mask"></div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+</script>

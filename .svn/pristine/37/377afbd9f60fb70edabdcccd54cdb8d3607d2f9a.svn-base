@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>员工信息</title>
+    <link rel="stylesheet" href="style/comm.css">
+    <link rel="stylesheet" href="style/employee.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/popWin.css">
+    <script type="text/javascript" src="js/popWin.js"></script>
+</head>
+
+<body>
+    <div class="page bggray2">
+        <!-- header 开始 -->
+        <div class="header">
+            <a href="javascript:void(0)" class="goBack"></a>
+            <h2>员工管理</h2>
+            <a href="employee_account_edit.html" class="goEditicon"></a>
+            <a href="index.html" class="goHome"></a>
+           
+        </div>
+        <!-- header 结束 -->
+        <!-- content 开始 -->
+        <div class="content">
+          <div class="info">
+          		<p style="font-weight:normal;">用户名：xiaohai
+                  <strong>姓名：小海</strong>
+                 </p>
+                 <ul>
+                    <li><img src="images/mobile.png">15835458585 <span class="email"><img src="images/email.png">2144874@qq.com</span></li>
+                    <li>数据权限： 企业所有数据</li>
+                    <li>岗位：采购业务员 / 财务出纳 / 仓库收货员</li>
+                    <li><a href="javascript:void(0)" class="fr del"><img src="images/icon_del2.png"></a></li>
+                 </ul>
+            </div>
+			<div class="tips2" id="tips" style="display:none;">
+                  <p><span style="font-size:24px;"><font color="#2b98e5">●</font>&nbsp;提示：您确定要删除该员工？</span></p>
+                  <div>
+                  	<span id="disappear" class="span2">取消</span>
+                  	<a href="employee_account_del_ok.html"><span id="close" class="span2">确定</span></a>
+                  </div>
+             </div>
+            <!--<div class="osbtn" >
+            	<a href="javascript:void(0)" class="del" style="width:250px;margin-right:50px;margin-left:0px;">删除</a>
+                <a href="employee_account_edit.html" class="edit" style="width:250px;margin-left:0px">编辑</a>
+            </div>-->
+            <!--<div class="clear"></div>
+            <div class="button">
+                <a href="javascript:void(0)" class="del" style="margin-top:450px;">删除</a>
+            </div>-->
+        </div>
+        <!-- content 结束 -->
+
+    </div>
+
+    <!--对话框_提示对话框 START-->
+      <div class="pop_win_mask" id="popWin3">
+        <div class="pop_win">
+          <div class="pop_has_title titleshow">
+            <div class="hd">提示信息</div>
+            <div class="content">
+              <p class="center padding"><font color="#2b98e5"></font>您确定要删除该员工？</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="ft ft_two_btn">
+            <a class="l hidePop" href="javascript:" id="sure_link" style="color:blue;">删除</a>
+            <a class="r hidePop" href="javascript:" style="color:blue;">取消</a>
+          </div>
+        </div>
+      </div>
+      <!--对话框_提示对话框 END-->
+</body>
+<script type="text/javascript">
+	$('.del').click(function(){
+	 	popWin("#popWin3");
+});
+  $('#sure_link').click(function(){
+    window.location = 'employee_account_del_ok.html';
+  })
+	$('#disappear').click(function(){
+	 	$('#tips').hide();
+});
+
+</script>
+
+
+</html>

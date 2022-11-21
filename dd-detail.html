@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5,user-scalable=no" />
+	<title>订单详情</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/dd-detail.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>
+         <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header bgblue">
+			<a href="cx-order.html" class="goBack1"></a>
+			<h2>订单详情</h2>
+			<a href="index.html" class="goHome"></a>
+	</div>
+    	<div class="content" style="margin-top: 130px;">
+	           <div class="orders">
+			<div class="tabs ">
+				<ul>
+					<li class="active"><a href="dd-detail.html">商品信息</a></li>
+					<li style="line-height:100px;"><a href="dd-detail2.html">收货信息</a></li>
+					<li style="line-height:100px;"><a href="dd-detail3.html">付款信息</a></li>
+				</ul>
+			</div>
+		          <div class="tabsCont tabsCont1" style="display:block;">
+                                     <div class="round" style="display:none">
+                <ul id="goods">
+                    <li id="item1">
+                        <div class="productInfo">
+                           
+                            <p class="productName" ><label  style="color:#333333;" ></label>Apple iPhone 5s 16GB 银色移动4G手机</p>
+                            <div class="words fr"  style="color:#333333;font-size:24px">单价（元）：<em class="price unitprice"  style="color:#333333;padding-right: 25px;">2,488.00</em></div>
+                        </div>
+                        <div class="productPrice">
+                            <div class="words"  style="color:#333333;">计量单位：<span  style="color:#333333;">部</span></div>
+                            <br>
+                            
+                              <div class="words fl"  style="color:#333333;">采购数量：<span class="orderQty" style="color:#333333;">10</span></div>
+                            <div class="words fr"  style="color:#333333;">小计（元）：<em class="price s_total"  style="color:#000000;font-size: 28px;padding-right: 10px;">24,880.00</em></div></br>
+                             
+                        </div>
+                    </li>
+                </ul>
+                </div>
+               
+
+                 <div class="round" style="display:none">
+                <ul id="goods">
+                    <li id="item1">
+                        <div class="productInfo">
+                            
+                            <p class="productName"><label  style="color:#999999;"></label>SAMSUNG三星节能四季柜式超静电冰箱</p>
+                            <div class="words fr"  style="color:#333333;font-size:24px">单价（元）：<em class="price unitprice"  style="color:#333333;padding-right: 25px;">2,769.00</em></div>
+                        </div>
+                      <div class="productPrice">
+                            <div class="words"  style="color:#333333;" >计量单位：<span  style="color:#333333;">台</span></div>
+                            <br>
+                            
+                              <div class="words fl"  style="color:#333333;">采购数量：<span  style="color:#333333;" class="orderQty">10</span></div>
+                            <div class="words fr"  style="color:#333333;">小计（元）：<em class="price s_total"  style="color:#000000;font-size: 28px;padding-right: 10px;">27,690.00</em></div></br>
+                             
+                        </div>
+                    </li>
+                </ul>
+                </div>
+
+               
+                 <div class="round" style="display:none">
+                <ul id="goods">
+                    <li id="item1">
+                        <div class="productInfo">                            
+                            <p class="productName"><label  style="color:#999999;"></label>卡萨帝冰箱 BCD-356W</p>
+                            <div class="words fr"  style="color:#333333;font-size:24px" >单价（元）：<em class="price unitprice"  style="color:#333333;padding-right: 25px;">4000.00</em></div>
+                        </div>
+                      <div class="productPrice">
+                            <div class="words"  style="color:#333333;">计量单位：<span  style="color:#333333;">台</span></div>
+                            <br>
+                            
+                              <div class="words fl"  style="color:#333333;">采购数量：<span  style="color:#333333;" class="orderQty">10</span></div>
+                            <div class="words fr"  style="color:#333333;">小计（元）：<em class="price s_total"  style="color:#000000;font-size: 28px;padding-right: 10px;">27,690.00</em></div></br>
+                             
+                        </div>
+                    </li>
+                </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+              
+                
+                                 </div>
+								
+		</div>
+	</div>
+    </div>
+  	
+    <div class="orderPrice" style="margin-top: 20px;">
+            <span class="fl"  style="color:#000000;font-weight: bold;"><img src="images/icon-price.png" style="margin-right:5px;" />订单金额（元）：</span>
+            <span class="fr total"  id="ordertotal" style="color:#000000;margin-right: 20px;padding-right: 10px; font-weight:bold;">52,570.00</span>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+$(function(){
+console.log(Enjurokcc.getMarkStringThis('_itemStort'))
+ //解析值
+  if(Enjurokcc.getMarkStringThis('_itemStort')!=null&&Enjurokcc.getMarkStringThis('_itemStort')){
+      var obj = Enjurokcc.getMarkStringThis('_itemStort');
+      var itemSour = JSON.parse(obj);    
+      var ordertotal=0      
+     for(var k=0;k<3;k++){
+        $('.round').eq(k).addClass(itemSour._itemClass[k]);           
+        var orderQty=parseInt(itemSour._orderQty[k]);
+          if (itemSour._orderQty[k]==""){
+            orderQty=0;
+			$('.round').eq(k).removeClass("on");
+        } 
+          $('.orderQty').eq(k).text(orderQty);   
+        var unitprice=($('.unitprice').eq(k).text());         
+         unitprice = unitprice.replace(",",'');          
+        var s_total =parseInt(unitprice)*orderQty;
+        console.log(s_total);
+        $('.s_total').eq(k).text(formatCurrency(s_total));         
+        ordertotal += s_total; 
+        console.log(ordertotal)
+        $('#ordertotal').text(formatCurrency(ordertotal)); 
+          }
+      $('.round.item_.on').show();      
+       
+  }
+
+
+})
+</script>
+

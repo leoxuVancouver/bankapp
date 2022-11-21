@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>添加快捷支付账户</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/add_accounts_pay.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+ <div class="page bggray2 bggray2">
+	<div class="header bgblue">
+		<a href="javascript:void(0)" class="goBack"></a>
+		<h2>添加快捷支付账户</h2>
+		<a href="index.html" class="goHome"></a>
+	</div>
+	<div class="content">
+		<div class="add_accounts_pay">
+			<ul class="mass_one">
+				<li><label>姓名</label><input type="text" class="inputstyle" value="*木森"></li>
+				<li><label>证件类型</label><input type="text" class="inputstyle"value="身份证"></li>
+				<li><label>证件号码</label><input type="text" class="inputstyle"value="440811*********2310"></li>
+			</ul>
+			<ul class="mass_two">
+				<li><input type="text" class="inputCard" placeholder="个人活期存折/储蓄卡/信用卡"></li>
+				<li><input type="text" class="inputPhone"placeholder="手机号码后四位"></li>
+				<li><input type="text" class="inputCode"placeholder="短信验证码"><input type="button" class="get_code fr" value="免费获取" /></li>
+			</ul>
+			<div class="button abs">
+				<a href="pay-success.html">下一步</a>
+			</div>
+			<div class="button2">
+				<a href="payment2.html">切换付款方式</a>
+			</div>
+		</div>
+	</div>
+</div> 
+</body>
+</html>
+<script type="text/javascript">
+           
+
+
+ $(document).ready(function(){
+	var $toggleBtn = $(".quickpay");
+	var $category = $(".menu_show");
+	$toggleBtn.toggle(function(){
+		$toggleBtn.find("i").addClass("arrow_down")
+		$category.slideDown();
+	},function(){
+		$toggleBtn.find("i").removeClass("arrow_down")
+		$category.slideUp();
+	});
+
+});
+</script>

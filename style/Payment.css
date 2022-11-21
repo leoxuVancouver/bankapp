@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+
+ /*付货款*/
+.payment{ margin-top: 150px;margin-bottom: 100px;}
+.payment .bundle{background:#fff;
+   	margin:25px 15px 0px 15px;
+   	border-radius: 16px;
+	width: 608px;
+	border:1px solid #ccc;
+
+  }
+.payment .bundle h2{ height: 100px; line-height: 100px; padding: 0px 0px 0px 15px; border-top:none; border-bottom: 1px solid #ccc; position: relative; font-size: 28px;  font-weight: normal; color: #999999; }
+.payment .bundle h2 input[type="checkbox"] + label{ margin-top: 32px; float: left;}
+
+.payment ul{ width: 100%; border-radius: 15px;}
+.payment ul li{ padding: 10px 0px 10px 63px; overflow: hidden; position: relative; color: #999999; border-bottom: 1px solid #ccc;}
+.payment ul li:last-child {border-bottom:none; }
+.payment ul li em{ overflow: hidden; font-size: 28px; color: #333333;font-weight: lighter;}
+.payment ul li span.input-checkbox{ position: absolute;  left: 25px; }
+.payment ul li p{ padding: 20px 0px 0px 0px; float: left; font-size: 24px; clear: both; }
+.payment ul li p .inps{ font-size:26px;display: inline-block; width: 130px; text-align: left;  color: #333;font-weight: bold; padding: 3px 0px; border-bottom: 0px solid #ccc;}
+.payment ul li .footshow{ display: none;}
+.paymentfoot{ position: fixed; bottom: 0px; left: 0px; z-index: 3; height: 90px;font-size: 28px; line-height: 90px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; width: 100%; }
+.paymentfoot span{ margin-left: 24px; }
+.paymentfoot a.btnPay{ float: right; color: #fff; font-size: 36px; display: inline-block; width: 196px; background: #2b98e5; text-align: center; line-height: 92px; }
+.paymentfoot a.btnPay1{ float: right; color: #fff; font-size: 36px; display: inline-block; width: 196px; background: #2b98e5; text-align: center; line-height: 92px; }
+
+
+.paymain{ width: 100%; }
+.paytop{ padding: 10px 25px; border-bottom: 1px solid #ccc;}
+.paytop p{ font-size: 28px; padding: 18px 0px;}
+.balance{ padding: 20px 25px; border-bottom: 1px solid #ccc;}
+.balance p{ font-size: 28px; padding: 8px 0px;}
+.paylist{ border: 1px solid #ccc; border-radius: 10px; margin: 25px; overflow: hidden;}
+
+.paylist ul li{ line-height: 80px; font-size: 28px; color: #333;  position: relative;}
+.paylist ul li:not(:last-child){border-bottom: 1px solid #ccc;}
+.paylist ul li a{ display: block; padding: 0px 20px;}
+.paylist ul li span{ font-size: 28px; color: #ccc; float: right; margin-right: 40px;}
+.paylist ul li span img{ vertical-align: middle; margin-top: -6px; margin-right: 10px;}
+.paylist ul li i.arrow{ display: inline-block; background: url("../images/rarrow.png"); width: 11px; height: 20px; position: absolute; right: 24px; top: 27px;}
+.paylist ul li i.arrow.arrow_down{ background: url("../images/rarrow2.png"); width: 26px; height: 14px; top: 33px;}
+.menu_show li{ border-bottom: 1px solid #ccc; padding-left: 23px;}
+.paylist22 ul li:after{content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 24px; top: 42%; }
+.paylist ul li em{ padding-left: 20px; }
+.round {
+	background:#fff;
+   	margin:20px 15px 0px 15px;
+   	border-radius: 15px;
+	width: 608px;
+	border:1px solid #ccc;
+}
+
+.payment ul li p .payThis .inps { width: 130px;font-size:28px; margin:0px 20px 0px 0px ;font-weight: lighter;text-align: right;}
+
+.wpayment{ padding-bottom: 158px;}
+.wpayment .bundle{ width: 100%;  }
+.wpayment .bundle h2{
+	height: 100px;
+	line-height: 100px;
+	padding: 0 25px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	font-size: 28px;
+	font-weight: normal;
+	background-color: #fff;
+
+}
+
+
+.wpayment ul{ width: 600px;margin:15px 20px 15px 20px;border:1px solid #ccc;border-radius:15px; background:#fff;}
+.wpayment ul li{ padding: 20px 20px 20px 20px; overflow: hidden; position: relative; color: #333333; border-bottom: 1px solid #ccc; }
+.wpayment ul li em{ overflow: hidden; font-size: 24px; color: #333333;}
+.wpayment ul li span.input-checkbox{ position: absolute;  left: 25px; }
+.wpayment ul li p{ padding: 5px 0px 5px 0px; float: left; ; clear: both; font-size: 24px;font-weight: lighter;}
+.wpayment ul li p .inps{ font-size:26px;display: inline-block; width: 120px; text-align: left;  color: #333;font-weight: bold; padding: 3px 0px; border-bottom: 0px solid #ccc;}
+.wpayment ul li label.f24{font-size: 24px;font-weight: lighter;color:#333333; }
+.wpayment ul li label.f28{font-size: 28px;color:#333333; }
+.wpayment ul li label.f30{font-size: 30px;color:#333333; }

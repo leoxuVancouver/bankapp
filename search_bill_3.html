@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5,user-scalable=no" />
+	<title>账单查询</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/search_bill_2.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>  
+    <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header bgblue">
+			<a href="search_bills.html" class="goBackUrl"></a>
+			<h2>账单查询</h2>
+           
+			<a href="index.html" class="goHome"></a>
+	</div>
+    	<div class="content" style="margin-top:150px">
+             <ul>
+               <a href="bill_detail_zd.html">
+               <li><p><span class="word">广东琪琪电子商务有限公司</span></p></li>
+               <li><span class="word">付货款</span><span class="fr num price" id="totalmoney">20,000.00</span></li>
+               <li><span class="date billdate">02-22</span>&nbsp&nbsp&nbsp<span class="date" id="paymenttime">09:38</span></li></a>
+             </ul>
+            <ul>
+               <li><p><span class="word">广东琪琪电子商务有限公司</span></li>
+               <li><span class="word">预付款</span><span class="fr num price" id="advance">10,000.00</span></li>
+               <li><span class="date billdate">02-11</span>&nbsp&nbsp&nbsp<span class="date" id="advancetime">20:06</span></li>
+             </ul>
+            <ul>
+               <li><p><span class="word">湖北百歌电子商务有限公司</span></li>
+               <li><span class="word">付货款</span><span class="fr num price">19,966.00</span></li>
+               <li><span class="date">02-11 12:38</span></li>
+             </ul>
+             <ul>
+               <li><p><span class="word">湖北欢尚集团电器有限公司</span></li>
+               <li><span class="word">预付款</span><span class="fr num price">20,000.00</span></li>
+               <li><span class="date">02-09 13:30</span></li>
+             </ul>
+            </div>
+			
+    	
+    	<div class="orderPrice" style="margin-top: 20px;">
+                   <span class="fl"  style="color:#000000;"><img src="images/icon-price.png" style="margin-right:5px;font-weight: normal;" />本月汇总（元）：</span>
+                    <span class="fr total"   style="color:#000000;margin-right: 20px;padding-right: 30px; font-weight:bold;">69,966.00</span>
+            </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+//本地时间
+var billdate=new Date();
+var year=billdate.getFullYear();
+var month=billdate.getMonth()+1;
+if (parseInt(month)<10) month="0"+month;
+var date=billdate.getDate();
+if (parseInt(date)<10) date="0"+date;
+var checkmonth=year+"年"+month+"月";
+var checkdate=month+"-"+date;
+console.log(checkmonth);
+console.log(checkdate);
+$("#nowTime").text(checkmonth);
+$(".billdate").text(checkdate);
+ //订单时间获取
+      var paymenttime = Enjurokcc.getMarkStringThis('_paymenttime'); 
+	  console.log(paymenttime)
+	  $('#paymenttime').text(paymenttime);
+	  var advancetime = Enjurokcc.getMarkStringThis('_advancetime'); 
+	  console.log(advancetime)
+	  $('#advancetime').text(advancetime);   
+   
+//付货款金额获取  
+      var totalmoney = Enjurokcc.getMarkStringThis('_totalmoney');
+      console.log(totalmoney);	  
+	  if(Enjurokcc.getMarkStringThis('_totalmoney')!="0.00"&&Enjurokcc.getMarkStringThis('_totalmoney')!=null){
+      $('#totalmoney').text(totalmoney); 
+      }
+	  if(Enjurokcc.getMarkStringThis('_totalmoney')==null||Enjurokcc.getMarkStringThis('_totalmoney')=="0.00"){
+	  var totalmoney ="0.00" ;
+	  }
+	  
+	  
+	  
+//预付款金额获取  
+       	   
+	  if(Enjurokcc.getMarkStringThis('_Money')!="0.00"&&Enjurokcc.getMarkStringThis('_Money')!=null){
+	  var advance = Enjurokcc.getMarkStringThis('_Money');	
+      console.log(advance);	
+      $('#advance').text(advance); 		  
+      }
+	 
+	  if(Enjurokcc.getMarkStringThis('_Money')==null||Enjurokcc.getMarkStringThis('_Money')=="0.00"){
+	  var advance="0.00";
+	  }
+//金额汇总
+            var s = 0;
+            $(".price").each(function() {
+                    var price = $(this).text();
+                    price = price.replace(",",'');
+                    var n_price = parseInt(price);
+                    console.log(n_price)
+                    s += n_price;                    
+            });
+            console.log(s)
+            $(".total").html(formatCurrency(s));
+})
+</script>
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>善付通</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/index.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>
+    <!--加载存储Js-->
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script type="text/javascript" src="js/Storage.js"></script>
+</head>
+<body>
+<div class="masking hide"></div>
+<div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header bggray">
+    		<h2 style="
+    margin-top: 23px;
+"><img src="images/ccb_logo.png"></h2>
+    		<a href="javascript:void(0)" class="goMenu">
+    			
+    		</a>
+    		<div class="hide speech-bubble speech-bubble-top">
+		            <a href="password1.html"><img src="images/lock.png">修改密码</a>
+	    			<a href="mobileno1.html"><img src="images/u_iphone.png">修改手机号码</a>
+	    			<a href="email1.html"><img src="images/u_email.png">修改电子邮箱</a>
+	    			<a href="enterprise_info.html"><img src="images/u_qiye.png">企业资料</a>
+                    <a href="noticesystem.html"><img src="images/u_xtgg.png">系统公告</a>
+	    			<a href="login.html"><img src="images/quit.png">退出</a>
+	        		</div>
+    		
+    	</div>
+
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+    		<div class="menu">
+				<div class="head-info">
+					<ul>
+						<li>
+							<a href="Payment.html">
+								<p style="font-size:24px;">待付款余额（元）</p>
+							<span style="font-size:48px;">818,640<em style="font-size:30px;">.00</em></span>
+							</a>
+						</li>
+						<li>
+							<a href="search_bill_2.html">
+								<p style="font-size:24px;">本月已付金额（元）</p>
+								<a href="search_bill_1.html"><span style="font-size:48px;" ><label id="total">69,966</label><em style="font-size:30px;">.00</em></span></a>
+							</a>
+						</li>
+					</ul>
+				</div> 
+				<div class="menu-info" style="margin-bottom: 20px;">
+					<div class="menu-row">
+					                <a href="Payment.html"><img src="images/icon-yfk.png" /><p>付货款</p></a>
+						<a href="vendor_list_yf.html"><img src="images/icon-fhk.png" /><p>预付款</p></a>
+						<a href="bills.html"><img src="images/icon-zd2.png" /><p>账单</p></a>
+						
+					</div>
+					<div class="menu-row">
+						<a href="vendor_list_xd.html"><img src="images/icon-zxxd.png" /><p>下单</p></a>
+						<a href="cx-order.html"><img src="images/icon_ddcx.png" /><p>订单查询</p></a>
+						<a href="Receiving.html"><img src="images/icon-qdsh.png" /><p>收货</p></a>
+					</div>
+					<div class="menu-row">
+						<a href="vendor_record.html"><img src="images/icon-yfcx.png" /><p>预付款查询</p></a>
+                        <a href="provider.html"><img src="images/icon-gys.png" /><p>供应商</p></a>
+						<!-- <a href="perset.html"><img src="images/icon-set.png" /><p>个人设置</p></a> -->
+						<a href="employee_account.html"><img src="images/icon_addsubaccount.png" /><p>员工管理</p></a>
+					</div>
+                    <div class="menu-row" >
+                        <a href="online.html"><img src="images/icon-kf.png" /><p>在线客服</p></a>
+
+					</div>
+				</div>
+				<div class="notice-info bt">
+					<a href="notice.html" ><h2><img src="images/icon-gg.png" style="padding-right: 10px;padding-bottom: 5px;"/>供应商公告 <img src="images/more.png" class="fr" style="margin-right: 25px;" /></h2></a>
+					<ul>
+						<li style="padding: 10px;"><a href="notice-detail.html"><i class="dot"></i>关于召开2016年全国经销商大会的通知
+！</a></li>
+					</ul>
+				</div>                          
+    		</div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    
+	
+
+	$(".goMenu").on("click", function(e){
+		if($(".speech-bubble").is(":hidden")){
+	    		$(".speech-bubble").show();
+	    		$('.masking').show();
+	    	}else{
+	    		$(".speech-bubble").hide();
+	    		$('.masking').hide();
+	    	}
+
+	    	$(document).one("click", function(){
+	        		$(".speech-bubble").hide();
+	        		$('.masking').hide();
+	    	});
+			
+		$(".masking").click(function(){
+	        		$(".speech-bubble").hide();
+	        		$('.masking').hide();
+    		});		
+	    	e.stopPropagation();
+	});
+	$(".speech-bubble").on("click", function(e){
+	    	e.stopPropagation();
+	});
+
+});
+
+
+
+	
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   
+//付货款金额获取  
+      var totalmoney = Enjurokcc.getMarkStringThis('_totalmoney');
+      console.log(totalmoney);	  
+	  if(Enjurokcc.getMarkStringThis('_totalmoney')!="0.00"&&Enjurokcc.getMarkStringThis('_totalmoney')!=null){
+      $('#totalmoney').text(totalmoney); 
+      }
+	  if(Enjurokcc.getMarkStringThis('_totalmoney')==null||Enjurokcc.getMarkStringThis('_totalmoney')=="0.00"){
+	  var totalmoney ="0.00" ;
+	  }
+	  
+	  
+	  
+//预付款金额获取  
+       	   
+	  if(Enjurokcc.getMarkStringThis('_Money')!="0.00"&&Enjurokcc.getMarkStringThis('_Money')!=null){
+	  var advance = Enjurokcc.getMarkStringThis('_Money');	
+      console.log(advance);	
+      $('#advance').text(advance); 		  
+      }
+	 
+	  if(Enjurokcc.getMarkStringThis('_Money')==null||Enjurokcc.getMarkStringThis('_Money')=="0.00"){
+	   var advance="0.00";
+	  }
+//金额汇总
+            var mtotalpayment = parseInt(totalmoney.replace(",",""))+parseInt(advance.replace(",",""));
+			var mtotalpayment = formatCurrency(mtotalpayment);
+			var mtotalpayment = mtotalpayment.substring(0,mtotalpayment.lastIndexOf('.')); 
+			console.log(mtotalpayment);
+            $("#total").html(mtotalpayment);
+})
+</script>

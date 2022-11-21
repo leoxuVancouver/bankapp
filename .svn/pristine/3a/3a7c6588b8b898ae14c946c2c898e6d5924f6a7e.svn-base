@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>个人设置</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/perset.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header">
+			<a href="javascript:void(0)" class="goBack"></a>
+			<h2>个人设置</h2>
+			<a href="index.html" class="goHome"></a>
+		</div>
+    	<div class="content">
+			<div class="userbg mb20">
+				<img class="faceimg" src="images/default.png" alt="">  
+			</div>
+			<div class="perset">
+				<ul class="bt-gray mb20">
+					<li><a href=""><i class="main_icon password"></i><span>修改密码</span></a></li>
+					<li><a href=""><i class="main_icon mobile"></i><span>修改手机号码</span></a></li>
+					<li><a href=""><i class="main_icon email"></i><span>修改电子邮箱</span></a></li>
+				</ul>
+				<ul class="bt-gray">
+					<li><a href=""><i class="main_icon business"></i><span>企业信息</span></a></li>
+				</ul>
+			</div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</body>
+</html>

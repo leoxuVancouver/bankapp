@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-29 15:53:27
+ * @version $Id$
+ */
+
+.accounts_pay{ width: 100%; overflow:hidden;}
+.accounts_pay ul{ padding: 25px;}
+.accounts_pay ul li{ margin-bottom: 25px; overflow:hidden;}
+.accounts_pay ul li input{ border: 1px solid #ccc; box-sizing: border-box; border-radius: 6px; height: 80px; font-size: 28px;  float: left;}
+.accounts_pay ul li input.inputCard{ width: 100%; background:#fff url(../images/icon_card.png) no-repeat 24px 20px; text-indent: 130px;}
+.accounts_pay ul li input.inputPhone{ width: 100%;  background:#fff url(../images/icon_tel.png) no-repeat 36px 20px;text-indent: 130px;}
+.accounts_pay ul li input.inputCode{ width: 316px; height: 58px; text-indent: 44px; }
+.accounts_pay ul li img{ float: left; margin-left: 24px;}
+.accounts_pay ul li a{ float: left; margin-left: 46px; font-size: 28px; line-height: 58px;}
+.accounts_pay .abs{ margin-top: 120px;}
+
+.button2{ padding: 0 25px; margin-top: 40px; margin-bottom: 40px; overflow: hidden;}
+.button2 a{ float: right; color: #2b98e5; font-size: 24px;}

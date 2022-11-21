@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>预付款核销</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/verification-add.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+    <!--对话框引入css与js-->
+  <link rel="stylesheet" type="text/css" href="style/popWin.css">
+  <script type="text/javascript" src="js/popWin.js"></script>
+</head>
+<body> 
+    <div class="page bggray2">
+        <div class="header">
+            <a href="javascript:void(0)" class="goBack"></a>
+            <h2>预付款核销</h2>
+           <a href="search_verification-add.html" class="goSearch" style="margin-right:85px;"></a>
+            <a href="index.html" class="goHome"></a>
+                 <div class="tabs2 mb10">
+                    <ul>
+                        <li class="active" ><a href="verification-add.html">新增</a></li>
+                        <li><a href="verification-record.html">核销记录</a></li>
+                    </ul>
+                </div>
+        </div>
+    	<div class="content" style="margin-top:250px;">
+    		<div class="verification">
+               
+                
+                <div class="tit" >
+                            <img src="images/logo_gdqq.png" style="padding-bottom: 9px; padding-right: 7px;"/><a>广东琪琪电子商务有限公司</a> 
+                            <p> 当前预付款余额（元）:50,000.00</p>
+                        </div>
+                </div>
+                <div class="verification1 bundle">
+                <ul>
+                <li class="round">
+                <span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox" class="checkbox " name="check1" id="checkbox-1"  /><label for="checkbox-1"></label></span>
+						<p><label style="font-size: 28px; font-weight:normal;">订单号：20150817001975380865</label></p>
+                        <p>订单日期：2015-08-17</p>                                                     
+						<p style="margin-bottom: 20px; font-weight:normal;">订单金额（元）：<em  style="color:#333333;">120,000.00</em></p>
+                                             
+						<div   style="display: block;">
+                         <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+							<p style="float: right;margin-right: 35px; font-weight:normal;">未付款金额（元）：<em class="price">30,000.00</em></p>
+						</div>
+					</li>
+                </ul>
+                
+                </div>
+                    
+                <div class="verification1 bundle">
+                <ul>
+                <li class="round">
+                <span class="input-checkbox" style="margin-top: 12px;"><input type="checkbox" class="checkbox" name="check2" id="checkbox-2"  /><label for="checkbox-2"></label></span>
+                        <p><label style="font-size: 28px; font-weight:normal;">订单号：20150817001975380861</label></p>
+                        <p>订单日期：2015-08-07</p>
+                                                                               
+                        <p style="margin-bottom: 20px; font-weight:normal;">订单金额（元）：<em style="color:#333333;">4,976.00</em></p>
+                    
+                                 
+                                                                                
+                        <div  style="display: block;" >
+                         <div style="height:1px; width:520px; background:#ccc; overflow:hidden;" ></div>
+                            <p style="float: right;margin-right: 35px; font-weight:normal;">未付款金额（元）：<em class="price" >4,976.00</em></p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="orderPrice">
+                    <label><span class="fl" style="color:#000000; font-weight:normal; font-size:28px;"> 本次核销金额合计（元）：</span>
+                    <em class="stotal fr" style="font-weight:bold;font-size: 30px;color:#000000;margin-right: 20px;padding-right: 10px;">0.00</em>
+                </div>
+                <div class="button clearfix mt20" syt>
+                    <a href="#nogo" id="next_go">提交</a>
+                </div>
+                
+                </div>
+
+
+
+
+                <div>
+                
+                
+                </div>
+<!--对话框_提示对话框 START-->
+   
+      <div class="pop_win_mask" id="popWin3">
+                <div class="pop_win">
+                    <div class="pop_has_title titleshow">
+                        <div class="hd">提示</div>
+                        <div class="pop_scroll">
+                            <div class="content" style="overflow-y: scroll;">
+                                <p class="center padding">本操作为预付款支出，无疑义请确定</p><!--若不用居中的请把class = center去掉-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft ft_two_btn">
+                        <a class="l hidePop" href="javascript:">取消</a>
+                        <a class="r hidePop" href="javascript:" id="sure_link">确定</a>
+                    </div>
+                </div>
+            </div>
+      <!--对话框_提示对话框 END-->               
+                 
+</body>
+</html>
+<script type="text/javascript">
+$(".agree_bind").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".win_pop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".win_pop1").css("height")))/2+"px");
+    $(".win_pop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".win_pop1").css("width")))/2+"px");
+    $(".btnOK2").bind('click', function () {
+        $(".mask").hide();
+        $(".win_pop1").hide();
+    }) 
+})
+$(".reject_bind").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".win_pop2").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".win_pop2").css("height")))/2+"px");
+    $(".win_pop2").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".win_pop2").css("width")))/2+"px");
+    $(".btnOK2").bind('click', function () {
+        $(".mask").hide();
+        $(".win_pop2").hide();
+    }) 
+})
+$('#next_go').click(function(){
+    popWin("#popWin3");
+})
+$('#sure_link').click(function(){
+    window.location = 'verification-success.html';
+})
+</script>
+

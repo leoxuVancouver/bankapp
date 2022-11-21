@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5,user-scalable=no" />
+	<title>账单详情</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/bill_detail.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+			<script type="text/javascript" src="js/price.js"></script> 
+  
+      <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+	
+	
+	
+	
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header bgblue">
+			<a href="search_bill_2.html" class="goBackUrl"></a>
+			<h2>账单详情</h2>
+            <!--<a href="search_bills_detail.html" class="goSearch" style="margin-right:85px;"></a>-->
+			<a href="index.html" class="goHome"></a>
+	    </div>
+    	<div class="content" style="margin-top:150px;">
+              <ul>
+               <li><p><span class="word">广东琪琪电子商务有限公司</span></p></li>
+               <li style="border-bottom:1px solid #ccc;padding-bottom:30px;">
+               <span class="date">付款日期</span>&nbsp&nbsp<span class="date billdate">2016-02-22</span>
+               <span class="fr num"><img src="images/icon-ddcx.png" style="padding-right:10px;"/>付货款</span></li>
+               <li style="padding-top:30px;"><span class="num">付款单号：72015073115323456002</span></li>
+               <li><span class="num">付款银行：中国建设银行</span></li>
+               <li style="border-bottom:1px solid #ccc; padding-bottom:30px;"><span class="num">付款卡号：6217092406411091</span></li>
+               <li style="padding-top:30px;">
+               <span class="word">付款总金额：</span>
+               <span class="fr word" id="totalmoney">20,000.00</span></li>
+             </ul>
+             
+           <div class="orderPrice" style="margin-top: 20px;">
+           <a href="dd-detail.html">
+              <span class="fl" style="font-weight:normal;">订单号：72015122500132439003</span></a>
+            </div>
+      </div>
+
+    </div>
+</body>
+
+<script>
+$(document).ready(function(){
+
+			
+//付货款金额获取  
+      var totalmoney = Enjurokcc.getMarkStringThis('_totalmoney');	
+      console.log(Enjurokcc.getMarkStringThis('_totalmoney'));	  
+	  if(Enjurokcc.getMarkStringThis('_totalmoney')!="0"){
+      $('#totalmoney').text(totalmoney); 
+      var paymentQty=1;	  
+      }
+	  else{
+	  $("#paymentbill").slideUp(150);
+	  var paymentQty=0;
+	  }
+
+	 
+//本地时间
+var billdate=new Date();
+var year=billdate.getFullYear();
+var month=billdate.getMonth()+1;
+if (parseInt(month)<10) month="0"+month;
+var date=billdate.getDate();
+if (parseInt(date)<10) date="0"+date;
+var checkdate=year+"-"+month+"-"+date;
+console.log(checkdate);
+$(".billdate").text(checkdate);
+
+			
+})
+</script>
+
+
+

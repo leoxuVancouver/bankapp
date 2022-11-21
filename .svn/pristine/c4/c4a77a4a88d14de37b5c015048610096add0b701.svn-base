@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>登录页面</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/login.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+	<div class="page bggray2">
+		<div class="content">
+			<div class="logo" style="background-color: #e6e6e6">
+				<h1><img src="images/logo.png" /></h1>
+			</div>
+			<div class="login" style="background-color: #e6e6e6">
+				
+				<div class="group" style="background-color: #e6e6e6">
+					<label style="background-color: #e6e6e6;padding-right: 20px;"><img src="images/icon_mainuser.png"></label>
+					<span><input type="text" name="username" placeholder="善付通/善融用户名" autocomplete="off" style="
+    width: 445px ;"></span>
+				</div>
+				<div class="group">
+					<label style="background-color: #e6e6e6;padding-right: 20px;"><img src="images/icon_password.png"></label>
+		        	<span><input type="password" name="password" placeholder="登录密码" autocomplete="off"></span>
+				</div>
+				<div class="btn-logon">
+					<input type="button" class="btnlogin" value="登录" onclick="window.location.href='index.html'" />
+					<a href="sub_login.html" class="sublogin">切换到子账号登录 >></a>
+				</div>
+				<div class="logonfoot">
+					<a href="javascript:;" class="question">登录遇到问题?</a>|<a href="register_1.html">立刻注册</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="login_wrong">
+			<div class="zhpassword">找回登录密码</div>	
+			<div class="zhusername">找回用户名</div>	
+			<div class="quxiao">取消</div>	
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	$('.question').click(function(){
+		$('.logonfoot').hide();
+		$('.login_wrong').show();
+	});
+	$('.quxiao').click(function(){
+		$('.logonfoot').show();
+		$('.login_wrong').hide();
+	})
+	
+	$('.zhpassword').click(function(){
+		location.href = "lookfor_password.html"
+	})
+	$('.zhusername').click(function(){
+		location.href = "lookfor_username.html"
+	})
+</script>

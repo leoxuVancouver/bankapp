@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>确认支付</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/surepay.css">
+	<script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<!-- header 开始 -->
+    	<div class="header">
+    		<a href="javascript:void(0)" class="goBack"></a>
+            <h2>确认支付</h2>
+            <a href="index.html" class="goHome"></a>
+    	</div>
+    	<!-- header 结束 -->
+    	<!-- content 开始 -->
+    	<div class="content">
+			<div class="surepay pb50">
+				<div class="input-row">
+					<label>短信验证码：</label>
+					<input type="text" placeholder="" class="u_code" />
+					<input type="button" class="get_code fr" value="免费获取" />
+				</div>
+                <div class="input-desc bb-gray">
+                    我行已向您后四位为6092的手机发送验证码，请及时输入，如未收 到短信，请点击“重新获取验证码”。
+                </div>
+                <div class="button clearfix abs">
+                    <a href="pay-success.html">确定</a>
+                </div>
+			</div>
+
+    	</div>
+    	<!-- content 结束 -->
+
+    </div>
+</body>
+</html>
+

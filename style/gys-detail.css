@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:19
+ * @version $Id$
+ */
+/*我的供应商 - 详情*/
+.providexq{ width: 100%; }
+/*详情*/
+.providexq .group1{ background: #fff; padding: 14px 0px 0px 0px; border-top: 1px solid #ccc;  border-bottom: 1px solid #ccc;  }
+.providexq .group1 .tit{ padding: 0px 24px; font-size: 24px; height: 100px; line-height: 100px; border-bottom: 1px solid #ccc;  }
+.providexq .group1 .tit img{ vertical-align: middle; margin-right: 24px; }
+.providexq .group1 .tit a{ display: block; float: right; font-size: 20px; color: #2b98e5;  }
+.providexq .group1 .con{  overflow: hidden; }
+.providexq .group1 .con ul{ border-bottom: 1px solid #ccc; overflow: hidden; padding: 10px 0px;}
+.providexq .group1 .con ul li{ width: 50%; float: left; line-height: 44px; }
+.providexq .group1 .con ul li input{ width: 50%;  font-size: 20px; color: #666; text-indent: 10px; height: 30px; border: 1px solid #ccc; }
+.providexq .group1 .con ul li select{ width: 50%;  font-size: 20px; color: #666; height: 30px; border: 1px solid #ccc; }
+
+.providexq .group1 .con .info{ clear: both; overflow: hidden; padding: 0 25px;}
+.providexq .group1 .con .info p{ float: left; clear: both; font-size: 20px; padding: 10px 0px;}
+.providexq .group1 .con .info .phone{ height: 42px; line-height: 42px; overflow: hidden; width: 100%;}
+.providexq .group1 .con .info .phone span{ float: left; display: inline-block; width: 33.3%; font-size: 20px;}
+.providexq .group1 .con .info .phone span:nth-child(1){ text-align: left;}
+.providexq .group1 .con .info .phone span:nth-child(2){ text-align: center;}
+.providexq .group1 .con .info .phone span:nth-child(3){ text-align: right;}
+.providexq .group1 .con .info .phone span img{ vertical-align: middle; margin-right: 10px; }
+.providexq .group1 .con .desc{ font-size: 20px; padding: 0 25px; height: 80px; border-top: 1px solid #ccc; line-height: 80px;}
+.providexq .group1 .con .desc b{ font-size: 24px; font-weight: normal;}
+
+.providexq .group2{ background: #fff; border-top: 1px solid #ccc;  border-bottom: 1px solid #ccc; }
+.providexq .group2 .con{ padding: 12px 25px; overflow: hidden;}
+.providexq .group2 h4{ height: 46px; line-height: 46px; font-size: 24px;}
+.providexq .group2 p{ float: left; clear: both; padding: 4px 0px;}
+.providexq .group2 ul { width: 100%; overflow: hidden;}
+.providexq .group2 ul li{ width: 50%; float: left; height: 36px; line-height: 36px; font-size: 20px;}
+
+.tabshow{ display: none;}
+.blog{ background: #fff; padding: 0 25px; height: 100px; line-height: 100px; font-size: 24px;border-top: 1px solid #ccc;  border-bottom: 1px solid #ccc;}
+.blog a{ display: block; width: 100%; position: relative;}
+.blog a:after{ content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 0px; top: 38%; }
+
+.providexq .group3{ border-top: 1px solid #2b98e5;  border-bottom: 1px solid #2b98e5;  }
+.providexq .group3 .tite{ background: #fff;  height: 81px; line-height: 81px; border-bottom: 1px solid #ccc;  overflow: hidden;}
+.providexq .group3 .tite h2{ padding: 0 25px; font-size: 24px; float: left;}
+.providexq .group3 .cont{ padding: 14px 25px; overflow: hidden;}
+.providexq .group3 .cont p.name1{ float: left; clear: both; padding: 10px 0px; font-size: 20px;}
+.spname{ height: 50px; }
+.spname label{ height: 50px; float: left; }
+.providexq .group3 .cont div{ padding: 10px 0px; font-size: 20px;}
+.providexq .group3 .cont div span{ width: 50%;}
+.providexq .group3 .foot{ overflow: hidden; margin: 0 25px; border-top: 1px solid #ccc; }
+.providexq .group3 .foot{ padding: 10px 0px; }
+.providexq .group3 .foot div{ height: 46px; line-height: 46px;}
+
+.btnbind{ height: 78px; padding: 70px 40px;}
+.btnbind a{ display: inline-block; width: 250px; height: 78px; line-height: 78px; text-align: center; font-size: 30px; background: #2b98e5; border-radius: 5px;  color: #fff;}

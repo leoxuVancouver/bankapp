@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5, maximum-scale=0.5,user-scalable=no" />
+	<title>订单详情</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/dd-detail.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/comm.js"></script>
+	<script type="text/javascript" src="js/price.js"></script>
+         <!--加载存储Js-->
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/Storage.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+    	<div class="header bgblue">
+			<a href="cx-order.html" class="goBack1"></a>
+			<h2>订单详情</h2>
+			<!-- <a href="javascript:void(0)" class="goEdit">编辑</a> -->
+			<a href="index.html" class="goHome"></a>
+		</div>
+    	<div class="content" style="margin-top: 130px;">
+			<div class="orders">
+				<div class="tabs">
+					<ul >
+						<li style="line-height:100px;"><a href="dd-detail.html">商品信息</a></li>
+						<li style="line-height:100px;"><a href="dd-detail2.html">收货信息</a></li>
+						<li class="active"><a href="dd-detail3.html">付款信息</a></li>
+					</ul>
+				</div>
+                <div class="tabsCont tabsCont3" style="display:block;">
+                  <div class="info" style="height: 210px;">
+          		  <p style="height: 64px;"><span class="fl" id="nowTime">2016-01</span>
+                 <span class="fr" style="font-size:24px;"><img src="images/icon-cxyhk.png" style="padding-right:10px;padding-bottom: 5px;">付货款</span>
+                 </p>
+                 <ul>
+                    <li><span style="font-size:28px;">付款金额（元）</span><span class="fr" style="font-size:28px;" id="totalpayment">0.00</span></li>
+                    <li>单据号：72015073115323456002</li>
+                 </ul>
+            </div>
+                
+			</div>
+    	</div>
+         <div class="orderPrice" style="margin-top: 20px;">
+                    <span class="fl"  style="color:#000000;font-weight: bold;"><img src="images/icon-price.png" style="margin-right:5px;" />未付金额（元）：</span>
+                    <span class="fr" class="total" id="unpay_num" style="color:#000000;margin-right: 20px;padding-right: 10px; font-weight:bold;">16,840.00</span>
+                   </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript"> 
+//当前日期
+function current(){ 
+var d=new Date(),str=''; 
+str +=d.getFullYear()+'-'; //获取当前年份 
+str +=d.getMonth()+1+'-'; //获取当前月份
+str +=d.getDate(); 
+return str; } 
+setInterval(function(){$("#nowTime").html(current)},10); 
+
+var totalorder_txt =Enjurokcc.getMarkStringThis('_ordertotal'); 
+var totalpayment_txt = Enjurokcc.getMarkStringThis('_totalmoney'); 
+var totalorder_txt=totalorder_txt.replace(",",'');
+var totalpayment_txt=totalpayment_txt.replace(",",'');
+var totalorder_num=parseInt(totalorder_txt);
+var totalpayment_num=parseInt(totalpayment_txt);
+console.log(totalpayment_num);
+ var unpay_num=totalorder_num-totalpayment_num;
+ $("#unpay_num").text(formatCurrency(unpay_num));
+  $("#totalpayment").text(formatCurrency(totalpayment_num));
+ 
+
+</script> 
+

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-05 17:34:18
+ * @version $Id$
+ */
+ /*确认收货*/
+.Receiving{ width: 100%; }
+.Receiving h2{ height: 92px; line-height: 92px; font-size: 28px; font-weight: normal; background: #fff; color: #000; padding:0px 25px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.Receiving ul{ background: #fff; }
+.Receiving ul li{ padding: 0px 28px; border-bottom: 1px solid #ccc; overflow: hidden; position: relative; font-weight: lighter;}
+/*.Receiving ul li:after{ content: ""; background: url("../images/rarrow.png"); width: 14px; height: 26px; position: absolute; right: 25px; top: 44%; }*/
+.Receiving ul li a{ display: block; font-size: 28px;}
+.Receiving ul li p{ line-height: 50px; font-size: 24px; float: left; clear: both;}
+
+.round {background:#fff;
+             width:94%;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+	margin:20px 10px 0px 15px;
+	padding-top:20px;
+	border-color:#e6e6e6;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>供应商</title>
+	<link rel="stylesheet" href="style/comm.css">
+	<link rel="stylesheet" href="style/provider-detail.css">
+    <script type="text/javascript" src="js/set-meta.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/comm.js"></script>
+</head>
+<body>
+    <div class="page bggray2">
+        <div class="header">
+            <a href="provider.html" class="goBackUrl"></a>
+            <h2>供应商</h2>
+           <a href="provider-detail-edit.html" class="goEditicon"></a>
+            <a href="index.html" class="goHome"></a>
+        </div>
+    	<div class="content">
+    		<div class="providexq">
+                <div class="tabs2 mb10">
+                    <ul>
+                        <li class="active"><a href="provider-detail.html">供应商信息</a></li>
+                        <li><a href="provider-detail2.html">销售政策</a></li>
+                    </ul>
+                </div>
+                <div class="tabshow tabshow1" style="display:block;">
+                    <div class="group group1 mb20">
+                        <div class="tit" >
+                            <img src="images/hbbg-logo.png" />广东琪琪电子商务有限公司 
+                        </div>
+                        <div class="con">
+                            <ul style="border-bottom: 0px">
+                                <li>供应商用户名：h**g</li>
+                                <li>供应商代码：EC10002</li>
+                                
+                            </ul>
+                            <ul>
+                                
+                                <li>采购业务员：李彦斌</li>
+                            </ul>
+                            <div class="info clearfix">
+                                <p style="height: 62px; line-height:62px;">首要联系人：张慧欣</p>
+                                <div class="phone clearfix">
+                                    <span class="three"><img src="images/mobile.png" />15835458585</span>
+                                    <span class="three" style="width: 310px;"><img src="images/tel.png" />020-85495078</span>
+                                    
+                                </div>
+                                <div class="phone clearfix">
+                                    
+                                    <span class="three"><img src="images/qq.png" />14100916</span>
+                                </div>
+                                
+                                <p class="adress"  style="line-height:200%;">联系地址：广东省广州市花都区彭家岭366号万通工业园18号楼</p>
+                            </div>
+                            <!--<div class="desc" style="background:#e6e6e6"><b>备注：</b>暂无备注</div>
+                        </div>
+                        <div class="foot"></div>-->
+                    </div>
+                    <!-- <div class="group group2 mb20">
+                        <div class="con">
+                            <h4>交易信息统计</h4>
+                            <ul>
+                                <li>订单总数：5</li>
+                                <li>订单总金额：500,000.00</li>
+                                <li>已支付总金额：100,000.00</li>
+                                <li>未支付总金额：400,000.00</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <!-- <div class="blog">
+                        <a href="ck-log.html">操作日志</a>
+                    </div>  -->
+
+                </div>   
+<!--                                    <div class="btnbind" style="background:#e6e6e6">
+                        <a href="provider-success.html"  style=" margin-right: 50px;">同意绑定</a>
+                        <a href="provider-refused.html">拒绝绑定</a>
+                    </div>    -->           
+    		</div>
+    	</div>
+    	<!-- content 结束 -->
+    </div>
+</div>
+<div class="mask"></div>
+<div class="error_pop win_pop1">
+    <h3>提示信息</h3>
+    <div class="error_info">
+        <p> <img src="images/secc-icon.png" height="40" width="40" alt="">成功绑定 </p>
+    </div>
+    <div class="btnbutton2">
+        <a href="javascript:;" class="btnOK2">确定</a>
+    </div>
+</div>
+<div class="error_pop win_pop2">
+    <h3>提示信息</h3>
+    <div class="error_info">
+        <p><img src="images/error_icon.png" height="40" width="40" alt="">拒绝绑定</p>
+    </div>
+    <div class="btnbutton2">
+        <a href="javascript:;" class="btnOK2">确定</a>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(".agree_bind").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".win_pop1").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".win_pop1").css("height")))/2+"px");
+    $(".win_pop1").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".win_pop1").css("width")))/2+"px");
+    $(".btnOK2").bind('click', function () {
+        $(".mask").hide();
+        $(".win_pop1").hide();
+    }) 
+})
+$(".reject_bind").bind("click",function(){
+    $(".mask").show().height($(document).height());
+    $(".win_pop2").show().css("top",(parseInt(document.documentElement.clientHeight)-parseInt($(".win_pop2").css("height")))/2+"px");
+    $(".win_pop2").show().css("left",(parseInt(document.documentElement.clientWidth)-parseInt($(".win_pop2").css("width")))/2+"px");
+    $(".btnOK2").bind('click', function () {
+        $(".mask").hide();
+        $(".win_pop2").hide();
+    }) 
+})
+</script>
+
